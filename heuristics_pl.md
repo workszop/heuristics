@@ -1,16 +1,16 @@
 # Praktyczne heurystyki rozwiązywania problemów
 
-Heurystyka to użyteczny sposób poszukiwania rozwiązania, a nie gwarancja, że będzie ono poprawne lub najlepsze. Ten przewodnik zbiera schematy wielokrotnego użytku z dokumentów znajdujących się w tym folderze, z pominięciem plików HTML. Przy każdym schemacie znajdziesz wyjaśnienie, kiedy go użyć i co zrobić dalej.
+Heurystyka to sposób szukania rozwiązania. Pomaga ruszyć z miejsca, ale nie gwarantuje poprawnej ani najlepszej odpowiedzi. W tym przewodniku zebrano metody z dokumentów w tym folderze, z pominięciem plików HTML. Możesz je stosować do różnych zadań. Przy każdej znajdziesz wyjaśnienie, kiedy się przydaje, oraz kroki, które pomogą ci ją zastosować.
 
-Procedury są opracowaniami napisanymi prostym językiem, nie cytatami. Przykłady spoza matematyki pokazują, jak można przenieść dany schemat na inny obszar; nie oznacza to, że źródła potwierdzają jego skuteczność w tych zastosowaniach. Podobne pomysły połączono, zamiast je powtarzać. Krótkie oznaczenia źródeł odsyłają do przeglądu dokumentów na końcu.
+Procedury opisano własnymi słowami, prostym językiem. Podobne pomysły połączono, żeby się nie powtarzały. Przykłady spoza matematyki pokazują, jak można zastosować metodę w innej dziedzinie. Nie oznacza to, że źródła potwierdzają jej skuteczność w takich sytuacjach. Oznaczenia źródeł prowadzą do przeglądu dokumentów na końcu przewodnika.
 
-Rozwinięte wyjaśnienia są przeznaczone dla osób w wieku około 13–16 lat. Przy każdym schemacie znajduje się przykład przygotowany na potrzeby tego przewodnika. Nie jest to cytat ani opis przypadku przypisany dokumentom źródłowym.
+Wyjaśnienia napisano z myślą o osobach w wieku około 13–16 lat. Przykłady przy poszczególnych metodach powstały na potrzeby tego przewodnika. Nie są cytatami ani opisami zdarzeń zaczerpniętymi z dokumentów źródłowych.
 
 ## Jak korzystać z przewodnika
 
-Zapisz, co chcesz osiągnąć, co już wiesz i jakie warunki musi spełniać poprawna odpowiedź. Wybierz schemat pasujący do napotkanej trudności. Notuj swoje próby i to, czego się z nich dowiadujesz. Zanim przyjmiesz wynik, sprawdź go względem pierwotnego problemu.
+Zapisz, co chcesz osiągnąć, co już wiesz i jakie warunki musi spełniać poprawna odpowiedź. Wybierz schemat pasujący do napotkanej trudności. Notuj swoje próby i to, czego się z nich dowiadujesz. Zanim przyjmiesz wynik, sprawdź, czy odpowiada na pierwotne pytanie i spełnia wszystkie warunki.
 
-Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem trzeba wrócić do sformułowania problemu, zmienić metodę albo połączyć dwa podejścia. Heurystyka pomaga odkryć odpowiedź; dowód, odpowiedni test lub sprawdzenie wykonalności pozwalają ustalić, co można o niej powiedzieć z pewnością.
+Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których potrzebujesz. Czasem trzeba ponownie przemyśleć pytanie, zmienić metodę albo połączyć dwa podejścia. Heurystyka pomaga znaleźć odpowiedź. Dopiero dowód, odpowiedni test lub sprawdzenie, czy plan da się wykonać, pozwalają ocenić, na ile można jej zaufać.
 
 ### Jak szybko wybrać schemat
 
@@ -33,9 +33,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 1. Rozumuj od końca, zaczynając od celu
 
-**Opis:** Rozumowanie od końca zaczyna się od dokładnego wyniku, którego chcesz, i pytania, jaki warunek umożliwiłby bezpośrednio wcześniejszy krok. Cofaj się, aż dojdziesz do czegoś, co już wiesz lub potrafisz zrobić, a potem odczytaj łańcuch w przód. Odległy cel zamienia się w serię mniejszych wymagań i może ujawnić brakujący krok. To sposób szukania drogi, nie dowód. Warunek konieczny, czyli taki, który musi być spełniony, może nie wystarczać, dlatego sprawdź każdy krok w kierunku celu.
+**Opis:** Zacznij od celu i zapytaj: „Co musiałoby być gotowe tuż przed jego osiągnięciem?”. Potem zadaj to samo pytanie dla wcześniejszego kroku. Cofaj się tak długo, aż dojdziesz do czegoś, co już wiesz lub umiesz zrobić. W ten sposób rozpiszesz odległy cel na mniejsze wymagania i zauważysz ewentualne braki. Następnie przejdź przez plan od początku do końca. Samo znalezienie potrzebnego warunku nie wystarcza: sprawdź, czy każdy krok rzeczywiście pozwala wykonać następny.
 
-**Przykład:** W piątek musisz oddać plakat naukowy. Wysyłka wymaga wyeksportowanego pliku; plik wymaga zmieszczenia tekstu i obrazów; układ wymaga szkicu i źródeł; oddanie wymaga uwag nauczyciela. Na pierwszej liście nie było na nie czasu, więc planujesz szkic na wtorek, układ na środę, uwagi na czwartek, a wysyłkę na piątek. Łańcuch od końca ujawnił tę lukę; sprawdzenie w przód nie pozwala pomylić szkicu z gotowym plakatem.
+**Przykład:** W piątek musisz oddać plakat naukowy. Żeby go wysłać, potrzebujesz wyeksportowanego pliku. Wcześniej musisz rozmieścić tekst i ilustracje, a do tego mieć szkic i źródła. Przed oddaniem plakat musi też obejrzeć nauczyciel. W pierwszym planie zabrakło czasu na jego uwagi. Wyznaczasz więc szkic na wtorek, skład plakatu na środę, uwagi na czwartek, a wysyłkę na piątek. Teraz sprawdzasz plan od początku: czy po każdym etapie masz wszystko, czego potrzebujesz w następnym?
 
 **Kiedy się przydaje:** Przy planowaniu, szukaniu brakujących warunków wstępnych, rozwiązywaniu równań i budowaniu dowodów.
 
@@ -52,9 +52,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 2. Wykorzystaj strukturę rozwiązanego problemu
 
-**Opis:** Analogia to porównanie sytuacji, które mają ważne zależności wspólne. Zamiast dopasowywać tematy lub kopiować odpowiedź, ustal, co od czego zależy, co jest ograniczone i po czym poznasz sukces. Przenieś te role z rozwiązanego problemu do nowego, a potem sprawdź różnice, które mogą zepsuć porównanie. Taka metoda podpowiada drogę przy nieznanym temacie, lecz samo zewnętrzne podobieństwo jest słabym dowodem. Liczą się relacje, nie dekoracje.
+**Opis:** Przypomnij sobie zadanie, które już udało ci się rozwiązać. Czy w nowym problemie coś zależy od czegoś innego w podobny sposób? Na takim porównaniu polega analogia. Ustal, które elementy obu zadań sobie odpowiadają, jakie mają ograniczenia i do czego zmierzasz. Następnie spróbuj dostosować znaną metodę. Nie kopiuj gotowej odpowiedzi. Nawet podobnie brzmiące zadania mogą mieć różne warunki, dlatego sprawdź przede wszystkim te różnice, które mogłyby sprawić, że wcześniejszy sposób tutaj nie zadziała.
 
-**Przykład:** W planszówce na pewnym poziomie trzeba zebrać klucze, zanim otworzy się drzwi. Wykorzystujesz tę strukturę przy planowaniu prezentacji grupowej: klucze stają się źródłami, drzwi slajdami, a ostatnia brama próbą generalną. Kilka osób może szukać źródeł równocześnie, więc dostosowujesz analogię zamiast kopiować ruchy z gry. Mapa pokazuje, że brak źródła blokuje slajd, a praca równoległa oszczędza czas. Pomogła zależność, nie temat gry.
+**Przykład:** W planszówce trzeba zebrać klucze, żeby otworzyć drzwi. Podobnie planujesz prezentację grupową: źródła są jak klucze potrzebne do przygotowania slajdów, a gotowe slajdy pozwalają przeprowadzić próbę generalną. Dostrzegasz też różnicę: kilka osób może szukać źródeł równocześnie, więc nie trzeba kopiować kolejności ruchów z gry. Porównanie pomaga ustalić, co można robić jednocześnie, a z czym trzeba poczekać. Brak źródła zatrzymuje pracę nad danym slajdem.
 
 **Kiedy się przydaje:** Przy nieznanych problemach, projektowaniu, diagnozowaniu usterek i nauce nowego zagadnienia.
 
@@ -71,9 +71,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 3. Podziel problem na części
 
-**Opis:** Podziel duży problem na mniejsze zadania z jasno określonym wynikiem, a potem połącz te wyniki i sprawdź połączenia. Zaznacz zależności, czyli zadania, których nie można zacząć, dopóki nie powstanie inny wynik. To zmniejsza przeciążenie i ułatwia podział pracy, ale nie usuwa wzajemnego wpływu części: dobre elementy mogą się zderzyć po połączeniu. Końcowa kontrola nadal musi sprawdzić pierwotny cel i wszystkie ograniczenia.
+**Opis:** Gdy trudno objąć cały problem, podziel go na mniejsze zadania. Przy każdym zapisz, jaki ma dać wynik i czy trzeba wcześniej skończyć coś innego. Łatwiej wtedy zdecydować, od czego zacząć i jak podzielić pracę między osoby. Po rozwiązaniu części połącz je i sprawdź całość. Poszczególne części mogą działać osobno, a po połączeniu sobie przeszkadzać. Ostatecznie cały wynik musi odpowiadać pierwotnemu celowi i spełniać wszystkie warunki.
 
-**Przykład:** Organizacja klasowego wieczoru filmowego wygląda jak jedno wielkie zadanie. Podziel ją na zgodę i salę, wybór filmu, przekąski, godziny oraz ogłoszenia. Zgoda musi być przed rezerwacją, a długość filmu wyznacza koniec. Dwie osoby wybierają przekąski osobno, lecz ich listy przekraczają budżet, więc klasa łączy je i usuwa jeden produkt. Podział wyjaśnia, kto za co odpowiada, a ponowne połączenie ujawnia konflikt budżetu i godzin.
+**Przykład:** Organizację klasowego wieczoru filmowego dzielisz na uzyskanie zgody i znalezienie sali, wybór filmu, zakup przekąsek, ustalenie godzin oraz ogłoszenie wydarzenia. Zgoda jest potrzebna przed rezerwacją, a długość filmu wpływa na godzinę zakończenia. Dwie osoby osobno wybierają przekąski. Dopiero po połączeniu ich list widać, że zakupy przekroczą budżet, więc klasa rezygnuje z jednego produktu. Podział pracy ustala odpowiedzialność, ale dopiero sprawdzenie całości pozwala dopilnować budżetu i godzin.
 
 **Kiedy się przydaje:** W projektach, złożonych obliczeniach, projektowaniu systemów i wieloetapowych analizach.
 
@@ -90,15 +90,15 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 4. Stosuj kontrolowane próby i błędy
 
-**Opis:** Kontrolowane próby i błędy oznaczają, że każda próba jest małym eksperymentem: wybierasz wiarygodnego kandydata, przewidujesz wynik, bezpiecznie go testujesz i zapisujesz, czego dowiedziałeś się z rezultatu. Jeśli możesz, zmień jedną ważną cechę, aby połączyć przyczynę ze skutkiem. Nieudana próba jest pożyteczna, gdy wyklucza możliwość; losowe zgadywanie niczego nie wyjaśnia. Stosuj ten sposób tylko wtedy, gdy koszt i ryzyko są ograniczone.
+**Opis:** Potraktuj każdą próbę jak mały eksperyment. Wybierz pomysł, który ma szansę zadziałać, przewidź wynik, a potem bezpiecznie go sprawdź. Zapisz, co się wydarzyło i czego się z tego dowiadujesz. Jeśli to możliwe, w kolejnej próbie zmień tylko jedną ważną cechę, żeby łatwiej ustalić przyczynę różnicy. Niepowodzenie też się przydaje, jeśli pozwala odrzucić błędny pomysł. Przypadkowe zgadywanie bez sprawdzania wyników niewiele wyjaśnia. Eksperymentuj w ten sposób tylko przy ograniczonym koszcie i ryzyku.
 
-**Przykład:** Przewidujecie, że złożone paski wzmocnią papierowy most. Budujecie ten sam most długości 20 centymetrów: najpierw z trzema paskami, potem z pięcioma, zmieniając tylko ich liczbę. Dodajecie identyczne książki pojedynczo, aż każda wersja się zapadnie: trzy paski utrzymują cztery książki, a pięć osiem. Nośność jest zmierzonym wynikiem, nie zgadywaniem. Drugi test wspiera użycie większej liczby pasków, ale nie dowodzi, że każdy most potrzebuje pięciu.
+**Przykład:** Przypuszczacie, że złożone paski papieru wzmocnią papierowy most. Budujecie dwie wersje mostu o długości 20 centymetrów: z trzema i z pięcioma paskami. Poza liczbą pasków niczego nie zmieniacie. Na każdej wersji kładziecie pojedynczo identyczne książki, aż most się zapadnie. Most z trzema paskami utrzymał cztery książki, a z pięcioma osiem. W tej próbie więcej pasków oznaczało większą wytrzymałość. Nie wynika z niej jednak, że każdy most powinien mieć akurat pięć pasków.
 
 **Kiedy się przydaje:** Przy diagnozowaniu usterek, tworzeniu prototypów i niewielkich poszukiwaniach, gdy testy są tanie i bezpieczne.
 
 **Procedura:**
 1. Określ jednoznaczny test sukcesu.
-2. Wybierz wiarygodnego kandydata na rozwiązanie i przewidź, co powinno się wydarzyć.
+2. Wybierz rozwiązanie, które ma szansę zadziałać, i przewidź, co powinno się wydarzyć.
 3. Przetestuj go przy ograniczonym koszcie i ryzyku.
 4. Zapisz, co zadziałało, co zawiodło i jakie możliwości wyklucza niepowodzenie.
 5. Jeśli to możliwe, zmień jedną istotną cechę i przetestuj ponownie. Nie powtarzaj prób, z których niczego się nie dowiadujesz.
@@ -109,9 +109,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 5. Ulepszaj działające rozwiązanie i wychodź ze ślepych zaułków
 
-**Opis:** Zacznij od dowolnego rozwiązania spełniającego twarde wymagania, a potem poprawiaj je małymi zmianami, na przykład zamianą dwóch elementów. Zachowuj zmiany, które poprawiają wybraną ocenę. Gdy małe zmiany przestają pomagać, możesz być w lokalnym optimum, czyli sytuacji, w której nic bliskiego nie jest lepsze. Zachowaj najlepszą wersję i zacznij od innego punktu albo wykonaj większą zmianę. Takie poszukiwanie może znaleźć lepszą odpowiedź, ale nie dowodzi, że jest najlepsza z możliwych.
+**Opis:** Zacznij od rozwiązania, które spełnia wszystkie obowiązkowe wymagania. Potem wprowadzaj małe zmiany, na przykład zamień miejscami dwa elementy, i sprawdzaj, czy wynik jest lepszy według wybranego kryterium. Zachowuj udane poprawki. Jeśli żadna drobna zmiana już nie pomaga, być może masz lokalne optimum: najlepszy wynik spośród wariantów dostępnych przez takie zmiany. Zapisz go i spróbuj większej zmiany lub zacznij inaczej. Możesz w ten sposób znaleźć lepsze rozwiązanie, ale nie masz jeszcze dowodu, że jest najlepsze ze wszystkich.
 
-**Przykład:** Wasza grupa ma poprawny plan nauki pięciu przedmiotów, ale trzy sprawdziany przypadają jednego wieczoru. Zamiana dwóch bloków poprawia wynik, bo każdy sprawdzian dostaje czas na powtórkę. Po trzech zamianach bliskie warianty są gorsze. Zachowujecie plan i budujecie drugi od innej kolejności przedmiotów. Drugi lepiej rozkłada powtórki wokół stałych terminów sprawdzianów, a terminy i przedmioty pozostają bez zmian. Jedna ocena chroni przed wyborem ładniejszego, lecz słabszego planu.
+**Przykład:** Wasza grupa ma plan nauki pięciu przedmiotów, ale powtórki do trzech sprawdzianów zaplanowano na jeden wieczór. Zamiana dwóch bloków nauki pomaga rozłożyć przygotowania. Po trzech zamianach kolejne drobne zmiany już pogarszają plan. Zachowujecie go i układacie drugi, zaczynając od innej kolejności przedmiotów. Ten lepiej rozkłada powtórki przed ustalonymi terminami sprawdzianów. Nie zmieniacie ani terminów, ani zestawu przedmiotów. Oba plany oceniacie według tego samego kryterium, zamiast wybierać ten, który tylko wygląda lepiej.
 
 **Kiedy się przydaje:** Przy harmonogramach, układach przestrzennych, trasach, podziale zasobów i projektach z wieloma możliwymi rozwiązaniami.
 
@@ -128,9 +128,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 6. Oszacuj skalę, zanim zaczniesz dokładnie liczyć
 
-**Opis:** Oszacowanie rzędu wielkości pyta, jak duży jest wynik w przybliżeniu, zanim poświęcisz czas na dokładne rachunki. Zaokrąglaj niepewne dane, zapisuj jednostki i założenia oraz użyj niskiego i wysokiego wariantu, aby otrzymać zakres. Dzięki temu wcześnie wykryjesz przestawione zero albo nierealny plan. To sprawdzenie realności przed ważną decyzją, nie dokładna odpowiedź, gwarancja ani stała cena; gdy decyzja tego wymaga, użyj ścisłych obliczeń.
+**Opis:** Zanim zaczniesz dokładnie liczyć, oszacuj rząd wielkości, czyli sprawdź, jak dużego wyniku mniej więcej się spodziewać. Zaokrąglij niepewne dane i zapisz jednostki oraz przyjęte założenia. Wykonaj obliczenia dla niższych i wyższych wartości, żeby otrzymać przybliżony zakres. Takie oszacowanie pomaga zauważyć nadmiarowe zero w rachunkach lub plan, który od początku jest nierealny. Nie traktuj go jednak jak dokładnej odpowiedzi ani obietnicy, że koszt na pewno się nie zmieni. Jeśli od wyniku zależy ważna decyzja, może być potrzebne dokładniejsze obliczenie.
 
-**Przykład:** Wasza klasa chce zebrać 100 euro ze sprzedaży przekąsek. Szybkie oszacowanie przyjmuje 20 uczniów, po 3 produkty i 2 euro za produkt: 20 × 3 × 2 = 120 euro. Jeśli część sprzeda po 2, a część po 4 produkty, przybliżony zakres wynosi od 80 do 160 euro. Zakres pokazuje, że cel jest możliwy, ale nadal trzeba sprawdzić dokładne koszty i niesprzedane przekąski.
+**Przykład:** Wasza klasa chce zebrać 100 euro ze sprzedaży przekąsek. Zakładacie, że każdy z 20 uczniów sprzeda po 3 produkty za 2 euro: 20 × 3 × 2 = 120 euro. Sprawdzacie też warianty z 2 i 4 produktami na osobę. Otrzymujecie przybliżony zakres od 80 do 160 euro. Cel wydaje się możliwy, ale to jeszcze nie kwota, która wam zostanie. Trzeba uwzględnić koszty i sprawdzić, ile przekąsek może się nie sprzedać.
 
 **Kiedy się przydaje:** We wstępnym planowaniu, szybkiej ocenie wykonalności i wykrywaniu niewiarygodnych wyników obliczeń.
 
@@ -147,9 +147,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 7. Szacuj na podstawie części i podobnych przypadków
 
-**Opis:** Oszacuj zadanie na dwa sposoby. Najpierw podziel je na niepokrywające się części i użyj wskaźnika z podobnej pracy, na przykład liczby minut na montaż jednego nagrania. Dodaj wspólne zadania, takie jak uzgodnienia i wysyłka. Potem porównaj sumę z podobnym zadaniem potraktowanym jako całość. Różnica to wskazówka do sprawdzenia, nie błąd do ukrycia. Pamiętaj, że nakład pracy różni się od czasu trwania, gdy ludzie pracują równolegle.
+**Opis:** Oszacuj pracę na dwa sposoby. Najpierw podziel ją na części tak, żeby niczego nie liczyć podwójnie. Skorzystaj z danych z podobnych zadań, na przykład z liczby minut potrzebnych na montaż jednego nagrania. Dodaj pracę wspólną dla całości, taką jak uzgodnienia i wysyłka. Następnie porównaj sumę z czasem wykonania podobnego całego zadania. Jeśli wyniki się różnią, poszukaj przyczyny. Pamiętaj też, że łączny czas pracy wszystkich osób to nie to samo co czas od rozpoczęcia do zakończenia projektu.
 
-**Przykład:** Klasowy podcast ma cztery wywiady. Wcześniej montaż jednego zajmował średnio 15 minut, więc montaż potrwa około 4 × 15 = 60 minut. Dodajcie 30 minut na wspólny wstęp i wysyłkę: razem 90 minut pracy. Dwie osoby mogą montować równolegle, więc czas od początku do końca może być bliższy 60 minutom. Jeśli poprzedni cały podcast trwał 2 godziny, porównajcie różnicę i poprawcie wskaźnik po tym odcinku.
+**Przykład:** Klasowy podcast zawiera cztery wywiady. Montaż jednego zajmował wcześniej średnio 15 minut, więc na wszystkie potrzeba około 4 × 15 = 60 minut pracy. Dodajcie 30 minut na wspólny wstęp i wysyłkę: razem 90 minut. Jeśli dwie osoby montują równocześnie, od rozpoczęcia do zakończenia może minąć bliżej 60 minut. Poprzedni odcinek przygotowywaliście jednak przez 2 godziny. Sprawdźcie, skąd ta różnica, a po skończeniu nowego odcinka poprawcie założenia do przyszłych oszacowań.
 
 **Kiedy się przydaje:** Przy szacowaniu nakładu pracy, wydajności, ilości i kosztów, gdy dostępne są odpowiednie dane z przeszłości.
 
@@ -166,9 +166,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 8. Sprawdź, czy skrót myślowy cię nie zwodzi
 
-**Opis:** Potraktuj pierwszą ocenę jako hipotezę, nie wyrok. Dostępność to wpływ przykładu, który łatwo przychodzi na myśl; reprezentatywność oznacza ocenianie na podstawie podobieństwa; zakotwiczenie to przyciąganie przez pierwszą liczbę. Zapytaj, który skrót działa, poszukaj porównywalnych danych i dowodów przeciw pierwszej myśli, a potem oszacuj sprawę drugą drogą. Porównaj wyniki i nazwij to, co nadal pozostaje niepewne. Taka kontrola nie usuwa niepewności, tylko ją odsłania.
+**Opis:** Pierwszą odpowiedź potraktuj jako przypuszczenie do sprawdzenia. Może wynikać ze skrótu myślowego. O dostępności mówimy, gdy duży wpływ ma przykład, który łatwo sobie przypomnieć. Reprezentatywność polega na ocenianiu przez podobieństwo, a zakotwiczenie na zbyt silnym sugerowaniu się pierwszą liczbą. Sprawdź, czy któryś z tych mechanizmów wpływa na twoją ocenę. Poszukaj porównywalnych danych, również takich, które jej przeczą. Potem spróbuj oszacować wynik inną metodą i porównaj odpowiedzi. To pomoże zauważyć, czego nadal nie wiesz, choć nie usunie całej niepewności.
 
-**Przykład:** Po dwóch spóźnionych autobusach przewidujesz, że połowa z dziesięciu następnych kursów się spóźni. Wyraziste opóźnienia sprawiają, że ryzyko wydaje się większe. Dziesięć wcześniejszych kursów obejmuje dwa spóźnione, więc 20 procent lepiej pasuje do tej małej próby niż 50. Pogoda może zmienić wynik, dlatego zostawiasz niepewność zamiast ogłaszać autobusy niezawodnymi. Kontrola poprawiła wrażenie, lecz nie dowodzi przyszłości.
+**Przykład:** Po dwóch spóźnionych autobusach przewidujesz, że połowa z dziesięciu następnych kursów też się spóźni. Opóźnienia dobrze zapadły ci w pamięć i wpływają na ocenę. Sprawdzasz dziesięć wcześniejszych kursów: spóźnione były dwa, więc do tej małej próby lepiej pasuje 20 procent niż 50. Korygujesz przewidywanie, ale nie uznajesz autobusów za niezawodne. Pogoda może wpłynąć na kolejne kursy, a dane z przeszłości nie dają pewności, co wydarzy się później.
 
 **Kiedy się przydaje:** Przy niepewnych ocenach, interpretowaniu dowodów i sprawdzaniu oszacowań.
 
@@ -185,9 +185,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 9. Tymczasowo usuń trudne ograniczenie
 
-**Opis:** Relaksacja ograniczeń oznacza tymczasowe rozwiązanie łatwiejszej wersji tego samego problemu przez usunięcie lub złagodzenie jednej reguły. Zachowaj cel, sprawdź, czego nie spełnia rozwiązanie po relaksacji, i przywróć pierwotne reguły przed oddaniem wyniku. To może ujawnić wąskie gardło, czyli etap blokujący resztę, albo użyteczną granicę. Jest to model do myślenia, nie zgoda na pomijanie prawdziwych wymagań bezpieczeństwa, prawa lub dostępności.
+**Opis:** Spróbuj rozwiązać łatwiejszą wersję zadania, w której tymczasowo pomijasz lub łagodzisz jedną regułę. To właśnie relaksacja ograniczeń. Cel pozostaje ten sam. Sprawdź, co udało się dzięki uproszczeniu i których pierwotnych warunków wynik nie spełnia. Możesz w ten sposób zauważyć, co blokuje resztę pracy, albo uzyskać oszacowanie graniczne, jak w schemacie 11. Przed przyjęciem odpowiedzi przywróć pierwotne reguły. Uproszczenie służy rozumowaniu: nie pozwala ignorować rzeczywistych wymagań bezpieczeństwa, prawa czy dostępności.
 
-**Przykład:** Wasza grupa musi skończyć film, ale wszyscy mają być na każdym spotkaniu. Tymczasowo usuwacie tę regułę w arkuszu: dwie pary montują sceny, a potem spotykają się na 20-minutowe nagranie. To pokazuje, że blokadą był wspólny montaż. Przywracacie pierwotną regułę i układacie jedno dłuższe spotkanie z obecnością wszystkich; wersja po relaksacji była tylko wskazówką. Jeśli nauczyciel zmieni wymagania, zapisujecie to osobno. Bezpieczeństwo i zgody nie zostały złagodzone.
+**Przykład:** Wasza grupa musi skończyć film, a wszyscy mają być na każdym spotkaniu. W roboczym arkuszu na chwilę pomijacie ten wymóg: dwie pary montują sceny osobno, potem spotykają się na 20-minutowe nagranie. Widać, że trudność sprawia wspólny montaż. Wracacie do obowiązującej reguły i planujecie jedno dłuższe spotkanie całej grupy. Uproszczony plan był tylko podpowiedzią. Ewentualną zgodę nauczyciela na zmianę wymagań zapisujecie osobno. Wymagania dotyczące bezpieczeństwa i niezbędne zgody nadal obowiązują.
 
 **Kiedy się przydaje:** Przy planach obciążonych zbyt wieloma ograniczeniami, podziale zasobów, harmonogramowaniu i optymalizacji.
 
@@ -204,9 +204,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 10. Najpierw dopuść ułamki, potem wróć do całych jednostek
 
-**Opis:** Relaksacja ciągła tymczasowo pozwala, aby wybory całych jednostek lub decyzje tak/nie przyjmowały wartości ułamkowe, przy zachowaniu pozostałych limitów i celu. Łatwiejsze obliczenie może pokazać, które wybory są ważne, oraz dać granicę lub cel. Ułamki są tylko wskazówką: zaokrąglenie może naruszyć pojemność, budżet albo dokładną sumę, a bliskie rozwiązanie całkowitoliczbowe może nie istnieć. Na końcu sprawdź rzeczywiste całe wybory względem każdej pierwotnej reguły.
+**Opis:** Czasem musisz wybierać całe przedmioty albo decydować „tak” lub „nie”. Na próbę dopuść także ułamki, pozostawiając bez zmian cel i pozostałe ograniczenia. Takie uproszczenie nazywa się relaksacją ciągłą. Może ułatwić obliczenia, podpowiedzieć cel poszukiwań lub dać oszacowanie graniczne. Potem trzeba wrócić do rzeczywistych wyborów. Samo zaokrąglenie ułamków może przekroczyć budżet, pojemność lub wymaganą sumę. Być może żadne rozwiązanie w całych jednostkach nie będzie bliskie wynikowi uproszczonemu, dlatego sprawdź wszystkie pierwotne warunki.
 
-**Przykład:** Samorząd ma 6 godzin. Stoiska A, B, C potrzebują 4, 3, 2 godzin i dają 8, 6, 3 punktów; każde wybiera się w całości albo wcale. Przy 0 ≤ A, B, C ≤ 1 relaksacja wybiera A = 1 i B = 2/3: 6 godzin, 12 punktów. Zaokrąglenie B w górę wymaga 7 godzin i odpada. Całe wybory dają A + C: 6 godzin, 11 punktów, więc plan działa.
+**Przykład:** Samorząd ma do dyspozycji 6 godzin. Przygotowanie stoisk A, B i C zajmuje odpowiednio 4, 3 i 2 godziny, a każde daje odpowiednio 8, 6 i 3 punkty. Stoisko trzeba wybrać w całości albo z niego zrezygnować. Na próbę dopuszczacie 0 ≤ A, B, C ≤ 1. Wtedy A = 1 i B = 2/3 daje 12 punktów w 6 godzin. Zaokrąglenie B w górę oznacza jednak 7 godzin. W rzeczywistym planie wybieracie A + C: 11 punktów w 6 godzin.
 
 **Kiedy się przydaje:** Przy wyborze przedmiotów, przydzielaniu zasobów i planowaniu ilości, które ostatecznie muszą być całkowite.
 
@@ -223,7 +223,7 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 11. Wyznacz oszacowania, aby ocenić możliwą poprawę
 
-**Opis:** Oszacowanie graniczne to limit, którego prawdziwy wynik nie może przekroczyć. Gdy szukasz najmniejszego wyniku, zrelaksowany problem może dać granicę dolną, a poprawne rozwiązanie granicę górną; gdy szukasz największego, role się odwracają. Gdy obie wartości są równe, masz dowód, że odpowiedź jest najlepsza z możliwych. Gdy się różnią, luka mówi, ile niepewności zostało. Granica musi mieć uzasadnienie, a nie wynikać z przybliżonego zgadywania. Tak samo oceniasz maksymalny możliwy zysk.
+**Opis:** Nie zawsze musisz od razu znać najlepszy wynik. Najpierw spróbuj ustalić granice, między którymi musi się znajdować. Przy szukaniu minimum najlepszy wynik zadania po złagodzeniu ograniczeń może dać granicę dolną: niżej nie da się zejść. Każde rozwiązanie spełniające pierwotne warunki daje granicę górną: optimum nie może być od niego większe. Przy szukaniu maksimum jest odwrotnie. Jeśli obie granice się spotkają, masz dowód optymalności. Jeśli nie, ich różnica pokazuje, ile najwyżej można jeszcze poprawić. Każda granica wymaga uzasadnienia, a nie tylko oszacowania na wyczucie.
 
 **Przykład:** Szukasz najkrótszej trasy między trzema szkolnymi przystankami. Po pominięciu jednego trudnego ograniczenia najkrótsza trasa zrelaksowanego problemu ma 8 minut, więc żadna trasa spełniająca wszystkie reguły nie może być krótsza. Trasa zgodna z każdą regułą zajmuje 10 minut. Najlepszy wynik leży zatem między 8 a 10 minutami, a luka wynosi 2 minuty; nie możesz twierdzić, że 8 minut jest osiągalne. Jeśli znajdziesz poprawną trasę na 8 minut, równe granice dowodzą optymalności.
 
@@ -242,9 +242,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 12. Przypisz kompromisom jawny koszt
 
-**Opis:** Kompromis pojawia się, gdy poprawa jednej preferencji pogarsza inną. Oddziel twarde ograniczenia, których nie wolno łamać, od miękkich celów, przy których można ustąpić. Każdemu odstępstwu od miękkiego celu nadaj mierzalną karę i wagę, połącz te koszty ze zwykłą oceną i sprawdź, jak zmiana wag wpływa na wybór. Liczby porządkują decyzję, lecz dowolne kary nie dowodzą, że wynik jest matematycznie najlepszy.
+**Opis:** Czasem nie da się spełnić wszystkich oczekiwań naraz: poprawa jednego wyniku pogarsza inny. Oddziel wtedy obowiązkowe wymagania od preferencji, z których możesz częściowo zrezygnować. Ustal, jak mierzyć odstępstwo od każdej preferencji i jak dużo ma ono ważyć w ocenie. Możesz przypisać mu punkty karne i uwzględnić je przy porównywaniu planów. Sprawdź też, czy inne wagi zmieniłyby wybór. Liczby pomagają jasno opisać kompromis, ale dowolnie dobrane kary nie są dowodem, że rozwiązanie jest matematycznie najlepsze.
 
-**Przykład:** Wasza grupa wybiera godzinę próby. Sala i wysyłka w piątek to twarde ograniczenia. Obecność jest miękka: 5 punktów za każdą nieobecną osobę i 1 za każde 15 minut opóźnienia. Plan A ma wszystkich, lecz kończy się 45 minut później, więc kosztuje 3. Plan B kończy się na czas, ale brakuje jednej osoby, więc kosztuje 5. Przy tych wagach wygrywa A. Jeśli obecność ważniejsza, zwiększcie jej karę; nie usprawiedliwia ona braku sali ani terminu.
+**Przykład:** Wybieracie godzinę próby. Musicie mieć salę i dotrzymać piątkowego terminu wysyłki. Przy obecności i porze zakończenia dopuszczacie kompromis: 5 punktów karnych za każdą nieobecną osobę i 1 za każde 15 minut opóźnienia. W planie A są wszyscy, ale próba kończy się 45 minut później: 3 punkty karne. W planie B kończy się o planowanej porze, ale jednej osoby brakuje: 5 punktów. Wygrywa A. Jeśli obecność jest ważniejsza, możecie zwiększyć karę za nieobecność. Żadna punktacja nie pozwala jednak pominąć sali ani piątkowego terminu.
 
 **Kiedy się przydaje:** Przy godzeniu preferencji dotyczących harmonogramów, wykorzystania zasobów i projektów.
 
@@ -261,9 +261,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 13. Dodawaj brakujące ograniczenia, gdy ujawnią je niepowodzenia
 
-**Opis:** Dodawaj ograniczenia stopniowo, gdy kandydat na rozwiązanie zawodzi. Nowe ograniczenie, czasem nazywane cięciem, powinno ogólnie opisywać wykryty błąd i wykluczać ten niepoprawny wzorzec, a zarazem zachowywać każde poprawne rozwiązanie. Rozwiąż model ponownie i powtarzaj. Dzięki temu duży model pozostaje możliwy do obsłużenia, lecz reguła oparta wyłącznie na guście może usunąć prawidłową odpowiedź. Proces kończy się kandydatem, który przechodzi kontrolę, albo pokazuje, że żaden nie działa.
+**Opis:** Zacznij od uproszczonego modelu i sprawdź proponowane rozwiązanie. Jeśli narusza warunki zadania, ustal dlaczego i dopisz regułę, która wykluczy również inne rozwiązania z tym samym błędem. Takie ograniczenie bywa nazywane cięciem. Musi wynikać z zadania i pozostawiać wszystkie poprawne możliwości, nawet te, które ci się nie podobają. Rozwiąż model ponownie i powtarzaj kontrolę. Stopniowe dodawanie reguł ułatwia pracę z dużym modelem. Kończysz, gdy wynik spełnia wymagania lub model wykaże, że nie da się ich spełnić.
 
-**Przykład:** Uproszczony plan pozwala jednej osobie być na dwóch spotkaniach naraz. Dodajecie regułę, że uczeń nie może mieć nakładających się zajęć. Późniejszy kandydat umieszcza rejestrator w sali bez gniazdka, choć zadanie wymaga sprzętu zasilanego z gniazdka, więc wymagacie gniazdka przy każdym nagraniu. Sprawdzacie, czy reguły wynikają z zadania, nie z upodobania do znanych planów. Cięcia usuwają błędne harmonogramy, lecz zachowują poprawne; po kolejnym rozwiązaniu klasa ma plan, którego może przestrzegać.
+**Przykład:** Uproszczony plan przydziela jednej osobie dwa spotkania w tym samym czasie. Dodajecie regułę zakazującą nakładających się zajęć danego ucznia. W kolejnej wersji nagranie odbywa się w sali bez gniazdka, choć wymagany rejestrator musi być zasilany z gniazdka. Dopisujecie więc ten wymóg dla sali nagrań. Obie reguły wynikają z zadania, a nie z osobistych preferencji. Usuwają błędne propozycje, pozostawiając poprawne. Po ponownym rozwiązaniu klasa otrzymuje plan, który da się wykonać.
 
 **Kiedy się przydaje:** Przy złożonych modelach planowania, konfiguracji i poszukiwaniach z wieloma ograniczeniami.
 
@@ -280,15 +280,15 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 14. Podejmuj decyzje etapami, pozostawiając późniejsze wybory otwarte
 
-**Opis:** Ten schemat polega na układaniu długiego planu blokami, zamiast ustalania od razu każdego szczegółu. Najpierw rozstrzygnij pierwszy etap, przyjmij zgrubny obraz dalszych etapów i sprawdź, czy zostaje dość czasu, miejsca lub materiałów. Blok to grupa powiązanych decyzji, a wykonalność oznacza, że reszta pracy nadal mieści się w regułach. Jeśli późniejszy etap okaże się niemożliwy, zmień wcześniejszy wybór. Ta metoda oszczędza wysiłek przy zbyt dużym planie, ale wczesne decyzje mogą zablokować dalszy ciąg i nie gwarantuje ona najlepszego planu.
+**Opis:** Przy długim planie nie musisz od razu ustalać każdego szczegółu. Podziel decyzje na etapy. Pierwszy rozplanuj dokładnie, a dla późniejszych przyjmij uproszczone założenia. Sprawdź, czy zostawiasz na nie dość czasu, miejsca i materiałów. Potem przejdź do kolejnego etapu. Jeśli okaże się, że nie da się go wykonać, wróć do wcześniejszych wyborów i je popraw. Dzięki temu nie opracowujesz całego dużego planu naraz. Wczesne decyzje nadal mogą jednak zablokować dalszą pracę, a metoda nie gwarantuje najlepszego rozwiązania.
 
-**Przykład:** Na przykład Maja ma cztery godziny na szkolny festyn: przygotowanie, gry i sprzątanie. Najpierw wybiera dekoracje zajmujące 2,5 godziny. Późniejsze bloki potrzebują 1,25 godziny na gry i godziny na sprzątanie, więc razem wychodzi 4,75 godziny. Maja wraca do pierwszej decyzji, wybiera prostsze dekoracje na 1,5 godziny i zostawia 1,5 godziny na gry oraz godzinę na sprzątanie. Nowy harmonogram zajmuje całe cztery godziny i jest wykonalny.
+**Przykład:** Maja ma cztery godziny na przygotowanie szkolnego festynu, gry i sprzątanie. Najpierw wybiera dekoracje, których przygotowanie zajmie 2,5 godziny. Gry zajmą jeszcze 1,25 godziny, a sprzątanie godzinę. Razem to 4,75 godziny, więc plan się nie mieści. Maja wraca do pierwszej decyzji: wybiera prostsze dekoracje na 1,5 godziny, zostawia 1,5 godziny na gry i godzinę na sprzątanie. Teraz wszystkie etapy mieszczą się w czterech godzinach.
 
 **Kiedy się przydaje:** Przy wieloetapowych harmonogramach i planach zbyt dużych, by rozstrzygnąć je w całości naraz.
 
 **Procedura:**
 1. Podziel decyzje na etapy lub logiczne bloki.
-2. Zachowaj wcześniejsze decyzje jako ustalone, w bieżącym bloku wymagaj poprawnych wyborów dyskretnych, a późniejsze bloki uprość.
+2. Na razie nie zmieniaj wcześniejszych decyzji. W bieżącym etapie wybieraj tylko rzeczywiste możliwości, bez ułamkowych uproszczeń, a późniejsze etapy potraktuj w sposób uproszczony.
 3. Rozwiąż bieżący podproblem i sprawdź, czy nadal pozostaje miejsce na późniejszą pracę.
 4. Ustal decyzje z bieżącego bloku i przejdź do następnego.
 5. Jeśli późniejszy blok okaże się niewykonalny, wróć do wcześniejszych decyzji, zamiast uznawać cały plan za działający.
@@ -299,11 +299,11 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 15. Przeplataj ogólny plan ze sprawdzaniem szczegółów
 
-**Opis:** Ogólny plan wybiera kierunek, a szczegółowa kontrola sprawdza, czy zadania, czas, ludzie i koszty naprawdę się mieszczą. Przeplataj oba poziomy: zaproponuj strategię, rozpisz wersję wykonania, zamień problemy w konkretną informację zwrotną i popraw strategię. Informacja zwrotna to wiadomość ze szczegółów, która zmienia większy plan, a nie mgliste przeczucie. Schemat pomaga, gdy dobry pomysł psuje się podczas realizacji. Zgodność obu poziomów nadal nie dowodzi sukcesu.
+**Opis:** Ogólny pomysł może wyglądać dobrze, dopóki nie rozpiszesz jego wykonania. Sprawdź więc szczegóły: potrzebny czas, osoby, zadania i koszty. Jeśli coś się nie mieści, ustal, z której decyzji to wynika, i popraw ogólny plan. Potem ponownie przyjrzyj się szczegółom. Zamiast mówić „to się nie uda”, wskaż konkretną przeszkodę, którą trzeba usunąć. Takie przechodzenie między planem a jego wykonaniem pomaga poprawiać pomysł. Na końcu nadal sprawdź całość, bo zgodność planów sama nie gwarantuje sukcesu.
 
-**Przykład:** Na przykład czworo uczniów planuje film naukowy do sześciu minut: minutę wstępu, trzy minuty doświadczenia na żywo i dwie minuty podsumowania. Pracownia jest dostępna tylko przez 20 minut, a przygotowanie zajmuje 12, zaś nagranie 15, więc doświadczenie potrzebuje 27 minut. Uczniowie zmieniają plan na przygotowany wcześniej, trzydziestosekundowy pokaz, którego nagranie zajmuje 5 minut bez tego przygotowania. Nagranie wstępu i podsumowania zajmuje 14 minut, więc film ma 3,5 minuty, a praca w pracowni 19 minut.
+**Przykład:** Czworo uczniów planuje film naukowy trwający najwyżej sześć minut: minutę wstępu, trzy minuty doświadczenia na żywo i dwie minuty podsumowania. Mają pracownię na 20 minut. Samo przygotowanie doświadczenia zajmuje jednak 12 minut, a jego nagranie kolejne 15, czyli razem 27. Zmieniają pomysł: przygotują pokaz przed wejściem do pracowni. W filmie zajmie on trzydzieści sekund, a nagranie go potrwa 5 minut. Na nagranie wstępu i podsumowania potrzeba 14 minut. Gotowy film ma więc 3,5 minuty, a praca w pracowni zajmuje 19 minut.
 
-**Kiedy się przydaje:** Przy wyborze lokalizacji, planowaniu obsady, projektowaniu systemów i innych decyzjach mających poziom strategiczny oraz operacyjny.
+**Kiedy się przydaje:** Przy wyborze lokalizacji, planowaniu obsady, projektowaniu systemów i innych zadaniach, w których trzeba podejmować zarówno ogólne, jak i szczegółowe decyzje.
 
 **Procedura:**
 1. Oddziel ogólne wybory od szczegółowej pracy, która z nich wynika.
@@ -318,9 +318,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 16. Najpierw rozwiąż mały lub prosty przypadek
 
-**Opis:** Mały przypadek to zmniejszona wersja tego samego problemu: z mniejszą liczbą obiektów, mniejszymi liczbami albo prostszymi regułami, ale z zachowaną zależnością, którą chcesz zrozumieć. Rozwiąż go w całości, porównaj z trochę większym przypadkiem i poszukaj kroków, które się nie zmieniają. To daje punkt zaczepienia, gdy pierwotne zadanie jest zagmatwane. Wynik jest wskazówką co do metody, nie dowodem, że metoda działa dla każdego rozmiaru. Potem wróć do pierwotnych danych i sprawdź argument względem ich reguł.
+**Opis:** Jeśli duże zadanie cię przytłacza, spróbuj najpierw mniejszej wersji: z mniejszą liczbą obiektów, mniejszymi liczbami lub prostszymi regułami. Zachowaj jednak tę zależność, którą chcesz zrozumieć. Rozwiąż uproszczone zadanie do końca, a potem sprawdź nieco większy przypadek. Zwróć uwagę, które kroki można powtórzyć. To może podpowiedzieć metodę dla całego zadania. Sam sukces w kilku małych przypadkach nie jest jeszcze dowodem. Wróć do pierwotnych danych i wyjaśnij, dlaczego sposób nadal działa przy obowiązujących regułach.
 
-**Przykład:** Na przykład w turnieju, w którym każdy gracz spotyka się z każdym innym raz, zacznij od małych przypadków. Dwóch graczy daje jedną grę, trzech daje trzy, a czterech daje sześć. Każdy nowy gracz dodaje po jednej grze z każdym wcześniejszym, więc dla 20 graczy otrzymujemy 1 + 2 + ... + 19 = 190 gier. Małe przypadki ujawniły powtarzalny krok, a suma daje wynik. Same przykłady nie dowodzą, że inna reguła turnieju da ten sam wzór.
+**Przykład:** W turnieju każdy gracz rozgrywa po jednej partii z każdym innym. Ile będzie partii? Dla dwóch graczy jest jedna, dla trzech są trzy, a dla czterech sześć. Zauważasz, że każdy nowy gracz musi rozegrać po jednej partii ze wszystkimi wcześniejszymi. Dla 20 graczy daje to 1 + 2 + ... + 19 = 190 partii. Małe przypadki pomogły zauważyć regułę, a sposób dołączania graczy ją wyjaśnia. Przy innych zasadach turnieju trzeba sprawdzić rozumowanie od nowa.
 
 **Kiedy się przydaje:** Przy nieznanych regułach, zliczaniu, nauce, prototypach i szukaniu pierwszego punktu zaczepienia.
 
@@ -337,9 +337,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 17. Doprecyzuj problem i zakwestionuj ukryte założenia
 
-**Opis:** Najpierw zamień niejasną trudność w pytanie z wyraźnym celem, znanymi faktami i prawdziwymi ograniczeniami. Oddziel fakty od założeń: fakt jest podany lub sprawdzony, a założenie to coś uznane za prawdę bez kontroli. To pomaga, bo łatwo rozwiązać precyzyjnie sformułowaną, lecz niewłaściwą wersję pytania. Ustal, co oznacza sukces, jakich danych brakuje i czy dana reguła jest rzeczywista, czy tylko zwyczajowa. Potem zaplanuj działanie i oceń także samo sformułowanie problemu, bo ładne rozwiązanie złego pytania niewiele daje.
+**Opis:** Zanim zaczniesz rozwiązywać problem, upewnij się, że wiesz, o co chodzi. Zapisz cel, podane lub sprawdzone fakty i obowiązujące ograniczenia. Osobno wypisz założenia, czyli rzeczy przyjęte za prawdę bez sprawdzenia. Ustal, jakich danych brakuje i czy każda reguła rzeczywiście obowiązuje, czy tylko tak się przyjęło. Dopiero wtedy wybierz sposób działania. Podczas pracy wracaj też do samego pytania: nawet poprawne rozwiązanie niewiele pomoże, jeśli dotyczy innego problemu niż ten, który chcesz rozwiązać.
 
-**Przykład:** Na przykład klasa pyta: „Czy wszyscy dotrą do muzeum przed dziewiątą?”. Doprecyzowanie słowa „wszyscy” daje 28 uczniów i 2 nauczycieli. Autobus odjeżdża o 8:10, jedzie 35 minut i ma 30 miejsc. Szkoła wymaga miejsca siedzącego dla każdej osoby, więc grupa mieści się dokładnie i przyjeżdża o 8:45. Jeśli można użyć tylko 28 miejsc, dwie osoby nie mają siedzenia i trzeba znaleźć inną trasę.
+**Przykład:** Klasa pyta: „Czy wszyscy dotrą do muzeum przed dziewiątą?”. Najpierw ustalacie, kogo obejmuje „wszyscy”: 28 uczniów i 2 nauczycieli. Autobus odjeżdża o 8:10, jedzie 35 minut i ma 30 miejsc. Szkoła wymaga miejsca siedzącego dla każdej osoby. Grupa mieści się dokładnie i przyjeżdża o 8:45. Gdyby dostępnych było tylko 28 miejsc, dwie osoby nie miałyby gdzie usiąść. Sam czas przejazdu nadal by pasował, ale trzeba byłoby znaleźć inną trasę.
 
 **Kiedy się przydaje:** Przy niemal każdym problemie, szczególnie gdy nie ma zgody co do tego, co właściwie trzeba rozwiązać.
 
@@ -356,9 +356,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 18. Zmień sposób przedstawienia problemu
 
-**Opis:** Zmień sposób przedstawienia, opisując ten sam problem jako rysunek, tabelę, równanie, model z przedmiotów albo nowy zestaw zmiennych. Dobra postać uwidacznia zależność ukrytą w słowach. Oznacz wielkości i przenieś każde ograniczenie, bo inaczej możesz po cichu zmienić zadanie. Schemat pomaga przy długich zadaniach tekstowych, układach przestrzennych i splątanych zależnościach. Dokładne przekształcenie zachowuje pierwotne pytanie, lecz przybliżenie je zmienia i wymaga osobnej kontroli. Szkic może podsunąć wynik, ale nie dowodzi dokładnej zależności.
+**Opis:** Gdy opis słowny jest trudny do zrozumienia, narysuj problem, ułóż tabelę, zapisz równanie albo zbuduj model z przedmiotów. Możesz też inaczej oznaczyć zmienne. Chodzi o to, by łatwiej dostrzec zależności, a nie zmienić zadanie. Dlatego przenieś wszystkie ważne wielkości i warunki. To pomaga zwłaszcza przy długich zadaniach tekstowych i relacjach przestrzennych. Uważaj na przybliżenia: w odróżnieniu od dokładnego przekształcenia zmieniają problem i wymagają dodatkowej kontroli. Sam wygląd szkicu nie dowodzi dokładnej zależności.
 
-**Przykład:** Na przykład z treści wynika, że prostokąt ma obwód 26 cm, a długość jest o 3 cm większa od szerokości. Oznacz szerokość przez w, a długość przez w + 3. Równanie 2w + 2(w + 3) = 26 zmienia się w 4w + 6 = 26, więc w = 5, a długość wynosi 8. Kontrola daje 2 × 5 + 2 × 8 = 26. Zastąpienie słów zmiennymi odsłoniło zależność bez zmiany warunków.
+**Przykład:** Prostokąt ma obwód 26 cm, a jego długość jest o 3 cm większa od szerokości. Oznacz szerokość przez w. Długość to wtedy w + 3. Zapisujesz obwód jako 2w + 2(w + 3) = 26 i upraszczasz do 4w + 6 = 26. Otrzymujesz w = 5, więc długość wynosi 8. Sprawdzenie daje 2 × 5 + 2 × 8 = 26. Równanie pozwoliło zobaczyć zależność między bokami bez pomijania warunków z treści.
 
 **Kiedy się przydaje:** Przy zawiłych zadaniach tekstowych, niewygodnych wyrażeniach algebraicznych, relacjach przestrzennych i splątanych zależnościach.
 
@@ -375,9 +375,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 19. Sprawdź jednostki i przypadki graniczne
 
-**Opis:** Dopisz jednostki do mierzonych wielkości i sprawdź proste przypadki graniczne, zanim zaufasz wzorowi. Jednostki mówią, jakiego rodzaju jest wynik: odległość podzielona przez czas daje prędkość, a nie czas na odległość. Przypadki graniczne obejmują zero, jeden, równe wartości oraz dozwolone minimum lub maksimum. Mogą ujawnić odwrócone działanie albo model, który przestaje obowiązywać, choć przejście tych testów nie dowodzi poprawności. Nie dziel przez dane wykluczone przez model, na przykład przez zero godzin w obliczeniu prędkości.
+**Opis:** Zanim zaufasz wzorowi, dopisz jednostki do mierzonych wielkości. Pomagają sprawdzić, co właściwie obliczasz: odległość podzielona przez czas daje prędkość, a odwrotne dzielenie daje czas potrzebny na jednostkę odległości. Wypróbuj też proste wartości, takie jak zero, jeden, równe wielkości lub dozwolone minimum i maksimum. Możesz wtedy zauważyć odwrócone działanie albo granicę, przy której model przestaje działać. Poprawne wyniki tych testów nie zastępują dowodu. Sprawdzaj tylko dopuszczalne dane: przy obliczaniu prędkości nie wolno dzielić przez zero godzin.
 
-**Przykład:** Na przykład rowerzysta przejeżdża 18 km w 1,5 godziny, więc prędkość powinna wynosić 18 ÷ 1,5 = 12 km/h. Gdy Leo odwraca dzielenie, otrzymuje 0,083 godziny na kilometr, a jednostki pokazują błąd. Sprawdza 0 km: poprawny wzór daje 0 km/h. Sprawdza 36 km w 1,5 godziny: otrzymuje 24 km/h, czyli dwa razy więcej przy dwa razy większej odległości. Zaznacza też 0 godzin jako wartość niedozwoloną, bo przez zero nie można dzielić.
+**Przykład:** Rowerzysta przejeżdża 18 km w 1,5 godziny. Jego prędkość to 18 ÷ 1,5 = 12 km/h. Leo omyłkowo dzieli odwrotnie i otrzymuje około 0,083 godziny na kilometr. Po jednostkach widzi, że obliczył coś innego. Sprawdza jeszcze 0 km: prawidłowy wzór daje 0 km/h. Dla 36 km w 1,5 godziny otrzymuje 24 km/h, czyli dwukrotnie większą prędkość przy dwukrotnie większej odległości. Odrzuca natomiast 0 godzin, bo przez zero nie można dzielić.
 
 **Kiedy się przydaje:** Przy wzorach, oszacowaniach, modelach i wykrywaniu błędów przed szczegółowymi obliczeniami.
 
@@ -396,7 +396,7 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 **Opis:** Wykorzystaj symetrię, gdy zamiana, obrót, odbicie lub zmiana oznaczeń nie zmienia żadnej reguły ani celu. Pogrupuj przypadki rzeczywiście równoważne, rozpatrz jeden reprezentatywny przypadek i przenieś wynik na pozostałe. Dzięki temu nie powtarzasz pracy w geometrii, zliczaniu, układaniu i grach z wymiennymi elementami. Najpierw sprawdź reguły: oznaczone krzesło, inny kolor albo wyróżniony gracz może zniszczyć pozorną symetrię. Symetryczny rysunek nie wymaga symetrycznego rozwiązania, a przy zliczaniu trzeba uważać na liczebność każdej grupy.
 
-**Przykład:** Na przykład czterech nazwanych graczy siedzi przy nieoznaczonym okrągłym stole, a w grze liczy się kolejność zgodna z ruchem wskazówek zegara, więc odbicie jest innym układem. Obrót wszystkich osób daje ten sam wynik, więc ustal Anię i ustaw pozostałych zgodnie z ruchem wskazówek: 3 × 2 × 1 = 6 przypadków. Jeśli nauczyciel oznaczy jedno krzesło jako „przy drzwiach”, obrót też zmienia wynik. Każdy gracz może zająć to krzesło, a pozostałe miejsca wypełnić na 3! sposobów, więc mamy 4 × 6 = 24 przypadki.
+**Przykład:** Czworo graczy siedzi przy okrągłym stole bez oznaczonych miejsc. W grze liczy się kolejność osób zgodna z ruchem wskazówek zegara, więc odbicie daje inny układ, ale obrót wszystkich osób nie. Ustal miejsce Ani i ustaw pozostałych: 3 × 2 × 1 = 6 możliwości. Jeśli nauczyciel wyróżni jedno krzesło jako miejsce „przy drzwiach”, obrót też zmieni układ. Na tym krześle może siedzieć każdy gracz, a pozostałych można usadzić na 3! sposobów. Otrzymujesz 4 × 6 = 24 możliwości.
 
 **Kiedy się przydaje:** W geometrii, zliczaniu, układaniu obiektów i optymalizacji z wymiennymi elementami.
 
@@ -413,9 +413,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 21. Porównuj wybory przez ich skutki i kompromisy
 
-**Opis:** Wypisz każdy wykonalny wybór, jego skutki, koszty i możliwości, z których rezygnujesz. Skutek to możliwy rezultat, kompromis oznacza zysk połączony z rezygnacją z czegoś innego, a prawdopodobieństwo to uzasadnione oszacowanie częstości rezultatu. Sumy ważone prawdopodobieństwami mają sens tylko wtedy, gdy prawdopodobieństwa opierają się na danych. Nieznana szansa nie wynosi automatycznie 50 procent. Porównaj także niekorzystne skutki i nie ukrywaj ocen wartościujących w jednym wskaźniku.
+**Opis:** Przy każdej dostępnej opcji zapisz, co możesz zyskać, co stracić i z czego musisz zrezygnować. Jeśli wynik jest niepewny, określ możliwe skutki. Prawdopodobieństwa przypisuj im tylko wtedy, gdy masz ku temu podstawy w danych. Możesz wtedy obliczyć średni spodziewany wynik, uwzględniając szanse poszczególnych skutków. Brak wiedzy nie oznacza szansy 50 procent. Oprócz średniej sprawdź też niekorzystne scenariusze. Jedna liczba nie pokaże wszystkiego, zwłaszcza gdy dla różnych osób inne korzyści i straty są ważne.
 
-**Przykład:** Na przykład Rita porównuje dwa sposoby nauki. Plan A zajmuje dwie godziny, a na podstawie czterech podobnych kartkówek szacuje 75 procent szans na 80 punktów i 25 procent na 60. Zgrubny wynik oczekiwany to 0,75 × 80 + 0,25 × 60 = 75 punktów. Plan B zajmuje godzinę, lecz Rita nie ma porównywalnych danych, więc jego szansa jest nieznana, a nie wynosi automatycznie 50 procent. Może go przetestować, ale nie powinna liczyć średniej na podstawie zmyślonego prawdopodobieństwa. Jeśli 60 punktów byłoby nie do przyjęcia, sama średnia nie wystarczy.
+**Przykład:** Rita porównuje dwa sposoby nauki. Plan A zajmuje dwie godziny. Na podstawie czterech podobnych kartkówek szacuje 75 procent szans na 80 punktów i 25 procent na 60. Przy tych założeniach wynik oczekiwany to 0,75 × 80 + 0,25 × 60 = 75 punktów. Plan B zajmuje godzinę, ale Rita nie ma danych o jego skuteczności. Może go wypróbować, lecz nie powinna wpisywać 50 procent tylko dlatego, że nie zna szans. Musi też rozważyć gorszy wynik planu A: jeśli 60 punktów to za mało, korzystna średnia nie rozstrzyga wyboru.
 
 **Kiedy się przydaje:** Przy decyzjach obarczonych niepewnością, konkurujących celach lub kilku rozsądnych możliwościach.
 
@@ -432,9 +432,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 22. Rozrysuj zależności i motywacje uczestników
 
-**Opis:** Przedstaw problem jako system, a nie zbiór osób lub części. Narysuj uczestników jako węzły i połącz zależności, przepływy oraz wpływy strzałkami. Poszukaj wąskiego gardła, czyli punktu ograniczającego proces, pętli sprzężenia zwrotnego i bodźców. Bodziec to powód zwiększający skłonność do działania. Schemat pomaga przewidzieć skutki uboczne. Mapa jest tylko modelem, nie dowodem przyczynowości, więc przetestuj małą zmianę i oceń całość.
+**Opis:** Zamiast rozpatrywać każdą osobę lub część osobno, narysuj, jak na siebie wpływają. Połącz je strzałkami pokazującymi zależności i przepływ pracy. Poszukaj miejsca, które spowalnia całość, czyli wąskiego gardła. Sprawdź też, czy skutki działań wracają do uczestników i wpływają na ich następne decyzje oraz co zachęca ich do określonego zachowania. Taki rysunek pomaga przewidzieć skutki uboczne zmiany. Nie dowodzi jednak, co jest przyczyną czego. Wypróbuj małą zmianę i oceń jej wpływ na całość.
 
-**Przykład:** Na przykład czworo uczniów wysyła slajdy do jednego redaktora. Nauczyciel przyznaje punkt za każdy slajd, więc każdy ma bodziec, by dodawać więcej. Redaktor staje się wąskim gardłem i późno dostaje 18 powtarzających się slajdów. Grupa rozrysowuje zależności: uczniowie tworzą slajdy, slajdy trafiają do redakcji, a redakcja wpływa na termin. Prosi nauczyciela o próbę oceny spójności prezentacji i limitu trzech slajdów na osobę. Nauczyciel się zgadza, a grupa kończy 12 niepowtarzających się slajdów na czas. Ta próba sugeruje, że reguła pomogła, ale nie dowodzi, że spowodowała wszystkie ulepszenia.
+**Przykład:** Czworo uczniów wysyła slajdy do jednej osoby, która składa prezentację. Nauczyciel przyznaje punkt za każdy slajd, więc uczniom opłaca się dodawać ich więcej. Osoba składająca dostaje późno 18 slajdów z powtarzającymi się treściami i nie nadąża z pracą. Grupa rozrysowuje tę zależność i prosi nauczyciela o próbę innych zasad: ocenę spójności całej prezentacji oraz limit trzech slajdów na osobę. Po jego zgodzie przygotowuje na czas 12 slajdów bez powtórzeń. Wynik sugeruje, że zmiana pomogła, ale nie dowodzi, że odpowiada za każdą poprawę.
 
 **Kiedy się przydaje:** W problemach organizacyjnych, przy wąskich gardłach procesów, koordynacji i zmianach wywołujących skutki uboczne.
 
@@ -453,7 +453,7 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 **Opis:** Wykonaj kilka małych eksperymentów, aby odkryć możliwy wzorzec, a potem znajdź powód, dla którego powinien się utrzymać. Wzorzec to powtarzająca się zależność, natomiast dowód wyjaśnia, dlaczego musi ona zachodzić przy podanych regułach. Zapisuj przykłady w stały sposób, sprawdź niewygodny przypadek i określ przewidywany zakres. Wiele reguł może pasować do kilku pierwszych wyników, więc przykłady wspierają przypuszczenie, ale nie dowodzą twierdzenia ogólnego. Gdy test zawiedzie, popraw regułę zamiast ukrywać wyjątek.
 
-**Przykład:** Na przykład rząd połączonych kwadratowych płytek wymaga 4 patyczków dla jednego kwadratu, 7 dla dwóch i 10 dla trzech. Różnice sugerują dodawanie po 3, więc osiem kwadratów powinno wymagać 4 + 7 × 3 = 25 patyczków. Wyjaśnienie wynika z budowy: każdy nowy kwadrat dzieli jeden bok z rzędem i dodaje tylko trzy patyczki. To tłumaczy wzorzec dla dowolnego prostego rzędu, nie tylko dla trzech przykładów. Same liczby 4, 7 i 10 mogłyby pasować do innej zmyślonej reguły, więc nie były dowodem.
+**Przykład:** Układasz z patyczków kwadraty w rzędzie tak, żeby sąsiednie miały wspólny bok. Na jeden kwadrat potrzeba 4 patyczków, na dwa 7, a na trzy 10. Za każdym razem przybywa 3, więc na osiem kwadratów powinno wystarczyć 4 + 7 × 3 = 25 patyczków. Dlaczego? Nowy kwadrat ma już jeden bok wspólny z poprzednim, więc dokładasz tylko trzy patyczki. To wyjaśnienie działa dla całego prostego rzędu. Same liczby 4, 7 i 10 nie byłyby dowodem, bo można do nich dopasować również inne reguły.
 
 **Kiedy się przydaje:** Przy ciągach, powtarzających się procesach, zliczaniu i badaniu nieznanych systemów.
 
@@ -470,9 +470,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 24. Sprawdź zaprzeczenie i poszukaj kontrprzykładu
 
-**Opis:** Oddziel założenia od dokładnego wniosku, a następnie sprawdź jego zaprzeczenie. Sprzeczność pojawia się wtedy, gdy założenia razem z zaprzeczonym wnioskiem prowadzą do czegoś niemożliwego. Kontrprzykład jest czymś innym: to jeden poprawny przypadek, który spełnia założenia, ale łamie wniosek. Sprzeczność wspiera twierdzenie ogólne, a kontrprzykład pozwala je odrzucić lub zawęzić. Sam brak znalezionego kontrprzykładu niczego nie dowodzi, a w doświadczeniu konflikt może ujawnić zły model, nie twierdzenie matematyczne.
+**Opis:** Zapisz osobno założenia i wniosek, który chcesz sprawdzić. Następnie rozważ, co by było, gdyby wniosek był fałszywy. Jeśli razem z założeniami prowadzi to do niemożliwości, otrzymujesz dowód przez sprzeczność. Możesz też szukać kontrprzykładu: przypadku, który spełnia założenia, ale nie pasuje do wniosku. Taki przypadek obala twierdzenie lub pokazuje, że trzeba je zawęzić. Nieznalezienie kontrprzykładu jeszcze niczego nie dowodzi. Przy badaniu rzeczywistego zjawiska sprzeczne wyniki mogą natomiast oznaczać błąd modelu lub założeń.
 
-**Przykład:** Na przykład twierdzenie „Każda wielokrotność 4 jest parzysta” można sprawdzić przez sprzeczność. Gdyby liczba była jednocześnie podzielna przez 4 i nieparzysta, byłaby podzielna przez 2, a zarazem dawałaby resztę 1, co jest niemożliwe. Kontrprzykład obala twierdzenie „Każda liczba kończąca się na 5 jest pierwsza”: 15 kończy się na 5, ale dzieli się przez 3 i 5. Ten poprawny przypadek nie tworzy sprzeczności; bezpośrednio łamie wniosek.
+**Przykład:** Rozważ twierdzenie „Każda wielokrotność 4 jest parzysta”. Gdyby liczba była podzielna przez 4 i jednocześnie nieparzysta, musiałaby być podzielna przez 2, a zarazem dawać przy dzieleniu przez 2 resztę 1. To niemożliwe. Inaczej sprawdzisz twierdzenie „Każda liczba kończąca się na 5 jest pierwsza”: wystarczy wskazać 15. Kończy się na 5, ale dzieli się przez 3 i 5. Ten kontrprzykład obala twierdzenie, bo spełnia jego założenie, a przeczy wnioskowi.
 
 **Kiedy się przydaje:** Przy dowodzeniu, sprawdzaniu twierdzeń ogólnych i ujawnianiu błędnych reguł.
 
@@ -489,9 +489,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 25. Skup się na elemencie skrajnym
 
-**Opis:** Wybierz rzeczywisty obiekt najmniejszy, największy, pierwszy, ostatni albo najbardziej ograniczony. Jego skrajna pozycja wyklucza możliwości, które nadal byłyby dostępne dla dowolnego obiektu. W skończonym zbiorze najpierw sprawdź, czy taki obiekt istnieje, a potem zapytaj, czy proponowany układ wymuszałby coś jeszcze mniejszego lub większego. To potrafi zamienić złożony argument o istnieniu w krótką sprzeczność. Nie chodzi o podstawienie bardzo dużej liczby do wzoru ani zbliżanie się do granicy, lecz o obiekt naprawdę obecny w zbiorze.
+**Opis:** Wybierz z rozpatrywanego zbioru element najmniejszy, największy, pierwszy, ostatni albo taki, którego dotyczą najsilniejsze ograniczenia. Jego pozycja może uprościć rozumowanie, bo wyklucza część możliwości. Najpierw upewnij się, że taki element istnieje. Potem zapytaj, czy badana sytuacja wymagałaby czegoś jeszcze mniejszego lub większego. Jeśli tak, otrzymasz sprzeczność z wyborem elementu skrajnego. Nie chodzi tu o wpisanie bardzo dużej liczby do wzoru ani o zbliżanie się do granicy. Wybierasz konkretny element należący do zbioru.
 
-**Przykład:** Na przykład pięciu graczy ma wyniki 12, 8, 15, 10 i 9 punktów. Wybierz największy wynik, 15. Twierdzenie, że po każdym graczu można wskazać kogoś z wyższym wynikiem, nie może działać, bo na liście nie ma wyniku większego niż 15. Skrajny gracz od razu daje punkt zatrzymania. W dłuższym skończonym rankingu ten wybór oszczędza sprawdzania każdej osoby. Gdyby zbiór był nieskończony i nie miał największego elementu, argument nie działałby automatycznie.
+**Przykład:** Pięciu graczy zdobyło 12, 8, 15, 10 i 9 punktów. Czy dla każdego można wskazać gracza z wyższym wynikiem? Wystarczy wybrać największy wynik: 15. Nikt na liście go nie przewyższa, więc odpowiedź brzmi „nie”. Nie trzeba sprawdzać po kolei wszystkich osób. Tak samo możesz postąpić z dłuższym, skończonym rankingiem. Dla zbioru nieskończonego trzeba jednak uważać: jeśli nie ma w nim największego elementu, ten argument nie zadziała.
 
 **Kiedy się przydaje:** Przy dowodach istnienia, układaniu obiektów, uporządkowanych danych i upraszczaniu złożonych przypadków.
 
@@ -508,9 +508,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 26. Wykaż, że pewne obiekty muszą trafić do tej samej szufladki
 
-**Opis:** Zasada szufladkowa mówi, że gdy do mniejszej liczby oznaczonych kategorii wkładamy więcej obiektów, któraś kategoria dostanie co najmniej dwa. Kategorie są szufladkami, a obiektami mogą być osoby, daty, pliki albo pionki. Ta metoda pozwala dowieść, że powtórzenie lub kolizja jest nieunikniona, nawet jeśli nie wiadomo, gdzie dokładnie wystąpi. Przy mocniejszym wniosku porównaj liczbę obiektów z pojemnością każdej kategorii, a nie tylko z liczbą kategorii.
+**Opis:** Jeśli przedmiotów jest więcej niż szufladek i każdy trzeba gdzieś włożyć, przynajmniej jedna szufladka pomieści więcej niż jeden przedmiot. Na tym polega zasada szufladkowa. Szufladkami mogą być dowolne kategorie, a przypisujesz do nich na przykład osoby, daty, pliki lub pionki. Możesz tak dowieść, że pewne obiekty muszą trafić razem, nie wiedząc, które to będą. Aby wykazać, że w jednej kategorii znajdzie się jeszcze więcej obiektów, porównaj ich łączną liczbę z pojemnością kategorii.
 
-**Przykład:** W klasie jest 25 uczniów. Przyporządkuj miesiąc urodzin każdemu uczniowi, więc mamy 12 szuflad, a każdy trafia dokładnie do jednej. Gdyby w każdym miesiącu były najwyżej 2 urodziny, wszystkich uczniów byłoby najwyżej 12 × 2 = 24. Jest ich 25, więc to założenie odpada: w którymś miesiącu urodziły się co najmniej 3 osoby. Wiemy, że taki miesiąc istnieje, ale sama zasada nie wskazuje który.
+**Przykład:** W klasie jest 25 uczniów. Podziel ich według miesiąca urodzin: masz 12 szufladek i każdy uczeń trafia do dokładnie jednej. Gdyby w każdej były najwyżej 2 osoby, w klasie mogłoby być najwyżej 12 × 2 = 24 uczniów. Jest ich 25, więc przynajmniej w jednym miesiącu urodziły się co najmniej 3 osoby. Wiesz to nawet bez sprawdzania dat urodzin. Sama zasada nie mówi jednak, który to miesiąc.
 
 **Kiedy się przydaje:** Przy dowodzeniu nieuniknionych powtórzeń, kolizji, istnienia bliskich par i ograniczeń pojemności.
 
@@ -521,15 +521,15 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 4. Porównaj liczbę obiektów z liczbą lub pojemnością kategorii. Więcej niż `k × m` obiektów w `m` kategoriach oznacza, że jakaś kategoria zawiera co najmniej `k + 1` obiektów.
 5. Przełóż wspólną przynależność do kategorii na potrzebny wniosek.
 
-**Uwaga:** Trudność polega na wyborze użytecznych kategorii. Zasada gwarantuje istnienie kategorii współdzielonej przez obiekty, ale nie musi wskazywać, która to kategoria.
+**Uwaga:** Najtrudniej bywa wybrać odpowiednie kategorie. Zasada pozwala stwierdzić, że pewne obiekty muszą trafić do tej samej kategorii, ale nie musi wskazywać, do której.
 
 **Źródła:** [S4](#s4), podrozdział 3.3, s. 84-91.
 
 ### 27. Znajdź coś, co nie może się zmienić
 
-**Opis:** Niezmiennik to własność, która pozostaje taka sama po każdym dozwolonym ruchu. Najpierw dokładnie opisz ruchy, potem sprawdzaj kandydatów, na przykład parzystość, resztę z dzielenia, sumę albo bilans kolorów. Różne wartości na początku i na końcu dowodzą, że cel jest nieosiągalny. Zgodność jest jednak tylko warunkiem koniecznym, a nie drogą dojścia: dwa stany mogą mieć ten sam niezmiennik, lecz należeć do rozłącznych części gry. Osiągalność wymaga dodatkowego rozumowania o ruchach.
+**Opis:** Niezmiennik to własność, której nie zmienia żaden dozwolony ruch. Opisz dokładnie ruchy i sprawdź, czy zachowują na przykład parzystość, resztę z dzielenia, sumę lub bilans kolorów. Jeśli taka własność różni się w stanie początkowym i docelowym, celu nie da się osiągnąć. Gdy się zgadza, nie masz jeszcze odpowiedzi: mogą istnieć inne przeszkody uniemożliwiające przejście między tymi stanami. Niezmiennik pomaga więc wykluczyć niektóre cele, ale żeby wykazać osiągalność pozostałych, trzeba dalej zbadać dozwolone ruchy.
 
-**Przykład:** Trzy przełączniki zaczynają w stanie 000, gdzie 1 oznacza włączenie. Jedyny ruch zmienia przełączniki 1 i 2. Liczba włączonych przełączników zachowuje parzystość, bo zmiana dwóch daje przyrost +2, 0 albo -2. Cel 100 ma jeden włączony, więc jest niemożliwy. Cel 101 ma dwa włączone, więc niezmiennik się zgadza, lecz z 000 można przejść tylko do 110, a powtórzenie wraca do 000. Zatem 101 także jest nieosiągalny.
+**Przykład:** Trzy przełączniki są początkowo wyłączone: 000. Cyfra 1 oznacza przełącznik włączony. Jedyny dozwolony ruch przełącza jednocześnie przełączniki 1 i 2. Przy przełączeniu dwóch liczba włączonych zmienia się o +2, 0 albo -2, więc zachowuje parzystość. Stanu 100 nie da się osiągnąć, bo ma jeden włączony przełącznik. A stan 101? Ma dwa, ale też jest nieosiągalny: z 000 przejdziesz tylko do 110, a kolejnym ruchem wrócisz do 000. Sama zgodność parzystości nie wystarczyła.
 
 **Kiedy się przydaje:** W zagadkach z przekształceniami, badaniu osiągalności, rozliczeniach i sprawdzaniu powtarzanych operacji.
 
@@ -546,9 +546,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 28. Śledź wielkość, która zmienia się tylko w jednym kierunku
 
-**Opis:** Monowariant to liczba przypisana bieżącemu stanowi, która przy każdym dozwolonym kroku nigdy nie rośnie albo nigdy nie maleje. Może wskazać postęp, wykluczyć cel lub pomóc dowieść zakończenia. Do zatrzymania w skończonym czasie potrzeba czegoś więcej: dyskretnego ograniczenia, na przykład nieujemnej liczby całkowitej malejącej o co najmniej 1, gdy procedura trwa. Ograniczona liczba rzeczywista może zmieniać się ściśle w jedną stronę bez końca, a ruchy bez zmiany oceny mogą tworzyć cykl.
+**Opis:** Przypisz bieżącej sytuacji liczbę i sprawdź, jak zmienia ją każdy dozwolony krok. Jeśli nigdy nie rośnie albo nigdy nie maleje, nazywamy ją monowariantem. Może pomóc śledzić postęp, wykluczyć cel lub dowieść, że proces się skończy. Do tego ostatniego potrzeba jednak dodatkowego uzasadnienia. Na przykład nieujemna liczba całkowita nie może bez końca maleć o co najmniej 1. Liczba rzeczywista może natomiast maleć coraz wolniej, nigdy nie osiągając granicy. Kroki, które nie zmieniają liczby, mogą też prowadzić do powtarzania tych samych stanów.
 
-**Przykład:** Zacznij od dodatniej liczby rzeczywistej x = 1 i w każdej rundzie zastąp ją przez x/2; zatrzymaj się dopiero dla x = 0. x ściśle maleje, ale pozostaje powyżej 0. Po n rundach x = 1/2^n, więc dla każdego skończonego n procedura nadal trwa. W innym procesie stos 12 kulek traci co najmniej jedną kulkę w aktywnym kroku; liczba kulek, będąca całkowitym monowariantem, osiąga 0 w najwyżej 12 krokach.
+**Przykład:** Zacznij od x = 1 i w każdej rundzie dziel x przez 2. Masz skończyć dopiero wtedy, gdy x = 0. Liczba za każdym razem maleje, ale nadal jest dodatnia: po n rundach x = 1/2^n. Żadna skończona liczba rund nie pozwoli więc zakończyć procedury. Porównaj to ze stosem 12 kulek, z którego w każdym kroku zabierasz co najmniej jedną. Liczba kulek jest całkowita i nieujemna, więc stos opróżnisz w najwyżej 12 krokach.
 
 **Kiedy się przydaje:** Przy powtarzanych procedurach, grach, stopniowym ulepszaniu i dowodzeniu zakończenia procesu.
 
@@ -565,9 +565,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 29. Zbuduj duży przypadek z mniejszych
 
-**Opis:** Rekurencja to reguła obliczania przypadku na podstawie wcześniejszych przypadków. Indukcja matematyczna to metoda dowodu: sprawdzasz przypadki początkowe, a potem pokazujesz, że jeśli teza działa dla potrzebnych mniejszych rozmiarów, działa też dla następnego. Obie metody budują duże przypadki z małych, lecz odpowiadają na różne pytania. Rekurencja produkuje wartości, a indukcja uzasadnia twierdzenie dla każdego dopuszczalnego rozmiaru całkowitego. Krok nie może zakładać nieudowodnionej tezy, a baza musi obejmować rozmiary potrzebne regule.
+**Opis:** Rekurencja pozwala obliczyć kolejny wynik na podstawie wcześniejszych. Indukcja matematyczna służy natomiast do dowodzenia: najpierw sprawdzasz przypadki początkowe, a potem wykazujesz, że prawdziwość twierdzenia dla potrzebnych mniejszych przypadków pozwala przejść do następnego. Obie metody wykorzystują mniejsze przypadki, ale do czego innego. Obliczenie kilku wartości z rekurencji nie zastępuje dowodu dla każdego dopuszczalnego rozmiaru. W indukcji nie możesz zakładać poprawności właśnie tego przypadku, który masz dopiero wykazać. Musisz też sprawdzić wszystkie przypadki początkowe potrzebne do rozpoczęcia kolejnych kroków.
 
-**Przykład:** Policz drogi robota na n stopni, gdy skacze o 1 albo 2. Niech a(n) oznacza liczbę dróg, przy a(1) = 1 i a(2) = 2. Ostatni skok pochodzi z n-1 albo n-2, więc a(n) = a(n-1) + a(n-2); stąd a(3) = 3 i a(4) = 5. Rekurencja oblicza wartości, ale nie dowodzi wzoru dla każdego n. Indukcja sprawdziłaby bazę i dowiodła kroku dla dowolnego n.
+**Przykład:** Na ile sposobów robot może dotrzeć na n-ty stopień, skacząc o 1 albo 2 stopnie? Oznacz tę liczbę przez a(n). Masz a(1) = 1 i a(2) = 2. Ostatni skok na n-ty stopień musi prowadzić ze stopnia n-1 albo n-2, więc a(n) = a(n-1) + a(n-2). Stąd a(3) = 3 i a(4) = 5. Rekurencja pozwala obliczać kolejne wartości. Gdy chcesz dowieść ogólnego wzoru przez indukcję, potrzebujesz przypadków początkowych i uzasadnienia kroku przejścia dla dowolnego dopuszczalnego n.
 
 **Kiedy się przydaje:** Przy zliczaniu, ciągach, procedurach rekurencyjnych i dowodach indeksowanych liczbami całkowitymi.
 
@@ -578,15 +578,15 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 4. Przy zliczaniu upewnij się, że konstrukcja obejmuje każdy przypadek bez powtórzeń. W dowodzie uzasadnij krok dla dowolnego dopuszczalnego rozmiaru.
 5. Połącz przypadki początkowe z krokiem przejścia; sprawdź, czy żaden rozmiar nie został pominięty.
 
-**Uwaga:** Założenie poprawności właśnie tego przypadku, którego próbujesz dowieść, jest błędnym kołem. Sam krok indukcyjny bez wymaganych przypadków początkowych niczego nie ustanawia.
+**Uwaga:** Jeśli zakładasz prawdziwość właśnie tego przypadku, którego próbujesz dowieść, rozumujesz w błędnym kole. Sam krok indukcyjny bez wymaganych przypadków początkowych nie wystarcza do dowodu.
 
 **Źródła:** [S4](#s4), podrozdział 2.3, s. 45-50, i podrozdział 6.4, s. 214-217.
 
 ### 30. Rozpatrz lub policz dopełnienie
 
-**Opis:** Dopełnienie to zbiór wszystkich dopuszczalnych wyników, które nie spełniają szukanego warunku. Gdy sukces trudno opisać, a porażkę łatwo, policz całość i odejmij porażki. W prawdopodobieństwie użyj P(sukces) = 1 - P(porażka), ale najpierw określ model. Dzielenie liczby sprzyjających wyników przez liczbę wszystkich działa tylko wtedy, gdy pojedyncze możliwości są jednakowo prawdopodobne. Przypadki porażki muszą też być rozłączne albo trzeba poprawić nakładanie się kategorii.
+**Opis:** Czasem łatwiej policzyć przypadki, które nie spełniają warunku, niż te, których szukasz. Tworzą one dopełnienie w zbiorze wszystkich dopuszczalnych wyników. Policz więc całość i odejmij dopełnienie. Przy prawdopodobieństwie możesz użyć P(sukces) = 1 - P(porażka), ale najpierw ustal model. Iloraz liczby wyników sprzyjających i wszystkich wyników daje prawdopodobieństwo tylko przy jednakowych szansach poszczególnych możliwości. Uważaj też na powtórzenia: jeśli kategorie niepowodzeń się nakładają, nie możesz po prostu dodać ich liczebności.
 
-**Przykład:** Rzuć dwa razy uczciwą sześcienną kostką i zapytaj o co najmniej jedną szóstkę. Dopełnieniem jest brak szóstki w obu rzutach. Mamy 6 × 6 = 36 jednakowo prawdopodobnych uporządkowanych wyników, a wyników bez szóstki jest 5 × 5 = 25. Zatem sukces ma 36 - 25 = 11 wyników, więc jego prawdopodobieństwo wynosi 11/36. Licząc osobno szóstkę w pierwszym i drugim rzucie, policzylibyśmy dwa razy wynik z dwiema szóstkami.
+**Przykład:** Rzucasz dwa razy symetryczną sześcienną kostką. Jakie jest prawdopodobieństwo wyrzucenia co najmniej jednej szóstki? Łatwiej policzyć dopełnienie, czyli wyniki bez szóstki w obu rzutach. Wszystkich uporządkowanych wyników jest 6 × 6 = 36 i mają jednakowe szanse. Bez szóstki jest ich 5 × 5 = 25. Szukanych wyników pozostaje 36 - 25 = 11, więc prawdopodobieństwo wynosi 11/36. Gdyby liczyć osobno szóstkę w pierwszym i drugim rzucie, wynik z dwiema szóstkami zostałby policzony dwa razy.
 
 **Kiedy się przydaje:** Przy zliczaniu, prawdopodobieństwie i warunkach typu „co najmniej jeden” lub „nie wszystkie”.
 
@@ -603,9 +603,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 31. Policz to samo na dwa sposoby
 
-**Opis:** Podwójne zliczanie polega na policzeniu jasno określonego zbioru z dwóch punktów widzenia. Obie metody opisują te same obiekty, więc sumy muszą się zgadzać. Można tak odkryć wzór, zastąpić trudne zliczanie łatwiejszym albo znaleźć błąd. Najpierw ustal, czy kolejność ma znaczenie i ile razy każdy obiekt pojawia się w każdym rachunku. Jeśli wcześniejsze wybory wymuszają późniejszy, nie traktuj go jako niezależnego, bo powstanie nadmiarowe zliczanie.
+**Opis:** Policz ten sam zbiór na dwa sposoby. Skoro obie metody dotyczą tych samych obiektów, powinny dać zgodne wyniki. Możesz tak odkryć wzór, uprościć rachunki lub znaleźć błąd. Najpierw dokładnie ustal, co liczysz i czy kolejność ma znaczenie. Przy każdej metodzie sprawdź, ile razy uwzględniasz jeden obiekt. Jeśli wcześniejsze wybory już przesądzają o następnym, nie licz go ponownie jako niezależnej możliwości. Inaczej wynik będzie zawyżony. Każdą różnicę między rachunkami trzeba wyjaśnić.
 
-**Przykład:** Sześciu uczniów podaje sobie ręce, każda para dokładnie raz. Z jednego punktu widzenia każdy spotyka 5 osób, więc mamy 6 × 5 = 30 końców uścisków. Każdy rzeczywisty uścisk ma dwie końcówki, po jednej dla każdej osoby, zatem policzyliśmy wszystko dwa razy i 30/2 = 15. Drugi rachunek wybiera od razu parę uczestników: 6 × 5 / 2 = 15. Zgodność potwierdza wynik.
+**Przykład:** Sześciu uczniów podaje sobie ręce, każda para dokładnie raz. Każdy uczeń uczestniczy w 5 uściskach, więc po zsumowaniu dla wszystkich otrzymujesz 6 × 5 = 30. Każdy uścisk policzono jednak u dwóch osób. Jeśli spojrzysz od strony uścisków, każdy z nich wnosi do tej sumy 2. Jest ich zatem 30/2 = 15. Możesz też od razu liczyć pary uczestników: 6 × 5 / 2 = 15. Oba sposoby dają ten sam wynik.
 
 **Kiedy się przydaje:** Przy tożsamościach kombinatorycznych, audytach, sprawdzaniu spójności i zapisywaniu układów obiektów w prostszej postaci.
 
@@ -622,9 +622,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 32. Dodaj pomocniczy obiekt lub wielkość pośrednią
 
-**Opis:** Obiekt pomocniczy to nowa prosta, zmienna, suma częściowa, ilustracja albo cel pośredni, o które zadanie nie pytało. Dodaj go z konkretnym powodem: powinien odsłonić zależność łączącą dane z celem. Zdefiniuj go dokładnie i sprawdź, czy wolno go zbudować. To most, nie dodatkowe założenie; jeśli nie może istnieć albo tylko powtarza pożądany wniosek, rozumowanie zawodzi. Na końcu przełóż wynik z powrotem na pierwotne pytanie.
+**Opis:** Czasem warto dorysować prostą, wprowadzić zmienną, obliczyć sumę częściową albo wyznaczyć cel pośredni, choć zadanie o to nie pyta. Taki element pomocniczy powinien pokazać związek między tym, co wiesz, a tym, czego szukasz. Zanim go dodasz, zastanów się, do czego go użyjesz. Opisz go dokładnie i sprawdź, czy może istnieć przy podanych warunkach. Nie wolno przemycić w ten sposób dodatkowego założenia ani uznać szukanego wniosku za prawdę. Na końcu odpowiedz na pierwotne pytanie.
 
-**Przykład:** Prostokątne boisko szkolne ma boki 6 m i 8 m. Narysuj przekątną, aby powstał trójkąt prostokątny. Reguła Pitagorasa mówi, że kwadrat najdłuższego boku równa się sumie kwadratów pozostałych: d² = 6² + 8² = 100, więc d = 10 m. Dodana prosta połączyła znane boki z szukaną odległością, ale nie zmieniła boiska.
+**Przykład:** Prostokątne boisko szkolne ma boki 6 m i 8 m. Dorysuj przekątną: otrzymasz trójkąt prostokątny. Z twierdzenia Pitagorasa wiesz, że kwadrat jego najdłuższego boku jest sumą kwadratów pozostałych. Zatem d² = 6² + 8² = 100, czyli d = 10 m. Dorysowany odcinek pozwolił powiązać znane długości boków z szukaną odległością. Nie zmienił przy tym ani kształtu, ani wymiarów boiska.
 
 **Kiedy się przydaje:** W geometrii, przy niewygodnych wyrażeniach i problemach, w których dane wydają się niezwiązane z celem.
 
@@ -641,9 +641,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 33. Systematycznie wypisuj przypadki i eliminuj niemożliwe
 
-**Opis:** Kompletne przeszukiwanie przypadków zapisuje każdą dopuszczalną możliwość w ustalonej kolejności, zwykle w tabeli albo na rozgałęzionej liście. Kompletne znaczy, że niczego nie pominięto, a rozłączne, że jedna możliwość nie trafia do dwóch gałęzi. Najpierw stosuj najsilniejszy szybki warunek i skreślaj niemożliwe przypadki, zachowując powód. Metoda działa, gdy lista jest mała. Jeśli sprawdzisz tylko część kandydatów, możesz znaleźć rozwiązanie, lecz nie dowiedziesz, że innych nie ma.
+**Opis:** Gdy możliwości jest niewiele, wypisz je w ustalonym porządku, na przykład w tabeli lub na rozgałęzionej liście. Podział powinien obejmować wszystko i nie zawierać powtórzeń. Najpierw sprawdź warunki, które szybko wykluczają wiele przypadków. Skreślaj niemożliwe warianty i zapisuj powód każdego odrzucenia. Dzięki temu łatwiej śledzić, co już sprawdzono, a co jeszcze zostało. Tylko pełne przeszukanie pozwala stwierdzić, że innych odpowiedzi nie ma. Sprawdzając część listy, możesz znaleźć rozwiązanie, lecz pozostałe możliwości nadal są niezbadane.
 
-**Przykład:** Czterocyfrowy kod do szafki używa cyfr 1, 2, 3, 4 po jednej, musi kończyć się cyfrą parzystą, a pierwsza cyfra ma być mniejsza od drugiej. Podziel kody na rozłączne przypadki według ostatniej cyfry. Dla 2 zostają 1342, 1432, 3412 po sprawdzeniu pierwszej nierówności. Dla 4 zostają 1234, 1324, 2314. Tylko 2 albo 4 może być na końcu, więc sześć kodów wyczerpuje możliwości i każdy spełnia warunki.
+**Przykład:** Kod do szafki zawiera cyfry 1, 2, 3 i 4, każdą dokładnie raz. Ostatnia musi być parzysta, a pierwsza mniejsza od drugiej. Podziel możliwości według ostatniej cyfry. Jeśli jest nią 2, po sprawdzeniu pozostałych warunków zostają 1342, 1432 i 3412. Jeśli jest nią 4, zostają 1234, 1324 i 2314. Inna cyfra nie może być na końcu. Te sześć kodów obejmuje więc wszystkie możliwości, a każdy spełnia warunki.
 
 **Kiedy się przydaje:** W zagadkach logicznych, niewielkich zbiorach konfiguracji, problemach porządkowania i poszukiwaniu wszystkich rozwiązań.
 
@@ -654,15 +654,15 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 4. W każdym pozostałym przypadku przejdź do następnego nierozstrzygniętego wyboru. Zachowuj uzasadnienia wykluczeń.
 5. Sprawdź każdą pozostałą odpowiedź względem wszystkich warunków. Jeśli twierdzisz, że innych nie ma, wyjaśnij, dlaczego przeszukiwanie było kompletne.
 
-**Uwaga:** Lista może nadmiernie się rozrosnąć. Jeśli ograniczysz poszukiwania, zaznacz, że pozostali niezbadani kandydaci; brak odpowiedzi w częściowym przeszukiwaniu nie jest dowodem niemożliwości.
+**Uwaga:** Lista może nadmiernie się rozrosnąć. Jeśli ograniczysz poszukiwania, zaznacz, że są jeszcze niesprawdzone możliwości. Brak odpowiedzi po przejrzeniu części listy nie dowodzi, że rozwiązanie nie istnieje.
 
 **Źródła:** [S5](#s5), s. 285-286, pełne wyliczenie tras, oraz s. 331-332, problem samochodów różnych kolorów; [S3](#s3), część 6, uporządkowane wypisywanie i eliminacja.
 
 ### 34. Ustal tylko tę wielkość, o którą pyta zadanie
 
-**Opis:** Wielkość łączna to suma, różnica, iloraz albo pozycja, a nie każda pojedyncza wartość. Najpierw podkreśl dokładnie to, o co pyta zadanie. Potem połącz dane tak, aby dodatkowe niewiadome się skróciły albo przestały mieć znaczenie. Oszczędza to rachunków i nie dopisuje informacji, których dane nie zawierają. Sprawdź jednak jednoznaczność: ustalona suma nie wyznacza składników, a różne dopuszczalne ustawienia z różnymi szukanymi wynikami oznaczają brak danych.
+**Opis:** Sprawdź dokładnie, o co pyta zadanie. Może potrzebujesz tylko sumy, różnicy, ilorazu albo czyjejś pozycji, a nie wszystkich wartości z osobna. Spróbuj połączyć znane zależności tak, żeby zbędne niewiadome się zredukowały lub przestały mieć znaczenie. Unikniesz niepotrzebnych rachunków i wyznaczania danych, których nie da się ustalić. Na końcu sprawdź, czy odpowiedź jest jednoznaczna. Znajomość sumy nie określa jej składników, a jeśli dopuszczalne przypadki dają różne odpowiedzi na zadane pytanie, informacji rzeczywiście brakuje.
 
-**Przykład:** Prostokąt ma obwód 28 cm, a pytanie dotyczy sumy długości i szerokości. Jeśli boki to a i b, wtedy 2a + 2b = 28, więc od razu a + b = 14 cm. Nie trzeba wyznaczać a i b osobno: prostokąty 6 na 8 oraz 5 na 9 mają ten sam obwód, ale w obu suma boków wynosi 14. Szukana wielkość łączna jest ustalona, choć pojedyncze boki nie są.
+**Przykład:** Prostokąt ma obwód 28 cm. Jaka jest suma jego długości i szerokości? Oznacz je przez a i b. Z równania 2a + 2b = 28 od razu wynika a + b = 14 cm. Nie musisz znać a i b osobno: prostokąt o bokach 6 i 8 oraz prostokąt o bokach 5 i 9 mają ten sam obwód i tę samą sumę długości i szerokości, równą 14. Zadanie pozwala ustalić tę sumę, choć nie wyznacza osobno długości każdego boku.
 
 **Kiedy się przydaje:** Przy problemach pozornie niedookreślonych, długich obliczeniach i pytaniach o wielkości łączne.
 
@@ -679,9 +679,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 35. Zacznij od wyborów zachłannych
 
-**Opis:** Metoda zachłanna buduje kandydata, za każdym razem wybierając to, co według prostej lokalnej reguły wygląda najlepiej teraz. Przydaje się do szybkiego ułożenia trasy, planu albo podziału, gdy sprawdzenie wszystkich możliwości byłoby kosztowne. Po lokalnych wyborach obejrzyj cały wynik i porównaj go z alternatywami lub ulepsz. Zachłanność tworzy kandydata, ale sama nie dowodzi najlepszego wyniku. Dobry ruch w tej chwili może zostawić niewygodną resztę, drogi finał albo ślepą uliczkę.
+**Opis:** W metodzie zachłannej na każdym kroku wybierasz to, co w danej chwili wygląda najlepiej według ustalonej reguły. Możesz tak szybko ułożyć pierwszą trasę, plan lub podział zasobów, zwłaszcza gdy sprawdzanie wszystkich możliwości trwałoby zbyt długo. Potem oceń cały wynik, porównaj go z innymi i spróbuj poprawić. Wybór korzystny teraz może bowiem utrudnić resztę zadania, zwiększyć późniejszy koszt albo uniemożliwić dokończenie. Metoda daje propozycję rozwiązania, ale bez osobnego dowodu nie wiesz, czy jest ono najlepsze.
 
-**Przykład:** Gra ma dać dokładnie 6 punktów za pomocą żetonów wartych 1, 3 i 4 punkty, używając ich jak najmniej. Metoda zachłanna bierze najpierw największy żeton: 4, potem 1 i 1, razem 3 żetony. Tymczasem dwa żetony po 3 dają 6 w 2 żetonach. Wynik zachłanny jest poprawny, ale nieoptymalny. Aby uznać go za najlepszy, trzeba osobno dowieść optymalności albo wykluczyć lepsze kombinacje.
+**Przykład:** W grze masz żetony warte 1, 3 i 4 punkty. Chcesz uzyskać dokładnie 6 punktów, używając jak najmniej żetonów. Wybierasz zachłannie największy pasujący żeton: najpierw 4, potem 1 i jeszcze 1. Potrzebujesz 3 żetonów. Można jednak wziąć dwa po 3 punkty i uzyskać 6 za pomocą 2 żetonów. Zachłanny wybór dał poprawną sumę, ale nie najlepszy wynik. Żeby uznać wynik tej metody za optymalny, trzeba osobno to udowodnić lub wykluczyć lepsze kombinacje.
 
 **Kiedy się przydaje:** Gdy trzeba szybko przygotować pierwszą trasę, kolejność lub podział zasobów, a pełne przeszukiwanie jest zbyt kosztowne.
 
@@ -698,9 +698,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 36. Sprawdzaj postęp i świadomie zmieniaj plan
 
-**Opis:** Monitorowanie oznacza zatrzymanie się w trakcie pracy i porównanie dowodów z planem. Zapytaj, co próba ustaliła, co nadal jest nieznane i dlaczego następny krok miałby pomóc. To odróżnia brak wiedzy od złej strategii albo błędnego odczytania warunku. Kontynuuj, gdy próba daje informacje; w przeciwnym razie zmień uzasadniony element planu, a nie wszystko losowo ani tylko dlatego, że poświęcono już czas. Na końcu sprawdź odpowiedź i zapisz wniosek do ponownego użycia.
+**Opis:** Zatrzymaj się co pewien czas i sprawdź, czego dowiadujesz się z pracy. Co udało się ustalić? Czego nadal nie wiesz? Dlaczego następny krok miałby pomóc? Takie pytania pozwalają odróżnić brak potrzebnej wiedzy od źle dobranej metody lub błędnie odczytanego warunku. Kontynuuj, jeśli próby przynoszą informacje. Jeśli nie, ustal, co warto zmienić, zamiast zmieniać wszystko przypadkowo. Nie trzymaj się też planu tylko dlatego, że poświęcono mu dużo czasu. Na końcu sprawdź odpowiedź i zapisz, co przyda się następnym razem.
 
-**Przykład:** Chcesz poprawić wynik kartkówki. Pierwszy plan to czytanie notatek przez 30 minut. Test z 10 pytań daje 2 poprawne odpowiedzi. Przegląd błędów pokazuje, że nie pamiętasz definicji, choć rozumiesz przykłady, więc problemem jest przypominanie, a nie czas czytania. Zmieniasz plan na fiszki i zadania, a podobny test daje 7/10. Liczby nie dowodzą pełnego opanowania, ale pokazują, dlaczego nowy plan rokuje lepiej.
+**Przykład:** Chcesz lepiej napisać kartkówkę. Czytasz notatki przez 30 minut, a potem odpowiadasz na 10 pytań. Tylko 2 odpowiedzi są poprawne. Sprawdzasz błędy: rozumiesz przykłady, ale nie potrafisz przypomnieć sobie definicji. Zamiast tylko wydłużać czytanie, przechodzisz do fiszek i zadań. W podobnym teście uzyskujesz 7/10. To nie dowodzi, że materiał jest już w pełni opanowany, ale daje powód, by dalej pracować według poprawionego planu.
 
 **Kiedy się przydaje:** Przy długich analizach, powtarzających się niepowodzeniach, nauce i każdym problemie bez oczywistej metody.
 
@@ -717,9 +717,9 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ### 37. Uogólnij, aby ujawnić strukturę
 
-**Opis:** Uogólnienie zastępuje jeden ustalony szczegół zmienną i bada całą rodzinę podobnych przypadków. Zmienna pełni rolę parametru, czyli symbolu, dla którego trzeba podać dopuszczalne wartości. To może ujawnić wzór lub strukturę ukrytą przez jeden przykład, lecz sprawdzenie kilku wartości nie jest dowodem. Poprawne twierdzenie ogólne wymaga argumentu obejmującego cały określony zakres, na przykład każdą dodatnią liczbę całkowitą, oraz osobnego wskazania wyjątków. Dopiero potem podstaw pierwotną wartość.
+**Opis:** Wybierz jeden ustalony szczegół zadania i zastąp go parametrem, czyli symbolem oznaczającym różne dopuszczalne wartości. Możesz wtedy zbadać całą rodzinę podobnych zadań i zobaczyć zależność, którą trudno zauważyć w pojedynczym przykładzie. Ustal dokładnie, jakie wartości dopuszczasz. Sprawdzenie kilku z nich podpowiada wzór, ale go nie dowodzi. Potrzebujesz uzasadnienia obejmującego cały wskazany zakres, na przykład wszystkie dodatnie liczby całkowite. Wymień też wyjątki. Gdy już uzasadnisz ogólną zależność, podstaw wartość z pierwotnego zadania.
 
-**Przykład:** Dla pierwszych n liczb nieparzystych sprawdź 1 = 1² oraz 1 + 3 = 2². Aby dowieść wzoru dla każdej dodatniej liczby całkowitej n, załóż, że pierwsze n dają n². Następna liczba nieparzysta to 2n + 1, więc nowa suma wynosi n² + 2n + 1 = (n + 1)². Baza i ten krok obejmują każde dodatnie n. Zatem pierwsze 4 liczby dają 4² = 16; kilka przykładów nie dowodzi wzoru.
+**Przykład:** Dodajesz kolejne dodatnie liczby nieparzyste: 1 = 1² oraz 1 + 3 = 2². Czy suma pierwszych n takich liczb zawsze wynosi n²? Przypadek początkowy już masz. Załóż teraz, że wzór działa dla n. Kolejna liczba nieparzysta to 2n + 1, więc po jej dodaniu otrzymujesz n² + 2n + 1 = (n + 1)². Przypadek początkowy i krok indukcyjny uzasadniają wzór dla każdego dodatniego całkowitego n. Możesz teraz podstawić 4: suma wynosi 4² = 16. Samo sprawdzenie kilku przykładów nie wystarczyłoby do dowodu.
 
 **Kiedy się przydaje:** Przy niewyjaśnionych wzorcach liczbowych, wzorach do wielokrotnego użycia i problemach ze stałymi, które wyglądają na przypadkowo dobrane.
 
@@ -736,7 +736,7 @@ Traktuj schematy jako zestaw do wyboru, nie listę do wykonania po kolei. Czasem
 
 ## Łączenie schematów w praktyce
 
-Te przykłady ilustrują użycie przewodnika; nie są dodatkowymi studiami przypadków pochodzącymi ze źródeł.
+Te przykłady pokazują, jak korzystać z przewodnika. Powstały na jego potrzeby, nie pochodzą z dokumentów źródłowych.
 
 - **Zaplanuj niewielkie warsztaty:** Określ sukces i ograniczenia (17), rozumuj wstecz od wydarzenia (1), podziel przygotowania na zadania (3) i szacuj na podstawie podobnej pracy (7). Sprawdź, czy mieści się cały harmonogram, nie tylko każde zadanie z osobna.
 - **Zbadaj powracającą usterkę oprogramowania:** Dokładnie opisz usterkę (17), odtwórz ją w mniejszym przypadku (16) i przeprowadź kontrolowane testy (4). Zapisuj każdy wynik i zmieniaj hipotezę, gdy dowody przestają ją wspierać (36).
@@ -744,21 +744,21 @@ Te przykłady ilustrują użycie przewodnika; nie są dodatkowymi studiami przyp
 
 ## Szablon notatki roboczej
 
-Skopiuj te pytania pomocnicze, gdy zaczynasz pracę nad problemem:
+Na początku pracy skopiuj ten szablon i uzupełniaj go w miarę postępów:
 
 - **Cel i test sukcesu:**
 - **Znane fakty i niewiadome:**
 - **Bezwzględne ograniczenia i niesprawdzone założenia:**
 - **Wybrany schemat i powód wyboru:**
-- **Następne działanie i czego ma mnie nauczyć:**
+- **Co zrobię dalej i czego chcę się z tego dowiedzieć:**
 - **Wynik i dowody:**
 - **Co nadal wymaga sprawdzenia:**
 - **Kontynuować, poprawić czy zakończyć:**
-- **Wniosek do ponownego wykorzystania:**
+- **Co przyda mi się przy kolejnym problemie:**
 
 ## Przegląd źródeł w kolejności lektury
 
-Poniżej uwzględniono wszystkie pięć dokumentów dotyczących tematu z tego folderu, z pominięciem plików HTML. Trzy dokumenty Word przeczytano w całości w postaci tekstu. W dwóch obszernych plikach PDF przejrzano wskazane niżej części i przykłady pod kątem metod rozwiązywania problemów. Nie opracowano wyczerpująco zbiorów ćwiczeń ani przeglądów literatury. Teksty źródłowe pozostały bez zmian.
+Przegląd obejmuje wszystkie pięć dokumentów na ten temat z tego folderu, z pominięciem plików HTML. Trzy dokumenty Word przeczytano w całości po wyodrębnieniu tekstu. W dwóch obszernych plikach PDF przejrzano wymienione niżej części i przykłady w poszukiwaniu metod rozwiązywania problemów. Nie przeanalizowano całych zbiorów ćwiczeń ani przeglądów literatury. Tekstów źródłowych nie zmieniono.
 
 <a id="s1"></a>
 ### S1 Heurystyki i szacowanie
@@ -792,7 +792,7 @@ Poniżej uwzględniono wszystkie pięć dokumentów dotyczących tematu z tego f
 
 **Dokument:** [/home/andrzey/git-claude/heuristics/the-art-and-craft-of-problem-solving.pdf](/home/andrzey/git-claude/heuristics/the-art-and-craft-of-problem-solving.pdf)
 
-**Autor i wydanie:** Paul Zeitz, wydanie drugie. Odwołania do stron używają numeracji drukowanej, nie pozycji w przeglądarce PDF.
+**Autor i wydanie:** Paul Zeitz, wydanie drugie. Numery stron w odwołaniach pochodzą z wydania drukowanego i mogą różnić się od numerów w przeglądarce PDF.
 
 **Przegląd pod kątem metod wielokrotnego użytku:** Spis treści i wskazówki dotyczące lektury; omówienia metod i wybrane rozwiązane przykłady w podrozdziałach 2.2-2.4, 3.2-3.4, 6.1-6.4 i 8.4. Porównano wyrenderowaną stronę geometryczną dotyczącą zasady ekstremalnej z wyodrębnionym tekstem. Główne uzupełnienia: sprawdzanie hipotez, sprzeczność, elementy skrajne, zasada szufladkowa, niezmienniki, monowarianty, indukcja i rekurencja, dopełnienia, zliczanie na dwa sposoby oraz konstrukcje pomocnicze.
 
@@ -803,7 +803,7 @@ Poniżej uwzględniono wszystkie pięć dokumentów dotyczących tematu z tego f
 
 **Dokument:** [/home/andrzey/git-claude/heuristics/Heuristics in Problem Solving for the Teaching and Learning of Mathematics.pdf](</home/andrzey/git-claude/heuristics/Heuristics in Problem Solving for the Teaching and Learning of Mathematics.pdf>)
 
-**Autor i data:** Nuno Álvaro Ferreira Rodrigues, rozprawa doktorska, Uniwersytet w Coimbrze, 2015. Odwołania do stron używają numeracji drukowanej.
+**Autor i data:** Nuno Álvaro Ferreira Rodrigues, rozprawa doktorska, Uniwersytet w Coimbrze, 2015. Numery stron w odwołaniach pochodzą z wydania drukowanego.
 
 **Przegląd pod kątem metod wielokrotnego użytku:** Streszczenie, spis treści, wybrane omówienia metapoznania i rozwiązywania problemów na s. 27-28 i 48-50, wnioski w okolicy s. 212-213 oraz plan aneksu i wskazówki metodyczne na s. 215-226. Przeanalizowano wybrane rozwiązane przykłady na s. 236-237, 252-253, 285-286, 320-333 i końcowe omówienie paradoksu wizualnego na s. 402-405. Sprawdzono wizualnie schemat cyklicznego procesu na s. 223 i porównanie metod wyznaczania tras na s. 285.
 
