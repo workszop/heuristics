@@ -165,8 +165,8 @@ async function checkScheme(page, id, lang) {
     check(`#${id} ${lang} caption ${k}${dir}`, result.caption === info.captions[k], result.caption);
     check(`#${id} ${lang} idempotent show(${k})${dir}`, result.same, 'state after other steps differs from a fresh mount at this step');
     check(`#${id} ${lang} text fits at step ${k}${dir}`, result.overflow.length === 0, result.overflow.join(' | '));
+    if (SHOTS && !dir) await shot(page, path.join(SHOTS, `${String(id).padStart(2, '0')}-${lang}-s${k + 1}.png`));
   }
-  if (SHOTS) await shot(page, path.join(SHOTS, `${String(id).padStart(2, '0')}-${lang}.png`));
 }
 async function checkVerifyRows(page, label) {
   const rows = await page.evaluate(() => window.App.verify());
@@ -214,8 +214,10 @@ async function regressions(page, errors) {
   check('unregistered id renders the unavailable fallback', fallback);
 }
 // Motion context: a playing animation must stop completely when the view or language changes.
-async function waitPlaying(page) {
-  await page.waitForFunction(() => { const host = document.querySelector('[data-component="scheme-animation"]'); return host && host.dataset.animState === 'playing'; }, null, { timeout: 5000 }).catch(() => {});
+async function waitPlaying(page, pageName) {
+  let started = true;
+  await page.waitForFunction(() => { const host = document.querySelector('[data-component="scheme-animation"]'); return host && host.dataset.animState === 'playing'; }, null, { timeout: 5000 }).catch(() => { started = false; });
+  check(`${pageName} motion probe: playback started`, started);
 }
 async function motionRegressions(page, errors, pageName) {
   const id = IDS[0];
@@ -224,7 +226,7 @@ async function motionRegressions(page, errors, pageName) {
   // Language switch while playing: old host frozen, step carried over, still (or again) running.
   await page.evaluate(() => window.App.navigate('home'));
   await openScheme(page, id);
-  await waitPlaying(page);
+  await waitPlaying(page, pageName);
   const sw = await switchLangSync(page, 'en');
   check(`${pageName} language switch while playing: remounted in en`, sw.replaced && sw.after.lang === 'en' && sw.after.step === sw.before.step, JSON.stringify({ before: sw.before.step, after: sw.after }));
   if (id === 1) check(`${pageName} language switch while playing relabels the svg`, sw.before.text !== sw.after.text, sw.after.text);
@@ -241,7 +243,7 @@ async function motionRegressions(page, errors, pageName) {
   for (const [label, act] of actions) {
     await page.evaluate(() => window.App.navigate('home'));
     await openScheme(page, id);
-    await waitPlaying(page);
+    await waitPlaying(page, pageName);
     await page.evaluate(() => { window.__oldHost = document.querySelector('[data-component="scheme-animation"]'); });
     await act(page);
     const stepAfter = await page.evaluate(() => window.__oldHost.dataset.animStep);
