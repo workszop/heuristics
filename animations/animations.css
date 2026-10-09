@@ -64,6 +64,7 @@
 .ha-label--small { fill: var(--anim-ink-soft); font-size: var(--anim-label-small); }
 .ha-label--big { font-family: var(--anim-font-display); font-size: var(--anim-label-big); font-weight: 700; }
 .ha-label--strong { font-weight: 700; }
+.ha-label.is-accent { fill: var(--anim-ink); font-weight: 700; }
 .ha-label.is-good { fill: var(--anim-good); }
 .ha-label.is-bad { fill: var(--anim-bad); }
 .ha-label.is-info { fill: var(--anim-info); }

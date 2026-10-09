@@ -217,6 +217,8 @@
 
     let step = Math.min(total - 1, Math.max(0, Number(opts.startStep) || 0));
     let state = 'idle';
+    if (opts.startState === 'paused') state = 'paused';
+    else if (opts.startState === 'done') state = step === total - 1 ? 'done' : 'paused';
     let timer = null;
     let destroyed = false;
     let autoPaused = false;
@@ -321,7 +323,7 @@
 
     // ─── Init ───
     sync();
-    if (opts.autoplay && !prefersReducedMotion()) {
+    if (opts.autoplay && state === 'idle' && !prefersReducedMotion()) {
       if ('IntersectionObserver' in window) {
         observer = new IntersectionObserver(onVisibility, { threshold: 0.4 });
         observer.observe(host);

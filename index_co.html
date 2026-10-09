@@ -900,7 +900,9 @@ function stopAnimation() {
 }
 function animationSection(schemeId) {
   if (activeAnimation && activeAnimation.id === schemeId && activeAnimation.lang === state.lang) return activeAnimation.el;
-  const startStep = activeAnimation && activeAnimation.id === schemeId ? activeAnimation.step : 0;
+  const same = activeAnimation && activeAnimation.id === schemeId;
+  const startStep = same ? activeAnimation.step : 0;
+  const startState = same ? activeAnimation.state : 'idle';
   stopAnimation();
   const host = document.createElement('section');
   if (!window.HeurAnim) {
@@ -909,7 +911,7 @@ function animationSection(schemeId) {
     host.appendChild(textElement('p', t('animUnavailable'), 'anim-unavailable'));
     return host;
   }
-  activeAnimation = window.HeurAnim.mount(host, schemeId, state.lang, animationLabels(), { startStep });
+  activeAnimation = window.HeurAnim.mount(host, schemeId, state.lang, animationLabels(), { startStep, startState });
   return host;
 }
 function renderScheme() {
