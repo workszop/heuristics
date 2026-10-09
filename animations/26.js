@@ -5,8 +5,8 @@ HeurAnim.register(26, {
     { pl: 'W klasie jest 25 uczniów, a miesięcy urodzin jest 12.', en: 'The class has 25 students and there are 12 birth months.' },
     { pl: 'Daj każdemu miesiącowi po jednym uczniu: to 12 osób.', en: 'Give every month one student: that is 12 people.' },
     { pl: 'Dołóż drugiego do każdego miesiąca: 24 osoby i w żadnym miesiącu nie ma więcej niż 2.', en: 'Add a second student to every month: 24 people and no month has more than 2.' },
-    { pl: 'Dla 25. ucznia nie ma wolnego miejsca: trafia do miesiąca, który już ma 2, więc jest tam co najmniej 3.', en: 'The 25th student has no free spot: he joins a month that already has 2, so it has at least 3.' },
-    { pl: 'Wiemy, że taki miesiąc istnieje, ale zasada nie mówi, który to jest.', en: 'We know such a month exists, but the principle does not say which one it is.' }
+    { pl: '25. uczeń trafia do któregoś miesiąca (tu: maja), który już ma 2, więc jest tam co najmniej 3.', en: 'The 25th student joins some month (here: May) that already has 2, so it has at least 3.' },
+    { pl: 'Mogło to być w każdym miesiącu: zasada nie mówi, w którym.', en: 'It could have been any month: the principle does not say which.' }
   ],
   build(api) {
     // ─── Layout ───

@@ -3,7 +3,7 @@
 HeurAnim.register(10, {
   steps: [
     { pl: '6 godzin, trzy stoiska. Każde robisz w całości albo wcale, a celem jest jak najwięcej punktów.', en: '6 hours, three booths. Each is built whole or not at all, and the goal is as many points as possible.' },
-    { pl: 'Na próbę udaj, że stoiska można dzielić. Bierz to, co daje najwięcej punktów za godzinę: całe A i 2/3 B to 12 punktów.', en: 'Pretend booths can be split. Take what pays most per hour: all of A and 2/3 of B make 12 points.' },
+    { pl: 'Udaj, że można dzielić. Bierz najpierw to, co daje najwięcej punktów za godzinę: A, B, na końcu C (najmniej). Całe A i 2/3 B to 12 pkt.', en: 'Pretend splitting is allowed. Take what pays most per hour first: A, B, last C (least). All of A and 2/3 of B make 12 pts.' },
     { pl: 'Pół stoiska nie istnieje. Całe B oznacza razem 7 godzin, a limit to 6: plan się nie mieści.', en: 'There is no half booth. A whole B makes 7 hours in total, but the limit is 6: the plan does not fit.' },
     { pl: 'Wróć do całych stoisk. A + C mieści się w 6 godzinach i daje 11 punktów.', en: 'Back to whole booths. A + C fits in 6 hours and earns 11 points.' },
     { pl: 'Sufit z ułamków to 12 punktów, najlepszy prawdziwy plan ma 11: do sufitu brakuje najwyżej 1.', en: 'The fraction ceiling is 12 points and the best real plan has 11: at most 1 point short of the ceiling.' }
