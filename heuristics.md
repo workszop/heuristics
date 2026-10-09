@@ -33,9 +33,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 1. Work backward from the goal
 
-**Description:** Working backward starts with the exact result you want and asks which condition would make the previous moment possible. Continue toward something you already know or can do, then read the chain forward. A distant goal becomes smaller requirements and may reveal a missing step. This searches for a route, not a proof. A necessary condition must be present, but may still be insufficient, so check every forward link.
+**Description:** Start from the exact result you want and ask: what must be ready just before it? Then ask the same about that step, and keep going back until you reach something you already know or can do today. A distant goal breaks into small requirements, and gaps in the plan show up. Finally read the chain forward from the start and check every link, because something you need is not always enough on its own.
 
-**Example:** You must submit a science poster Friday. Uploading requires an exported file; that requires text and images to fit; layout requires a draft and sources; submission requires teacher feedback. Your first list had no feedback time, so schedule draft Tuesday, layout Wednesday, feedback Thursday, upload Friday. The backward chain exposed the gap; checking forward keeps a draft from being mistaken for the finished poster.
+**Example:** You must hand in a science poster on Friday, and today is Monday. Work backward: handing in needs the finished poster, the poster needs its layout, and the layout needs a draft and sources, which you can start on now. Then a gap shows up: the teacher must see the poster before the hand-in, and the plan has no day for it. So plan from the end: teacher feedback Thursday, layout Wednesday, draft Tuesday, sources Monday. Last, read the plan forward: sources feed the draft, the draft feeds the layout, the layout goes to the teacher, and the feedback gives the final poster.
 
 **Useful for:** Planning, finding missing prerequisites, solving equations, and constructing proofs.
 
@@ -204,9 +204,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 10. Allow fractions first, then restore whole choices
 
-**Description:** Continuous relaxation temporarily lets whole or yes/no choices take fractional values, while keeping the other limits and goal. The easier calculation can show which choices matter and give a bound or target. Fractions are only clues: rounding may break capacity, budget, or exact totals, and a nearby whole-number solution may not exist. Finish by testing actual whole choices against every original rule.
+**Description:** Some choices cannot be split: a booth is built whole or not at all, a bus is hired whole, a person is not assigned by halves. With several such choices you would have to test many combinations. So pretend for a moment that splitting is allowed: half a booth takes half the time and earns half the points. Then you only take, one by one, whatever pays most per hour, and the result shows the most you could possibly get. Finally return to whole choices and test real combinations, because a rounded fraction can break the limit.
 
-**Example:** With 6 hours, booths A, B, C need 4, 3, 2 hours and earn 8, 6, 3 points; each is all-or-nothing. Keeping 0 ≤ A, B, C ≤ 1, relaxation chooses A = 1 and B = 2/3: 6 hours, 12 points. Rounding B up needs 7 hours and fails. Whole choices give A + C: 6 hours, 11 points, valid.
+**Example:** The student council has 6 hours for booths and wants the most points. Booth A takes 4 hours and earns 8 points, B 3 hours and 6 points, C 2 hours and 3 points. Booths cannot be halved, but pretend they can: A and B earn 2 points per hour, C only 1.5. Take all of A and 2/3 of B for the last 2 hours (4 points): 12 in total. Every real plan is also allowed in the pretend version, where 12 is the maximum, so no real plan beats 12. Whole booths: A + B needs 7 hours, too many; A + C fits in 6 hours for 11 points, beating B + C (9) and A (8).
 
 **Useful for:** Selecting items, assigning resources, and planning quantities that must eventually be whole numbers.
 
@@ -508,9 +508,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 26. Show that something must share a slot
 
-**Description:** The pigeonhole principle says that if more objects go into fewer labeled categories, some category receives at least two. The categories are the slots; the objects might be people, dates, files, or game pieces. The method helps prove that a repetition or collision cannot be avoided, even when you cannot identify which category it will be. For a stronger conclusion, compare the number of objects with the capacity of every category, not just with the number of categories.
+**Description:** The pigeonhole principle says: if you put more objects into fewer categories, some category gets at least two objects. The objects can be people, dates, files or game pieces; the categories are whatever you sort them by. This lets you prove that a repetition or collision cannot be avoided, even when you cannot say which category it will happen in. For a stronger claim, multiply the number of categories by 2: more than 12 × 2 objects in 12 categories force some category to hold at least 3.
 
-**Example:** A class has 25 students. Sort birthdays by calendar month, giving 12 slots; each birthday belongs to one. If every month held at most two birthdays, there could be at most 12 × 2 = 24 students. Since there are 25, at least one month has three or more birthdays. We know it exists, but the principle does not tell us which month.
+**Example:** In a class of 25 students, can you be sure that at least three were born in the same month? Sort the students by birth month. That gives 12 slots, and each student fits exactly one. Try to refute it. Suppose every month had at most 2 students. Then the class would have at most 12 × 2 = 24 students. But there are 25, so some month has at least 3. You know such a month exists without checking a single birthday, though the principle does not say which month it is.
 
 **Useful for:** Proving unavoidable repetitions, collisions, close pairs, and capacity limits.
 
@@ -527,9 +527,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 27. Find something that cannot change
 
-**Description:** An invariant is a property unchanged by every legal move. Define the moves, then test candidates such as parity, a remainder, a total, or color balance. Different values at the start and target make the target impossible. Equal values are only a necessary test, not a route: states can share an invariant yet lie in disconnected parts of a game. Reachability needs further reasoning about the available moves.
+**Description:** An invariant is something that no allowed move can change, such as the parity (odd or even) of a count, a total or a remainder. Write down the moves, pick a candidate property and check that every move keeps it. If the start and the target have different values of it, the target cannot be reached. If the values match, you have learned nothing yet: the target may still be out of reach for other reasons, so you must study the moves further.
 
-**Example:** Three switches start at 000, where 1 means on. The only move flips switches 1 and 2 together. The number of switches that are on keeps even parity: flipping two changes the count by +2, 0, or -2. Target 100 has one on, so it is impossible. Target 101 has two on, so parity matches, but from 000 the only states are 000 and 110; repeating returns to 000. Thus 101 is also unreachable.
+**Example:** Three switches are all off: 000, where 1 means on. The only allowed move flips switches 1 and 2 together. Can you reach 100? Count the switches that are on. A move flips two switches, and each one adds 1 or removes 1, so the count changes by +2, 0 or -2 and stays even. State 100 has one switch on, an odd number, so it is impossible. What about 101? Two on is even, so parity does not forbid it, yet from 000 you can only reach 110 and then return to 000, because switch 3 never changes. So 101 is impossible too: matching parity was not enough.
 
 **Useful for:** Transformation puzzles, reachability, bookkeeping, and checking repeated operations.
 

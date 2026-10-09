@@ -33,9 +33,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 1. Rozumuj od końca, zaczynając od celu
 
-**Opis:** Zacznij od celu i zapytaj: „Co musiałoby być gotowe tuż przed jego osiągnięciem?”. Potem zadaj to samo pytanie dla wcześniejszego kroku. Cofaj się tak długo, aż dojdziesz do czegoś, co już wiesz lub umiesz zrobić. W ten sposób rozpiszesz odległy cel na mniejsze wymagania i zauważysz ewentualne braki. Następnie przejdź przez plan od początku do końca. Samo znalezienie potrzebnego warunku nie wystarcza: sprawdź, czy każdy krok rzeczywiście pozwala wykonać następny.
+**Opis:** Zacznij od dokładnie opisanego celu i zapytaj: co musi być gotowe tuż przed nim? Potem zadaj to samo pytanie o ten wcześniejszy krok i cofaj się tak długo, aż dojdziesz do czegoś, co już wiesz albo możesz zrobić dziś. Odległy cel rozpada się na małe wymagania, a w planie widać braki. Na koniec przejdź łańcuch od początku do końca i sprawdź każde ogniwo: coś, co jest potrzebne, nie zawsze wystarcza.
 
-**Przykład:** W piątek musisz oddać plakat naukowy. Żeby go wysłać, potrzebujesz wyeksportowanego pliku. Wcześniej musisz rozmieścić tekst i ilustracje, a do tego mieć szkic i źródła. Przed oddaniem plakat musi też obejrzeć nauczyciel. W pierwszym planie zabrakło czasu na jego uwagi. Wyznaczasz więc szkic na wtorek, skład plakatu na środę, uwagi na czwartek, a wysyłkę na piątek. Teraz sprawdzasz plan od początku: czy po każdym etapie masz wszystko, czego potrzebujesz w następnym?
+**Przykład:** W piątek trzeba oddać plakat naukowy, a dziś jest poniedziałek. Cofasz się od celu: oddanie wymaga gotowego plakatu, plakat wymaga składu, a skład wymaga szkicu i źródeł, które możesz zacząć zbierać od razu. Wtedy widać lukę: przed oddaniem plakat musi obejrzeć nauczyciel, a w planie nie ma na to dnia. Układasz więc plan od końca: uwagi nauczyciela w czwartek, skład w środę, szkic we wtorek, źródła w poniedziałek. Na koniec czytasz plan od początku: źródła dają materiał na szkic, szkic na skład, skład na plakat dla nauczyciela, a jego uwagi na wersję do oddania.
 
 **Kiedy się przydaje:** Przy planowaniu, szukaniu brakujących warunków wstępnych, rozwiązywaniu równań i budowaniu dowodów.
 
@@ -204,9 +204,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 10. Najpierw dopuść ułamki, potem wróć do całych jednostek
 
-**Opis:** Czasem musisz wybierać całe przedmioty albo decydować „tak” lub „nie”. Na próbę dopuść także ułamki, pozostawiając bez zmian cel i pozostałe ograniczenia. Takie uproszczenie nazywa się relaksacją ciągłą. Może ułatwić obliczenia, podpowiedzieć cel poszukiwań lub dać oszacowanie graniczne. Potem trzeba wrócić do rzeczywistych wyborów. Samo zaokrąglenie ułamków może przekroczyć budżet, pojemność lub wymaganą sumę. Być może żadne rozwiązanie w całych jednostkach nie będzie bliskie wynikowi uproszczonemu, dlatego sprawdź wszystkie pierwotne warunki.
+**Opis:** Niektórych wyborów nie da się podzielić: stoisko na festynie przygotowujesz w całości albo wcale, autobus wynajmujesz cały, a osoby nie przydzielisz w połowie. Gdy takich wyborów jest kilka, trzeba sprawdzać wiele kombinacji. Na chwilę udaj więc, że dzielenie jest możliwe: pół stoiska zajmuje pół czasu i daje połowę punktów. Wtedy wystarczy brać po kolei to, co daje najwięcej za każdą godzinę, a wynik pokaże, ile najwyżej da się osiągnąć. Na koniec wróć do całych wyborów i sprawdź prawdziwe kombinacje, bo zaokrąglony ułamek może przekroczyć limit.
 
-**Przykład:** Samorząd ma do dyspozycji 6 godzin. Przygotowanie stoisk A, B i C zajmuje odpowiednio 4, 3 i 2 godziny, a każde daje odpowiednio 8, 6 i 3 punkty. Stoisko trzeba wybrać w całości albo z niego zrezygnować. Na próbę dopuszczacie 0 ≤ A, B, C ≤ 1. Wtedy A = 1 i B = 2/3 daje 12 punktów w 6 godzin. Zaokrąglenie B w górę oznacza jednak 7 godzin. W rzeczywistym planie wybieracie A + C: 11 punktów w 6 godzin.
+**Przykład:** Samorząd ma 6 godzin na stoiska na festyn i chce zdobyć najwięcej punktów. Stoisko A zajmuje 4 godziny i daje 8 punktów, B zajmuje 3 godziny i daje 6 punktów, a C zajmuje 2 godziny i daje 3 punkty. Pół stoiska nie istnieje, ale na próbę udajecie, że można: A i B dają po 2 punkty za godzinę, C tylko 1,5. Bierzecie całe A, a w pozostałe 2 godziny 2/3 B za 4 punkty. Razem 12 punktów. Każdy prawdziwy plan jest też dozwolony w wersji z ułamkami, a tam więcej niż 12 się nie da, więc żaden prawdziwy plan nie da więcej. Z całych stoisk A + B to 7 godzin, za dużo; A + C mieści się w 6 godzinach i daje 11 punktów, więcej niż B + C (9) czy samo A (8).
 
 **Kiedy się przydaje:** Przy wyborze przedmiotów, przydzielaniu zasobów i planowaniu ilości, które ostatecznie muszą być całkowite.
 
@@ -508,9 +508,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 26. Wykaż, że pewne obiekty muszą trafić do tej samej szufladki
 
-**Opis:** Jeśli przedmiotów jest więcej niż szufladek i każdy trzeba gdzieś włożyć, przynajmniej jedna szufladka pomieści więcej niż jeden przedmiot. Na tym polega zasada szufladkowa. Szufladkami mogą być dowolne kategorie, a przypisujesz do nich na przykład osoby, daty, pliki lub pionki. Możesz tak dowieść, że pewne obiekty muszą trafić razem, nie wiedząc, które to będą. Aby wykazać, że w jednej kategorii znajdzie się jeszcze więcej obiektów, porównaj ich łączną liczbę z pojemnością kategorii.
+**Opis:** Zasada szufladkowa mówi: jeśli wkładasz więcej przedmiotów do mniejszej liczby szufladek, w którejś znajdą się co najmniej dwa. Przedmiotami mogą być osoby, daty, pliki lub pionki, a szufladkami to, według czego je dzielisz. Dzięki temu dowodzisz, że powtórzenia albo zderzenia nie da się uniknąć, choć nie wiesz, w której szufladce nastąpi. Żeby wykazać więcej, pomnóż liczbę szufladek przez 2: więcej niż 12 × 2 przedmiotów w 12 szufladkach oznacza, że w którejś będą co najmniej 3.
 
-**Przykład:** W klasie jest 25 uczniów. Podziel ich według miesiąca urodzin: masz 12 szufladek i każdy uczeń trafia do dokładnie jednej. Gdyby w każdej były najwyżej 2 osoby, w klasie mogłoby być najwyżej 12 × 2 = 24 uczniów. Jest ich 25, więc przynajmniej w jednym miesiącu urodziły się co najmniej 3 osoby. Wiesz to nawet bez sprawdzania dat urodzin. Sama zasada nie mówi jednak, który to miesiąc.
+**Przykład:** W klasie jest 25 uczniów. Czy na pewno co najmniej troje z nich urodziło się w tym samym miesiącu? Podziel uczniów według miesiąca urodzin: masz 12 szufladek i każdy uczeń trafia do dokładnie jednej. Spróbuj to obalić. Załóż, że w każdym miesiącu jest najwyżej 2 uczniów. Wtedy w klasie byłoby najwyżej 12 × 2 = 24 uczniów. Jest ich 25, więc w jakimś miesiącu urodziło się co najmniej 3. Wiesz to bez sprawdzania ani jednej daty urodzin, ale zasada nie mówi, który to miesiąc.
 
 **Kiedy się przydaje:** Przy dowodzeniu nieuniknionych powtórzeń, kolizji, istnienia bliskich par i ograniczeń pojemności.
 
@@ -527,9 +527,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 27. Znajdź coś, co nie może się zmienić
 
-**Opis:** Niezmiennik to własność, której nie zmienia żaden dozwolony ruch. Opisz dokładnie ruchy i sprawdź, czy zachowują na przykład parzystość, resztę z dzielenia, sumę lub bilans kolorów. Jeśli taka własność różni się w stanie początkowym i docelowym, celu nie da się osiągnąć. Gdy się zgadza, nie masz jeszcze odpowiedzi: mogą istnieć inne przeszkody uniemożliwiające przejście między tymi stanami. Niezmiennik pomaga więc wykluczyć niektóre cele, ale żeby wykazać osiągalność pozostałych, trzeba dalej zbadać dozwolone ruchy.
+**Opis:** Niezmiennik to coś, czego żaden dozwolony ruch nie zmienia, na przykład parzystość liczby włączonych przełączników (parzysta czy nieparzysta), suma albo reszta z dzielenia. Zapisz dokładnie ruchy, wybierz kandydata na niezmiennik i sprawdź, czy każdy ruch go zachowuje. Jeśli w stanie początkowym i docelowym ma on różną wartość, celu nie da się osiągnąć. Gdy wartości są takie same, nie wiesz jeszcze nic: cel może być nieosiągalny z innych powodów, więc trzeba dalej badać ruchy.
 
-**Przykład:** Trzy przełączniki są początkowo wyłączone: 000. Cyfra 1 oznacza przełącznik włączony. Jedyny dozwolony ruch przełącza jednocześnie przełączniki 1 i 2. Przy przełączeniu dwóch liczba włączonych zmienia się o +2, 0 albo -2, więc zachowuje parzystość. Stanu 100 nie da się osiągnąć, bo ma jeden włączony przełącznik. A stan 101? Ma dwa, ale też jest nieosiągalny: z 000 przejdziesz tylko do 110, a kolejnym ruchem wrócisz do 000. Sama zgodność parzystości nie wystarczyła.
+**Przykład:** Trzy przełączniki są wyłączone: 000, gdzie 1 oznacza włączony. Jedyny dozwolony ruch przełącza jednocześnie przełączniki 1 i 2. Czy da się dojść do 100? Policz włączone przełączniki. Każdy przełączany przełącznik zmienia ich liczbę o +1 lub -1, więc ruch zmienia ją o +2, 0 albo -2 i liczba pozostaje parzysta. Stan 100 ma jeden włączony, czyli liczbę nieparzystą, więc jest niemożliwy. A 101? Dwa włączone to liczba parzysta, więc parzystość go nie wyklucza, ale z 000 dojdziesz tylko do 110 i z powrotem do 000, bo przełącznik 3 nigdy się nie zmienia. Stan 101 też jest więc niemożliwy: sama zgodna parzystość nie wystarczyła.
 
 **Kiedy się przydaje:** W zagadkach z przekształceniami, badaniu osiągalności, rozliczeniach i sprawdzaniu powtarzanych operacji.
 
