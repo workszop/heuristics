@@ -33,9 +33,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 1. Work backward from the goal
 
-**Description:** Working backward starts with the exact result you want and asks which condition would make the previous moment possible. Continue toward something you already know or can do, then read the chain forward. A distant goal becomes smaller requirements and may reveal a missing step. This searches for a route, not a proof. A necessary condition must be present, but may still be insufficient, so check every forward link.
+**Description:** Start from the exact result you want and ask: what must be ready just before it? Then ask the same about that step, and keep going back until you reach something you already know or can do today. A distant goal breaks into small requirements, and gaps in the plan show up. Finally read the chain forward from the start and check every link, because something you need is not always enough on its own.
 
-**Example:** You must submit a science poster Friday. Uploading requires an exported file; that requires text and images to fit; layout requires a draft and sources; submission requires teacher feedback. Your first list had no feedback time, so schedule draft Tuesday, layout Wednesday, feedback Thursday, upload Friday. The backward chain exposed the gap; checking forward keeps a draft from being mistaken for the finished poster.
+**Example:** You must hand in a science poster on Friday, and today is Monday. Work backward: handing in needs the finished poster, the poster needs its layout, and the layout needs a draft and sources, which you can start on now. Then a gap shows up: the teacher must see the poster before the hand-in, and the plan has no day for it. So plan from the end: teacher feedback Thursday, layout Wednesday, draft Tuesday, sources Monday. Last, read the plan forward: sources feed the draft, the draft feeds the layout, the layout goes to the teacher, and the feedback gives the final poster.
 
 **Useful for:** Planning, finding missing prerequisites, solving equations, and constructing proofs.
 
@@ -52,9 +52,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 2. Reuse the structure of a solved problem
 
-**Description:** An analogy is a comparison between situations that share important relationships. Instead of matching topics or copying an answer, identify what depends on what, what is limited, and what counts as success. Map those roles from a solved problem to the new one, then test differences that could break the match. The method can suggest a useful route when the subject feels unfamiliar, but surface resemblance alone is weak evidence. The relationships matter, not the decoration.
+**Description:** An analogy: the new problem works like one you have already solved – a different story, the same relationships. Do not copy the answer or match only the topic. Find what depends on what, what is limited and what you want. Match each part of the solved problem to a part of the new one, then reuse the method, because the same relationships make the same method work. Before you trust the match, check the differences that could break it.
 
-**Example:** A board-game level requires keys before doors open. Use that structure to plan a group presentation: keys become sources, doors slides, and the final gate rehearsal. Several people can gather sources at once, so adjust the analogy instead of copying game moves. The map shows that a missing source blocks a slide, while parallel research saves time. The dependency pattern helped; the game’s theme did not.
+**Example:** You have already solved this: tap A fills a pool in 3 hours and tap B in 6 hours. Together they need 2 hours, because in one hour A fills 1/3 of the pool and B 1/6, which is 1/2 together. New problem: Ola paints a fence in 3 hours and Kuba in 6. The story differs, the structure is the same: each painter is a tap, the fence is the pool, and the rates add up. So 1/3 + 1/6 = 1/2 of the fence per hour, which is 2 hours. One difference must be checked: this works only if they paint at the same time without getting in each other's way, for example with two brushes.
 
 **Useful for:** Unfamiliar problems, design, troubleshooting, and learning a new subject.
 
@@ -71,9 +71,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 3. Break the problem into parts
 
-**Description:** Break a large problem into smaller tasks with clear outputs, then combine those outputs and check the connections. Mark dependencies, meaning tasks that cannot start until another result exists. This reduces overload and makes work shareable, but it does not stop parts affecting one another: good pieces can clash when joined. The final check must still test the original goal and all constraints.
+**Description:** When a problem is too big to grasp at once, split it into smaller tasks and write down what each one should produce. Note which task must wait for another result: you cannot book a room before you have permission. Small tasks are easier to start and easy to share between people. Then join the results and check the connections, because parts that work alone can clash together. The final check must test the original goal and all the conditions.
 
-**Example:** Planning a class film night feels like one huge job. Split it into permission and room, film choice, snacks, timing, and publicity. Permission comes before booking, and the film length sets the finish time. Two students choose snacks separately, but their lists exceed the budget, so the class combines them and removes one item. Dividing the work makes ownership clear; reconnecting the pieces catches the budget and timing conflicts.
+**Example:** A class wants a film night, which looks like one huge job. Split it into five parts: permission, room, film, snacks, announcement. Mark what must wait: the room comes after permission, and the announcement needs the film and the room. One student plans the drinks and another the food, each list costing 6 euros; the class budget is 10 euros. Joined, the lists cost 12 euros, so the class drops one 2-euro item and gets exactly 10. Splitting shows who does what; only checking the whole catches the budget.
 
 **Useful for:** Projects, complex calculations, system design, and multi-stage investigations.
 
@@ -92,7 +92,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 **Description:** Controlled trial and error means each attempt is a small experiment: choose a plausible candidate, predict an outcome, test it safely, and record what the result teaches you. Change one relevant feature when possible, so you can connect cause and effect. A failed attempt is useful when it rules out an option; repeating random guesses is not. Use this only where the cost and risk are limited.
 
-**Example:** Your team predicts that folded strips will strengthen a paper bridge. Build the same 20-centimeter bridge with three strips, then five, changing only their number. Add identical books one by one until each version collapses: three strips hold four books, while five hold eight. Capacity is the measured outcome, not a guess. The second test supports using more strips, but it does not prove that every bridge needs five.
+**Example:** Your team predicts that folded paper strips make a paper bridge stronger. You build two identical 20-centimeter bridges, one with three strips and one with five, so the number of strips is the only difference. Then you add identical books one by one until each bridge collapses: three strips hold four books, five strips hold eight. Since nothing else changed, the extra books most likely come from the strips. The prediction held in this test, because you counted the books. It does not prove that every bridge needs five strips.
 
 **Useful for:** Troubleshooting, prototypes, and small searches where tests are cheap and safe.
 
@@ -111,7 +111,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 **Description:** Start with any solution that meets the hard requirements, then improve it through nearby changes, such as swapping two items. Keep changes that improve the chosen score. If small changes stop helping, you may be at a local optimum, meaning nothing nearby is better, so save the best version and restart or make a larger change. This search can find a better answer without proving it is the best possible one.
 
-**Example:** Your group has a valid study schedule for five subjects, but three tests land on one evening. Swapping two blocks improves the score by giving each test review time. After three swaps, nearby versions are worse. Save it and rebuild from another subject order. The second plan spreads review sessions around the fixed tests; deadlines and subjects stay fixed. One score prevents choosing a prettier but weaker plan.
+**Example:** A class has five evenings, Monday to Friday, to study five subjects, one subject per evening. The tests are fixed: Maths on Wednesday, Physics on Thursday, Biology on Friday. A plan scores one point for each test whose subject is studied the evening before. Start with Maths, Physics, History, Biology, Geography: only Biology fits, score 1. Swapping Monday and Tuesday puts Maths on Tuesday: score 2. Now every swap of neighbouring evenings gives only 1 (only a bigger change, such as swapping Monday with Wednesday, would help): a local optimum. Restart from History, Geography, Maths, Physics, Biology (score 0). Three swaps give History, Maths, Physics, Biology, Geography: score 3, the maximum possible, since there are only three tests.
 
 **Useful for:** Schedules, layouts, routes, resource allocation, and designs with many possible answers.
 
@@ -130,7 +130,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 **Description:** An order-of-magnitude estimate asks roughly how large a result is before you spend time on exact arithmetic. Round uncertain inputs, keep units, state assumptions, and use a low and high case to create a range. This catches a misplaced zero or an unrealistic plan early. It is a reality check, not an exact answer, guarantee, or fixed price; use a rigorous calculation when the decision needs one.
 
-**Example:** Your class wants to raise 100 euros by selling snacks. A quick estimate uses 20 students, 3 items each, and 2 euros per item: 20 × 3 × 2 = 120 euros. If some sell only 2 and others sell 4, a rough range is 80 to 160 euros. The range shows the target is plausible, while exact costs and unsold snacks still need checking.
+**Example:** Your class wants to raise 100 euros by selling snacks. A quick estimate: 20 students, 3 snacks each, 2 euros per snack, so 20 × 3 × 2 = 120 euros. Some students will sell only 2 snacks and others 4, which gives 20 × 2 × 2 = 80 euros at the low end and 20 × 4 × 2 = 160 euros at the high end. The range from 80 to 160 contains 100, so the goal is realistic. If an exact calculation later gave 1200 euros, the estimate would show at once that an extra zero slipped in. Costs and unsold snacks still need checking.
 
 **Useful for:** Early planning, quick feasibility checks, and catching implausible calculations.
 
@@ -147,9 +147,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 7. Estimate from parts and comparable cases
 
-**Description:** Estimate a task in two ways. First split it into non-overlapping pieces and use a comparable rate, such as minutes per edited clip. Add shared work like coordination and uploading. Then compare the total with a similar whole task. A mismatch is a clue to investigate, not an error to hide. Remember that effort, the amount of work, differs from elapsed time, the calendar time from start to finish, when people work in parallel.
+**Description:** Estimate a task in two ways, then compare. First split it into pieces that do not overlap and price each piece from similar past work, such as minutes per edited clip. Add work that belongs to the whole, like a shared introduction. Then compare the total with how long a similar whole task took; if they differ, look for the reason. Two routes that agree make it more trustworthy. Also keep two numbers apart: effort is everyone's working time added up, while elapsed time runs from start to finish and is shorter when people work in parallel.
 
-**Example:** A class podcast has four interviews. Earlier edits averaged 15 minutes each, so editing is about 4 × 15 = 60 minutes. Add 30 minutes for the shared introduction and upload: 90 minutes of effort. Two students can edit in parallel, so elapsed time may be closer to 60 minutes. If the last whole podcast took 2 hours, compare the difference and update the rate after this episode.
+**Example:** A class podcast has four interviews, and you estimate the editing. One interview took 15 minutes to edit before, so 4 × 15 = 60 minutes. Add 30 minutes for the shared introduction and upload: 90 minutes of effort. Two students each edit two interviews (30 minutes), then one of them adds the introduction and uploads (30 minutes), so the clock shows 30 + 30 = 60 minutes. The last podcast, also with four interviews, took 120 minutes of effort. The 30-minute gap has a reason: back then the teacher also asked for corrections, and this time there is no such step. So 90 minutes looks believable. After finishing, write down the real time and fix the 15-minute rate.
 
 **Useful for:** Effort, capacity, quantity, and cost estimates where relevant past data exist.
 
@@ -166,9 +166,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 8. Check whether a mental shortcut is misleading you
 
-**Description:** Treat your first judgment as a hypothesis, not a verdict. Availability is the pull of an example that is easy to remember; representativeness is judging by resemblance; anchoring is being pulled toward the first number. Ask which shortcut is operating, seek comparable data and evidence against your first idea, then make a second estimate by another route. Compare both and state what remains uncertain.
+**Description:** Your first answer may come from a mental shortcut. The most common one is availability: what is easy to remember feels more frequent than it is, like two late buses you just waited for. Others are judging by resemblance and clinging to the first number you heard. So treat the first answer as a guess to test. Ask which shortcut may be behind it, look for data about similar cases, including data against your guess, and estimate the same thing by another route. Compare both answers and say what you still do not know.
 
-**Example:** After two late buses, you predict half of your next ten trips will be late. The vivid delays make risk feel larger. Ten earlier trips include two late ones, so 20 percent fits that small sample better than 50. Weather could change the result, so keep uncertainty instead of declaring buses reliable. The check corrected an impression without proving the future.
+**Example:** Your school bus was late two times in a row, so you guess that half of the next ten trips, 5, will be late. Those two delays are easy to remember because they were annoying: that is availability. Second route: your notes on the last ten trips show only 2 late ones, the same two you remember. That is 20 percent, a better fit than 50. Ten trips is a small sample and rain could change the result, so you do not say ‘the bus is punctual’ but ‘about 2 trips in 10 are late, not certain’. The check corrected an impression without predicting the future.
 
 **Useful for:** Uncertain judgments, interpreting evidence, and reviewing estimates.
 
@@ -185,9 +185,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 9. Temporarily remove a difficult constraint
 
-**Description:** Constraint relaxation means temporarily solving an easier version of the same problem by removing or weakening one rule. Keep the goal, inspect what the relaxed answer violates, and restore the original rules before delivering anything. This can reveal a hidden bottleneck or a useful bound. It is a model for thinking, not permission to ignore real safety, legal, or accessibility requirements.
+**Description:** Pick one rule that makes the task hard and, on a draft only, pretend it does not exist. For a duty rota that could be ‘nobody two days in a row’. Now the task is easy, so you get a complete draft quickly. Then check the draft against the dropped rule: the places that break it show where the real difficulty is. Restore the rule and repair only those places. Sometimes the draft also shows how good an answer could be at best (see heuristic 11). Safety, legal and accessibility rules are never dropped from the final result.
 
-**Example:** Your group must finish a video, but everyone must attend every work session. Temporarily remove that rule in a planning sheet: two pairs edit scenes, then meet for a 20-minute recording. This reveals shared editing as the bottleneck. Restore the original rule and redesign around one longer session with everyone present; the relaxed version was only a clue. If a teacher changes requirements, record that separately. Safety and permissions were never relaxed.
+**Example:** A class needs a duty rota for Monday to Friday: 2 students per day, each of five students (A–E) on duty exactly twice, and nobody two days in a row. All three rules together are hard to juggle. Drop the last one for a moment and fill the table at once: Mon A B, Tue A C, Wed D E, Thu E B, Fri C D. Now check the dropped rule: A works Mon and Tue, E works Wed and Thu. Only two students are the problem. Swap A on Tuesday with E on Wednesday: Tue E C, Wed D A. Check again: every rule holds, and the draft only showed where the trouble was.
 
 **Useful for:** Overconstrained plans, allocation, scheduling, and optimization.
 
@@ -204,9 +204,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 10. Allow fractions first, then restore whole choices
 
-**Description:** Continuous relaxation temporarily lets whole or yes/no choices take fractional values, while keeping the other limits and goal. The easier calculation can show which choices matter and give a bound or target. Fractions are only clues: rounding may break capacity, budget, or exact totals, and a nearby whole-number solution may not exist. Finish by testing actual whole choices against every original rule.
+**Description:** Some choices cannot be split: a booth is built whole or not at all, a bus is hired whole, a person is not assigned by halves. With several such choices you would have to test many combinations. So pretend for a moment that splitting is allowed: half a booth takes half the time and earns half the points. Then you only take, one by one, whatever pays most per hour, and the result shows the most you could possibly get (the ceiling). Finally return to whole choices and test real combinations, because a rounded fraction can break the limit.
 
-**Example:** With 6 hours, booths A, B, C need 4, 3, 2 hours and earn 8, 6, 3 points; each is all-or-nothing. Keeping 0 ≤ A, B, C ≤ 1, relaxation chooses A = 1 and B = 2/3: 6 hours, 12 points. Rounding B up needs 7 hours and fails. Whole choices give A + C: 6 hours, 11 points, valid.
+**Example:** The student council has 6 hours to prepare booths for the school fair and wants most points. Booth A takes 4 hours and earns 8 points, B 3 hours and 6 points, C 2 hours and 3 points. Booths cannot be halved, but pretend they can: A and B earn 2 points per hour, C only 1.5. Take all of A and 2/3 of B for the last 2 hours (4 points): 12. Every real plan is also allowed in the pretend version, where 12 is the maximum, so none beats it. Whole booths: A + B needs 7 hours, too many; A + C fits in 6 hours for 11 points, beating B + C (9) and A (8).
 
 **Useful for:** Selecting items, assigning resources, and planning quantities that must eventually be whole numbers.
 
@@ -223,9 +223,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 11. Use bounds to judge how much improvement is possible
 
-**Description:** A bound is a limit that the true answer cannot cross. When seeking the smallest result, a relaxed problem can give a lower bound and a valid solution an upper bound; when seeking the largest, reverse them. If the two values match, you have proved the answer is best possible. If they differ, the gap tells you how much uncertainty remains. The bound must be justified, not guessed from an approximate calculation.
+**Description:** A bound is a value beyond which the best answer cannot lie. Looking for the shortest route, drop a rule, for example ‘stay on the streets’, and solve that task. Every real route is allowed there too, so its best answer is shorter or equal: a lower bound. A real route you find shows the best is at most that long: an upper bound. The best answer lies between them, and the gap shows how much more you can gain. If they meet, it is proved best. For the biggest result, swap roles. Every bound must be justified, not guessed.
 
-**Example:** Find the shortest route between three school stops. Ignoring one difficult rule, the relaxed problem’s shortest route is 8 minutes, so no route obeying every rule can be shorter. A valid route takes 10 minutes. The best is between 8 and 10, leaving a 2-minute gap; do not claim 8 is achievable. If a valid 8-minute route appears, matching bounds prove optimality.
+**Example:** You cycle from home to school and look for the shortest route along the streets. Drop the street rule: in a straight line the distance is 8 km. Every street route is also allowed in that easier version, so none can be shorter: 8 km is a lower bound. You find a street route of 10 km, so the best one is at most 10 km. The best street route lies between 8 and 10 km, and further searching can save at most 2 km. Later you find a 9 km route: the range shrinks to 8–9 km. A street route of exactly 8 km would prove itself best at once; otherwise you need a better lower bound.
 
 **Useful for:** Optimization, feasibility checks, and deciding whether further search is worthwhile.
 
@@ -242,9 +242,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 12. Put an explicit cost on a trade-off
 
-**Description:** A trade-off appears when improving one preference worsens another. Separate hard constraints, which may not be broken, from soft targets that can be exchanged. Give each soft violation a measurable penalty and weight, combine those costs with the normal score, and see how changing weights changes the choice. The numbers organize a decision; arbitrary penalties do not prove that the result is mathematically best.
+**Description:** Sometimes you cannot satisfy every wish at once: improving one result makes another worse. First split the requirements into hard rules that may never be broken and soft wishes that you may trade. Then give each soft wish a price: some penalty points for each unit of failure. Penalty points put different losses on one scale, so you can add them up and compare plans. Try other prices to see whether the choice changes. The numbers only organize the decision; they do not prove the winner is mathematically best.
 
-**Example:** Your team chooses a rehearsal time. Room and Friday upload are hard constraints. Attendance is soft: charge 5 points per absent member and 1 point per 15 minutes late. Plan A includes everyone but ends 45 minutes late, costing 3. Plan B ends on time but misses one member, costing 5. A wins under these weights. If attendance matters more, raise its penalty; it never excuses missing the room or deadline.
+**Example:** A school band must pick a rehearsal plan. Two rules are hard: the room is booked and the recording is uploaded on Friday. Two wishes are soft and get prices: 5 penalty points for each absent member and 1 point for each 15 minutes the rehearsal runs past its planned 18:00 end. Plan A waits until everyone arrives and ends at 18:45: 3 × 1 = 3 points. Plan B starts on time without one member and ends at 18:00: 1 × 5 = 5 points. A wins, 3 to 5. If an absence cost only 2 points, B would win with 2, so state the prices openly. No price lets you skip the room or the Friday upload.
 
 **Useful for:** Balancing preferences in schedules, resource use, and designs.
 
@@ -261,9 +261,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 13. Add missing restrictions as failures reveal them
 
-**Description:** Add restrictions gradually when a candidate fails. A new restriction, sometimes called a cut, should describe the failure generally and exclude that invalid pattern while preserving every valid answer. Re-solve and repeat. This keeps a large model manageable, but a rule based only on taste can remove a legitimate solution. The process may end with a valid candidate or show that no candidate survives.
+**Description:** Start with a simplified version of the problem that has only the basic rules, and find any answer to it. Test that answer against the real situation. When it fails, work out why and add one general rule that rules out this kind of mistake, not just this one answer. Such a rule is called a cut, because it cuts off bad candidates. Then look for a new answer and repeat. Each rule must follow from the task and keep every valid answer; a rule based on taste can throw away a good solution.
 
-**Example:** A simplified timetable lets one student attend two meetings at once. Add a rule: no student occupies overlapping sessions. A later candidate puts a recorder in a room without an outlet, though the assignment requires wall-powered equipment; require an outlet for every recording. Check each rule comes from the assignment, not personal taste. The cut removes invalid schedules while preserving valid ones; another solve gives a workable timetable.
+**Example:** A school has three clubs (robotics, chess, choir) and two rooms, the lab and the hall, each free at 15:00 and 16:00. Basic rule: every club gets a room and a time, and no room is booked twice at once. The first draft puts robotics and chess at 15:00, but one student attends both. New general rule: clubs sharing a member never meet together. The next draft puts robotics in the hall, which has no sockets for the robots. New rule: robotics only in the lab. Both rules come from the facts, so no valid timetable is lost. The third draft passes: robotics in the lab and choir in the hall at 15:00, chess in the hall at 16:00.
 
 **Useful for:** Complex planning models, configuration, and searches with many constraints.
 
@@ -280,9 +280,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 14. Commit in stages while keeping later choices flexible
 
-**Description:** This method means deciding a long plan one block at a time instead of fixing every detail immediately. Settle the first stage, sketch what comes later, and check that enough time, space, or materials remain. A block is a group of related decisions, while feasibility means the remaining work still fits the rules. If a later stage becomes impossible, change an earlier choice. Early choices can trap you, and the method does not guarantee the best plan.
+**Description:** Decide a long plan one block at a time instead of fixing every detail at once. A block is a group of related decisions, such as decorations, games or cleanup. Settle the first block in detail, sketch the later ones roughly, and check that enough time, space and materials remain for them. If a later block no longer fits, go back and change an earlier choice. Early choices can trap you, and the method does not guarantee the best plan.
 
-**Example:** For example, Maja has four hours for a school fair: setup, games, and cleanup. Decorations take 2.5 hours; later blocks need 1.25 hours and 1 hour, so 4.75 hours cannot fit. She backtracks, chooses decorations taking 1.5 hours, and leaves 1.5 hours for games plus 1 hour for cleanup. The revised schedule uses all four hours and remains feasible.
+**Example:** Maja has the school hall for 4 hours to decorate it for the fair, run the games and clean up. She decides one stage (block) at a time. First she picks the decorations: the rich set takes 2.5 hours. For the later stages she only sketches rough times: games 1.5 hours, cleanup 1 hour. She checks: 2.5 + 1.5 + 1 = 5 hours, one more than she has. So she goes back to the first choice: simple decorations take 1.5 hours, and 1.5 + 1.5 + 1 = 4 hours fits exactly. Without that check she would have found the problem only during the fair.
 
 **Useful for:** Multi-stage schedules and plans too large to settle in full at once.
 
@@ -299,9 +299,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 15. Alternate the big plan with detailed feasibility checks
 
-**Description:** A high-level plan chooses the direction, while a detailed check tests whether actual tasks, time, people, and cost fit. Alternate between them: propose a strategy, work out a concrete version, turn failures into specific feedback, and revise. Feedback means information from the details that changes the bigger plan, not a vague feeling. This helps when a clever idea fails during execution. Matching the two levels still does not prove success.
+**Description:** A big plan sets the direction, but it can look fine until you work out the details. So go back and forth: propose a plan, then check the real tasks, time, people and cost it needs. If something does not fit, name the exact part that causes it and use that fact to change the plan. Such feedback is a specific fact from the details, not a vague feeling that it will not work. Repeat until both levels agree. Agreement still does not guarantee success, so check the whole at the end.
 
-**Example:** For example, four students plan a science video no longer than six minutes: a 1-minute introduction, 3-minute live experiment, and 2-minute conclusion. The lab is available for 20 minutes, but setup takes 12 and filming 15, so the experiment needs 27. They revise the big plan to a prepared 30-second demonstration, already assembled before booking, filmed in 5 minutes. Recording the other sections takes 14 minutes, so filming uses 19 minutes.
+**Example:** Four students plan a science video. The big plan: film the whole experiment live in the school lab, which they have for only 20 minutes. Detail check: setting up the experiment takes 12 minutes and filming it 10, so 12 + 10 = 22 minutes, 2 more than they have. The feedback is specific: the setup does not fit in the lab. They revise the big plan: assemble the experiment at home and only plug it in at school, which takes 4 minutes. New check: 4 + 10 = 14 minutes, so 6 minutes remain for a retake. Plan and details now agree.
 
 **Useful for:** Location choices, staffing plans, system design, and other decisions with a strategic layer and an operational layer.
 
@@ -320,7 +320,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 **Description:** A small instance is a reduced version of the same problem: fewer objects, smaller numbers, or simpler rules, while keeping the relationship you want to understand. Solve it, compare it with a slightly larger case, and look for steps that stay the same. This gives a foothold when the original feels tangled. It suggests a reusable method, not proof for every size; restore the original size and check the actual rules.
 
-**Example:** For example, in a tournament where every player meets every other once, start small. Two players create 1 game, three create 3, and four create 6. Each new player adds one game against every earlier player, so 20 players create 1 + 2 + ... + 19 = 190 games. The small cases revealed the repeated step, but would not prove a different tournament rule.
+**Example:** A tournament has 20 players, and every player meets every other player exactly once. How many games is that? Start small: two players play 1 game, three play 3, four play 6. What repeats: each new player plays one game against every player already there, so going from 3 players to 4 adds 3 games. With 20 players the last newcomer adds 19, so the total is 1 + 2 + … + 19, all whole numbers from 1 to 19 added up: 190 games. The small cases found the pattern and the newcomer idea explains it. It holds only while every pair plays once; with other tournament rules, check again.
 
 **Useful for:** Unfamiliar rules, counting, learning, prototypes, and finding a first foothold.
 
@@ -337,9 +337,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 17. Clarify the problem and challenge hidden assumptions
 
-**Description:** Turn a vague difficulty into a question with a clear goal, known facts, and real constraints. Separate facts from assumptions: a fact is given or checked; an assumption is treated as true without checking. This prevents solving a precise version of the wrong question. Ask what counts as success, what information is missing, and whether a rule is real or merely customary. Review the framing after solving.
+**Description:** Before solving, make the question exact. Write down the goal, meaning what you will accept as success, the facts you are given, and the limits that really apply. List your assumptions separately: things you treat as true without checking. Ask whether a rule is real or only a habit. This matters because a perfect solution to a slightly different question helps nobody. After solving, return to the question and check that your answer is about the one that was asked.
 
-**Example:** For example, a class asks, ‘Can everyone reach the museum by 9:00?’ Clarify ‘everyone’ as 28 students plus 2 teachers. A bus leaves at 8:10, takes 35 minutes, and has 30 seats. The school requires a seat for each person, so the group fits exactly and arrives at 8:45. If only 28 seats can be used, two people lack seats and another route is needed. Naming the seat rule prevents an answer to the wrong question.
+**Example:** A class asks: ‘Can everyone get to the museum by 9:00?’ First decide who ‘everyone’ is: 28 students and 2 teachers, 30 people. The bus leaves at 8:10 and drives for 35 minutes, so it arrives at 8:45, in time. The school rule is one seat for every person, and this bus has only 28 seats. It is easy to assume silently that two people can stand and answer ‘yes’. Check that assumption against the rule: it fails, so 2 people have no seat and the answer is ‘no’, even though the time is fine. The class needs a bigger bus or a second one. Naming the assumption showed which question you were really answering.
 
 **Useful for:** Almost any problem, especially disagreements about what needs solving.
 
@@ -356,9 +356,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 18. Change the representation
 
-**Description:** Change the representation by describing the same problem as a picture, table, equation, physical model, or new variables. A good representation makes a hidden relationship easier to see. Label quantities and carry every condition across, or you may change the problem silently. This helps with dense word problems and tangled dependencies. An exact transformation preserves the question, but an approximation needs a separate check. A sketch suggests an answer, not proof.
+**Description:** Describe the same problem in another form: a picture, a table, an equation, or a model made of objects. The new form should make a hidden relationship easier to see, for example when letters stand for unknown numbers. Label every quantity and carry over every condition from the text, which means each fact in the words must appear in the new form, otherwise you end up solving a different problem. A sketch suggests an answer but does not prove it.
 
-**Example:** For example, the words say that a rectangle has perimeter 26 cm and length 3 cm more than its width. Let the width be w and the length w + 3. The equation 2w + 2(w + 3) = 26 becomes 4w + 6 = 26, so w = 5 and the length is 8. Checking gives 2 × 5 + 2 × 8 = 26. Replacing words with variables exposed the relationship without changing the conditions.
+**Example:** A rectangle has a perimeter of 26 cm, and its length is 3 cm more than its width. In words this is hard to hold in your head, so draw the rectangle and label the width w and the length w + 3. The perimeter is two widths and two lengths: 2w + 2(w + 3) = 26, which simplifies to 4w + 6 = 26. Then 4w = 20, so w = 5 and the length is 8. Check: 2 × 5 + 2 × 8 = 26, and 8 is 3 more than 5. The picture and the letters turned the words into an equation without dropping either condition.
 
 **Useful for:** Dense verbal problems, awkward algebra, spatial relationships, and tangled dependencies.
 
@@ -375,9 +375,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 19. Check units and extreme cases
 
-**Description:** Attach units to measured quantities and test simple boundary cases before trusting a formula. Units identify the kind of result: distance divided by time gives speed, not time per distance. Boundary cases include zero, one, equal values, and allowed minimum or maximum values. They can reveal a reversed operation or a model’s limits, although passing them does not prove correctness. Never divide by a forbidden input, such as zero time.
+**Description:** Write the unit next to every measured quantity and try simple extreme cases before you trust a formula. Units tell you what kind of result you get: distance divided by time gives speed, while time divided by distance gives hours per kilometre. Simple cases are zero, one, equal values, and the smallest or largest allowed input. They can expose a reversed operation or a limit of the model, but passing them does not prove the formula right. Never feed in forbidden input, such as dividing by zero hours.
 
-**Example:** For example, a cyclist travels 18 km in 1.5 hours, so speed is 18 ÷ 1.5 = 12 km/h. Reversing the division gives 0.083 hours per kilometre, exposing the mistake. Testing 0 km gives 0 km/h; testing 36 km in 1.5 hours gives 24 km/h. Zero hours is forbidden because division by zero is undefined.
+**Example:** A cyclist rides 18 km in 1.5 hours, and you want the speed. It is easy to divide the wrong way and compute 1.5 ÷ 18, which is about 0.083. Write the units: hours divided by kilometres is hours per kilometre, not speed, so the division is reversed. The right calculation is 18 ÷ 1.5 = 12 km/h. Now try extremes: 0 km in 1.5 hours gives 0 km/h, as it should: no distance, no speed. And 36 km, twice as far, in the same time gives 24 km/h, twice as fast, as it should. Zero hours is not tested, because division by zero is not defined.
 
 **Useful for:** Formulas, estimates, models, and catching errors before detailed calculation.
 
@@ -394,9 +394,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 20. Use symmetry to avoid repeated work
 
-**Description:** Use symmetry when swapping, rotating, reflecting, or relabeling parts leaves every rule and the goal unchanged. Group genuinely equivalent cases, solve one representative, and transfer the result. This avoids repeated work in geometry, counting, arrangements, and games with interchangeable pieces. Check the rules first: a labelled seat, different colour, or special player can destroy apparent symmetry. A symmetric picture does not guarantee a symmetric solution.
+**Description:** Look for symmetry: a change that breaks no rule and does not change the goal, such as moving everyone along by one seat, swapping two identical pieces, or renaming things. If different cases become the same after such a change, count or solve only one of them and copy the result to the rest. First check the rules: a marked seat, a different colour or a special player can destroy the symmetry.
 
-**Example:** For example, four named players sit around an unlabelled circular table, and the clockwise order matters, so a reflection is different. Rotating everyone gives the same arrangement; fix Ania and arrange the other three clockwise: 3 × 2 × 1 = 6. If one chair is labelled ‘near the door’, rotations differ too. Any player can occupy it, with 3! arrangements left, giving 4 × 6 = 24. The rules, not the circle’s appearance, decide the real symmetry.
+**Example:** Four friends, Ania, Bartek, Celina and Darek, sit at a round table with no marked seats. An arrangement is the clockwise order of people around the table, so when everybody moves one seat clockwise, nothing has changed. There are 4 such moves, so counting all 4 × 3 × 2 × 1 = 24 seatings counts every arrangement 4 times. Instead, put Ania in any seat, which removes the moving, and place the other three in 3 × 2 × 1 = 6 ways. Check: 24 ÷ 4 = 6. If one chair were marked ‘by the door’, moving everyone would change who sits there, so all 24 seatings would be different.
 
 **Useful for:** Geometry, counting, arrangements, and optimization with interchangeable elements.
 
@@ -413,9 +413,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 21. Compare choices through outcomes and trade-offs
 
-**Description:** List each feasible choice, its outcomes, costs, and opportunities you give up. An outcome is a possible result, a trade-off is a gain paired with giving up something else, and probability is a justified estimate of how often a result may occur. Use probability-weighted averages only with evidence; an unknown chance is not automatically 50 percent. Compare downside outcomes too, and keep value judgments visible instead of hiding them in one score.
+**Description:** For each choice, write down what you may gain, what you may lose, and what you give up. If the result is uncertain, list the possible outcomes. Give an outcome a probability, a justified estimate of how often it happens, only when you have evidence: not knowing is not the same as 50 percent. With probabilities you can compute an expected score, the average result if the choice were repeated many times. Also check the worst outcome, because a single average hides it.
 
-**Example:** For example, Rita compares study plans. Plan A takes two hours; from four similar quizzes she estimates 75% for 80 points and 25% for 60. Its rough expected score is 0.75 × 80 + 0.25 × 60 = 75. Plan B takes one hour, but its chance is unknown, not 50%. She may test it, but cannot calculate an average from a made-up probability. If 60 is unacceptable, the average alone is not enough.
+**Example:** Rita must choose between two ways of studying for a test. Plan A takes two hours. In four similar quizzes after studying this way she scored 80 points three times and 60 once, so she estimates 75% for 80 points and 25% for 60. Her expected score, the average over many repeats, is 0.75 × 80 + 0.25 × 60 = 75 points. Plan B takes one hour, but she has no quizzes to judge it, so its chance is unknown, not 50%. She could try it, but she cannot compute an average from an invented probability. And if 60 points is too low for her because it would not pass, the average of 75 does not settle the choice.
 
 **Useful for:** Decisions with uncertainty, competing objectives, or several plausible options.
 
@@ -432,9 +432,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 22. Map interactions and incentives
 
-**Description:** Map a problem as a system, not isolated parts. Draw participants as nodes, then connect dependencies and influences with arrows. Look for a bottleneck, the point limiting the process, feedback loops, and incentives. An incentive is a reason making someone more likely to choose an action. This helps predict side effects. The map is a model, not proof of causation, so test a limited change and check the whole result.
+**Description:** Draw the problem as a map: people or parts as dots, and arrows for who passes work or influence to whom. On the map look for the bottleneck, the spot that limits the speed of the whole process, and for incentives, the rewards that make people choose a certain action. Such a map helps predict side effects of a change. It shows connections, not causes, so try a small change first and check the result as a whole.
 
-**Example:** For example, four students send slides to one editor. The teacher awards one point per slide, so students add more; the editor becomes a bottleneck and gets 18 repeated slides late. They map students, slides, editing, and deadline, then ask the teacher to approve a pilot: grade one coherent deck and cap students at three slides. The teacher agrees. They finish 12 non-repeated slides on time. This pilot suggests the rule helped, but cannot prove it caused all improvements.
+**Example:** Four students each send 4 or 5 slides to one classmate, the editor, who assembles the presentation before the deadline. The teacher gives one point per slide, so everyone sends more and more. The editor gets 18 slides late, many repeating the same content, and cannot finish. The map shows why: the point per slide is the incentive that floods the editor, the bottleneck. The students ask the teacher for a trial: grade the whole presentation and allow at most 3 slides per student. Now 4 × 3 = 12 slides arrive without repeats and the editor finishes on time. One trial suggests the rule helped, but does not prove it caused every improvement.
 
 **Useful for:** Organizational problems, process bottlenecks, coordination, and changes with side effects.
 
@@ -451,9 +451,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 23. Experiment, find a pattern, then explain it
 
-**Description:** Use several small experiments to discover a possible pattern, then find why it should hold. A pattern is a repeated relationship; a proof explains why it must continue under the stated rules. Record examples consistently, test an awkward case, and state the suspected range. Different rules can match the first few results, so examples support a conjecture but do not establish a universal claim. If a test fails, refine the rule.
+**Description:** Run a few small experiments to discover a possible pattern, then find the reason it should hold. A pattern is a repeated relationship; a proof explains why it must hold under the given rules. Record examples in a consistent way. The first few results fit many different rules, so examples suggest a rule but do not prove it always works. If a test fails, fix the rule instead of hiding the exception.
 
-**Example:** For example, a row of connected square tiles uses 4 sticks for one square, 7 for two, and 10 for three. The differences suggest adding 3, so eight squares should use 4 + 7 × 3 = 25 sticks. Structurally, each new square shares one side and adds three sticks. That explains any straight row. The numbers alone could fit another rule, so the pattern was not proof.
+**Example:** Squares are made from matchsticks and placed in a row so that neighbors share a side. One square needs 4 matchsticks, two need 7, three need 10. Each time 3 more are added, so eight squares should need 4 + 7 × 3 (the first square plus 7 more) = 25 matchsticks. Why? A new square already shares one side with the previous one, so only three matchsticks are added. That explains any straight row. The numbers 4, 7 and 10 alone would not be proof, because other rules fit them too.
 
 **Useful for:** Sequences, repeated processes, counting, and exploring unfamiliar systems.
 
@@ -470,9 +470,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 24. Test the opposite and search for a counterexample
 
-**Description:** Separate assumptions from the exact conclusion, then test its opposite. A contradiction occurs when the assumptions plus the negated conclusion force something impossible. A counterexample is one valid case satisfying the assumptions but breaking the conclusion. Use contradiction to support a universal claim and a counterexample to reject or narrow one. Not finding a counterexample proves nothing; in empirical work, conflict may reveal a bad model.
+**Description:** To check a claim, try to break it. If you suspect it is false, look for a counterexample: one case that meets the starting conditions but not the conclusion. One is enough to reject the claim. If you suspect it is true, assume the opposite and follow the consequences. If they lead to something impossible, the opposite is out and the claim stays (this is a proof by contradiction). Not finding a counterexample after a few tries proves nothing.
 
-**Example:** For example, claim: ‘Every multiple of 4 is even.’ If a number were both a multiple of 4 and odd, it would be divisible by 2 and leave remainder 1, impossible; the claim survives for whole numbers. Claim: ‘Every number ending in 5 is prime.’ Counterexample 15 ends in 5 but is divisible by 3 and 5. This valid case does not create a contradiction; it breaks the conclusion.
+**Example:** Claim 1: ‘Every number ending in 5 is prime.’ The example 5 fits, but one example proves nothing, so look for a case that breaks it. The number 15 ends in 5 and 15 = 3 × 5, so it is not prime. One counterexample is enough to reject the claim. Claim 2: ‘There is no largest whole number.’ Assume the opposite: there is a largest one, N. But N + 1 is also a whole number, and it is larger than N. A largest number that is not the largest is impossible, so the opposite fails and the claim stays.
 
 **Useful for:** Proofs, reviewing universal claims, and exposing faulty rules.
 
@@ -489,9 +489,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 25. Focus on an extreme element
 
-**Description:** Choose an actual smallest, largest, first, last, or most constrained object. Its extreme position rules out possibilities that an arbitrary object would allow. In a finite set, check that the extreme exists, then ask whether a proposed arrangement forces something even smaller or larger. This can turn a complicated existence argument into a short contradiction. It is not substituting a huge value or approaching a limit; use an object really present.
+**Description:** Pick an extreme member of the group: the tallest person, the smallest number, the first or last step. A member at the end of the scale cannot have things that an ordinary member could have, so one look at it can replace checking everyone. First make sure it exists (a finite group always has a tallest). Then ask what the claim would demand of it. If it demands something even bigger or smaller, you have a contradiction. Pick someone who really is in the group, not an imagined person taller than everyone.
 
-**Example:** For example, five players have scores 12, 8, 15, 10, and 9. Pick the largest, 15. The claim that every player can be followed by someone with a higher score cannot work, because no listed score exceeds 15. The extreme player gives the stopping point. In a longer finite ranking, this avoids checking everyone. An infinite collection with no largest element would need another argument.
+**Example:** Five friends stand in a circle. Each says: ‘The person on my right is taller than me.’ Can all five be telling the truth? You do not need to know anyone's height or try every arrangement. Take the tallest person. If she is telling the truth, her right neighbor is taller than the tallest person in the circle, which is impossible. So at least one friend is wrong. The same argument works for a circle of any size.
 
 **Useful for:** Existence proofs, arrangements, ordered data, and reducing complicated cases.
 
@@ -508,9 +508,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 26. Show that something must share a slot
 
-**Description:** The pigeonhole principle says that if more objects go into fewer labeled categories, some category receives at least two. The categories are the slots; the objects might be people, dates, files, or game pieces. The method helps prove that a repetition or collision cannot be avoided, even when you cannot identify which category it will be. For a stronger conclusion, compare the number of objects with the capacity of every category, not just with the number of categories.
+**Description:** The pigeonhole principle says: if you put more objects into fewer categories, some category gets at least two objects. The objects can be people, dates, files or game pieces; the categories are whatever you sort them by. This lets you prove that a repetition or collision cannot be avoided, even when you cannot say which category it will happen in. For a stronger claim, multiply the number of categories by 2: more than 12 × 2 objects in 12 categories force some category to hold at least 3.
 
-**Example:** A class has 25 students. Sort birthdays by calendar month, giving 12 slots; each birthday belongs to one. If every month held at most two birthdays, there could be at most 12 × 2 = 24 students. Since there are 25, at least one month has three or more birthdays. We know it exists, but the principle does not tell us which month.
+**Example:** In a class of 25 students, can you be sure that at least three were born in the same month? Sort the students by birth month. That gives 12 categories, and each student fits exactly one. Try to refute it. Suppose every month had at most 2 students. Then the class would have at most 12 × 2 = 24 students. But there are 25, so some month has at least 3. You know such a month exists without checking a single birthday, though the principle does not say which month it is.
 
 **Useful for:** Proving unavoidable repetitions, collisions, close pairs, and capacity limits.
 
@@ -527,9 +527,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 27. Find something that cannot change
 
-**Description:** An invariant is a property unchanged by every legal move. Define the moves, then test candidates such as parity, a remainder, a total, or color balance. Different values at the start and target make the target impossible. Equal values are only a necessary test, not a route: states can share an invariant yet lie in disconnected parts of a game. Reachability needs further reasoning about the available moves.
+**Description:** An invariant is something that no allowed move can change, such as the parity (odd or even) of the number of switches that are on, a total or a remainder. Write down the moves, pick a candidate property and check that every move keeps it. If the start and the target have different values of it, the target cannot be reached. If the values match, you have learned nothing yet: the target may still be out of reach for other reasons, so you must study the moves further.
 
-**Example:** Three switches start at 000, where 1 means on. The only move flips switches 1 and 2 together. The number of switches that are on keeps even parity: flipping two changes the count by +2, 0, or -2. Target 100 has one on, so it is impossible. Target 101 has two on, so parity matches, but from 000 the only states are 000 and 110; repeating returns to 000. Thus 101 is also unreachable.
+**Example:** Three switches are all off: 000, where 1 means on. The only allowed move flips switches 1 and 2 together. Can you reach 100? Count the switches that are on. A move flips two switches, and each one adds 1 or removes 1, so the count changes by +2, 0 or -2 and stays even. State 100 has one switch on, an odd number, so it is impossible. What about 101? Two on is even, so parity does not forbid it, yet from 000 you can only reach 110 and then return to 000, because switch 3 never changes. So 101 is impossible too: matching parity was not enough.
 
 **Useful for:** Transformation puzzles, reachability, bookkeeping, and checking repeated operations.
 
@@ -546,9 +546,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 28. Track a quantity that moves only one way
 
-**Description:** A monovariant is a number attached to the current state that never increases or never decreases during legal steps. It can show direction of progress, rule out a target, or support a termination proof. Finite stopping needs more than monotonicity: a discrete bound, such as a nonnegative integer dropping by at least 1 whenever the process continues. A bounded real number may move strictly one way forever; unchanged-score moves may also create a cycle.
+**Description:** Find a number that describes the current situation and changes in only one direction under every allowed move: it only goes down, or it only goes up. Such a number shows progress, can rule out a goal, or prove that a process ends. Falling alone does not guarantee an end, because a number can fall ever more slowly and never reach zero. So check two things: whether it drops by at least 1 in every move, and whether it cannot go below 0, like the number of tokens in a pile.
 
-**Example:** Start with a positive real x = 1 and replace it by x/2 each round, stopping only at x = 0. It strictly decreases but stays above 0. After n rounds x = 1/2^n, still positive for every finite n, so this never stops. In a different process, a pile of 12 marbles loses at least one marble each active move; its integer monovariant reaches 0 within 12 moves.
+**Example:** Two players share a pile of 12 tokens. In each move a player takes 1, 2 or 3 tokens, and the game ends when the pile is empty. Will it end, and how many moves can it last? Watch the number of tokens: every move lowers it by at least 1, and it cannot fall below 0. So after at most 12 moves (if everyone takes just one) the pile is empty. A number halved each round (1, 1/2, 1/4...) also keeps falling, but it never reaches 0, because the steps get smaller. That is why ‘at least 1 per move’ matters.
 
 **Useful for:** Repeated procedures, games, iterative improvement, and termination arguments.
 
@@ -565,9 +565,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 29. Build the large case from smaller cases
 
-**Description:** A recurrence is a rule for calculating one case from earlier cases. Mathematical induction is a proof method: check starting cases, then show that a claim for the needed earlier size implies it for the next. Both build large cases from small ones, but recurrence produces values whereas induction justifies a statement for every allowed whole-number size. The step uses only justified cases, and the base covers every size the rule needs.
+**Description:** Work out the smallest cases by hand, then build each bigger case from smaller ones you already have. Ask: how can the last move into this size be made? Every way leads back to a smaller case that is already solved, so the answers add up step by step. A rule that calculates each answer from earlier ones is called a recurrence. Proving that the pattern holds for every size is a different task (induction).
 
-**Example:** Count routes for a robot climbing n steps with jumps of 1 or 2. Let a(n) be the number of routes, with a(1) = 1 and a(2) = 2. The last jump comes from n-1 or n-2, so a(n) = a(n-1) + a(n-2); thus a(3) = 3 and a(4) = 5. This recurrence computes values. It does not prove a formula for every n. Induction would check the base cases and prove the step for arbitrary n.
+**Example:** A robot climbs a staircase, and every jump goes up 1 or 2 steps. How many routes lead to step 4? Count small cases by hand: to step 1 there is 1 route (jump 1), to step 2 there are 2 (1 + 1, or 2). The last jump into step 3 starts from step 2 (jump 1) or step 1 (jump 2), so routes to step 3 equal those to step 2 plus those to step 1: 2 + 1 = 3. Likewise for step 4: 3 + 2 = 5. Listing: 1 + 1 + 1 + 1, 1 + 1 + 2, 1 + 2 + 1, 2 + 1 + 1, 2 + 2 – five.
 
 **Useful for:** Counting, sequences, recursive procedures, and proofs indexed by whole numbers.
 
@@ -584,9 +584,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 30. Solve or count the complement
 
-**Description:** The complement is the set of all allowed outcomes that fail the condition you want. If success is hard to describe but failure is simple, count the whole set and subtract the failures. In probability, use P(success) = 1 - P(failure), but first specify the model. Dividing favorable outcomes by all outcomes works only when the elementary outcomes are equally likely. Failure cases must also be disjoint, or overlaps need correcting.
+**Description:** When a problem says ‘at least one’, count the opposite instead: the outcomes where it never happens. These form the complement. Take the number of all possible outcomes and subtract the complement. This is easier because ‘none’ is one simple condition, while ‘at least one’ hides several cases at once. A probability is the number of good outcomes divided by the number of all outcomes, but only when every outcome is equally likely, as with a fair die.
 
-**Example:** Roll a fair six-sided die twice and ask for at least one six. The complement is no six on either roll. There are 6 × 6 = 36 equally likely ordered outcomes; 5 × 5 = 25 have no six. Thus success has 36 - 25 = 11 outcomes, so P = 11/36. Counting a six on each roll separately would double-count the outcome with two sixes.
+**Example:** You roll a fair die twice and want at least one six. Counting that directly needs three cases: a six on the first roll, on the second, or on both. Count the opposite instead: no six at all. Each result is a pair (first roll, second roll), so there are 6 × 6 = 36 pairs, all equally likely. Without a six each roll has 5 options: 5 × 5 = 25 pairs. So at least one six appears in 36 − 25 = 11 pairs, a probability of 11/36. Adding the pairs with a six on the first roll (6) and on the second (6) would give 12, because the pair (6, 6) is counted twice.
 
 **Useful for:** Counting, probability, and requirements such as "at least one" or "not all."
 
@@ -603,9 +603,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 31. Count the same thing in two ways
 
-**Description:** Double counting means counting one clearly defined set from two viewpoints. Because both methods describe the same objects, their totals must agree. This can reveal a formula, replace a hard count with an easier one, or catch an error. Decide first whether order matters and whether each object appears once or several times in each count. If one method lists choices, check whether later choices were already forced; treating them as independent creates overcounting.
+**Description:** Count the same thing twice, from two different viewpoints. Both counts describe the same objects, so the results must match. This can turn a hard count into an easy one, and a mismatch reveals a mistake. Before you start, decide what exactly counts as one object and whether order matters. Also ask whether one object can be counted more than once; if so, correct for it afterwards.
 
-**Example:** Six students each shake hands with every other student once. Each meets 5 others, giving 6 × 5 = 30 handshake ends. An actual handshake has two ends, so every handshake was counted twice: 30/2 = 15. Directly choosing two participants also gives 6 × 5 / 2 = 15. Agreement confirms the total; forgetting to divide by 2 would report 30.
+**Example:** Six students greet each other with a handshake, every pair exactly once. How many handshakes are there? First way, one by one: the first student shakes 5 new hands, the second only 4 new ones, then 3, 2 and 1, so 5 + 4 + 3 + 2 + 1 = 15. Second way, by ends: each of the 6 students shakes 5 hands, giving 6 × 5 = 30 handshake ends. Every handshake has two ends, one for each person, so it was counted twice: 30 / 2 = 15. Both ways give 15, so the answer is confirmed. Had you got 15 and 30, the mismatch would reveal a mistake – here, forgetting to divide by 2.
 
 **Useful for:** Counting identities, audits, consistency checks, and translating arrangements into simpler codes.
 
@@ -622,9 +622,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 32. Add a helpful object or intermediate quantity
 
-**Description:** An auxiliary object is a new line, variable, subtotal, diagram, or intermediate target that the problem did not ask for. Add it for a specific reason: it should expose a relationship linking the given information to the goal. Define it precisely and check that it is allowed. It is a bridge, not an extra assumption; if it cannot exist or merely repeats the desired conclusion, the argument fails. Translate the result back to the original question.
+**Description:** When the facts you have do not connect to what you want, add something the problem did not ask for: draw a line, name an unknown with a letter, or work out a subtotal. Choose it so that it links what you know to what you want. It is a bridge, not a new assumption: it must be possible to draw it, and it must not assume the very thing you want to show. At the end, return to the original question.
 
-**Example:** A rectangular school court is 6 m by 8 m. Draw the diagonal to make a right triangle. For such a triangle, the Pythagorean rule says the square of the longest side equals the sum of the other squares: d² = 6² + 8² = 100, so d = 10 m. The added line connected the known sides to the requested distance without changing the court.
+**Example:** A rectangular school court is 6 m by 8 m. How far is it from one corner to the opposite one? The sides alone do not give that distance, so draw the diagonal. It cuts the court into two right triangles, and in each the diagonal is the longest side. By the Pythagorean rule, the square of the longest side equals the sum of the squares of the other two: d² = 6² + 8² = 36 + 64 = 100 (d² means d × d). Since 10 × 10 = 100, d = 10 m. The added line only helped the calculation; it did not change the court.
 
 **Useful for:** Geometry, awkward expressions, and problems where the givens seem disconnected from the goal.
 
@@ -641,9 +641,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 33. List cases systematically and eliminate impossibilities
 
-**Description:** An exhaustive case search writes every allowed possibility in a controlled order, usually as a table or branching list. Exhaustive means no option is omitted; disjoint means no option appears in two branches. Use a strong quick condition first to cross out impossible cases, and keep the reason for each deletion. This helps when the remaining search is small. If you inspect only some candidates, you may find a solution, but cannot claim no other solution exists.
+**Description:** Write down all possibilities in a fixed order, for example in a table or a branching list, and cross out those that break a rule. Start with the rule that crosses out the most at once, and note the reason for every deletion. Split the possibilities so that each lands in exactly one branch: nothing is missing and nothing repeats. This works when the full list is short enough to write. If you check only part of it, you may find a solution, but you cannot say there are no others.
 
-**Example:** A four-digit locker code uses 1, 2, 3, 4 once each, must end even, and must have first digit smaller than second. Split by last digit. For last 2, testing the inequality leaves 1342, 1432, 3412. For last 4, it leaves 1234, 1324, 2314. These branches are disjoint, and only 2 or 4 can be last, so the six codes cover every possibility. Each satisfies the rules, proving there are exactly six.
+**Example:** A locker code uses the digits 1, 2, 3, 4, each exactly once. Rules: the last digit is even, and the first digit is smaller than the second. Split by the last digit. Ending in 1 or 3 is crossed out at once, because those digits are odd. Ending in 2: the first three places hold 1, 3, 4 in 6 orders. Cross out 3142, 4132 and 4312, where the first digit is bigger than the second; 1342, 1432 and 3412 stay. Ending in 4 works the same way and leaves 1234, 1324 and 2314. The branches cannot overlap and together cover every allowed ending, so there are exactly six codes.
 
 **Useful for:** Logic puzzles, small configuration searches, ordering problems, and finding all solutions.
 
@@ -660,9 +660,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 34. Find only the quantity the question asks for
 
-**Description:** An aggregate is a total, difference, ratio, or position rather than every individual value. Start by underlining exactly what the question asks. Then combine the given relationships so extra unknowns cancel or become irrelevant. This saves work and avoids inventing information the data do not contain. Still check uniqueness: a fixed total does not determine its parts, and if two valid setups give different requested quantities, the problem is genuinely underdetermined.
+**Description:** Read exactly what the question asks for. Often it is only a total, a difference, a ratio or a position, not every number separately. Write down what you know and combine it so that the unknowns you do not need disappear. This saves work and stops you from inventing facts the data do not contain. At the end ask whether the answer is fixed: if two cases that both fit the data give different answers to the question, the data are not enough.
 
-**Example:** A rectangle has perimeter 28 cm, and the question asks for length plus width. If the sides are a and b, 2a + 2b = 28, so a + b = 14 cm. There is no need to find each side: 6 by 8 and 5 by 9 both fit the perimeter, yet each has sum 14. The requested aggregate is fixed while the individual sides are not.
+**Example:** A rectangular garden is fenced with 28 m of fence. How many metres are length and width together? You could hunt for each side, but the data do not give them: 6 by 8 and 5 by 9 both need 28 m (2 · 6 + 2 · 8 = 28 and 2 · 5 + 2 · 9 = 28). The fence runs along two lengths and two widths, so 2 lengths + 2 widths = 28 m, and one of each is half: 14 m. Check: 6 + 8 = 14 and 5 + 9 = 14. Asked for the area instead, the gardens disagree (48 and 45 m²), so that question would lack data.
 
 **Useful for:** Problems that appear underdetermined, long calculations, and questions about aggregate quantities.
 
@@ -679,9 +679,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 35. Use a greedy choice as a first pass
 
-**Description:** A greedy method builds a candidate by choosing what looks best now according to a simple local rule. It quickly produces a route, schedule, or allocation when checking every possibility is expensive. Then inspect the complete result and compare alternatives or improve it. Greedy is a way to find a candidate, not a proof that it is best. A locally attractive move can leave an awkward remainder, an expensive final step, or no legal continuation.
+**Description:** A greedy method builds an answer step by step, each time taking what looks best right now by a simple rule, such as the biggest token that still fits or the closest stop on a route. It quickly gives a first candidate when checking every possibility would take too long. Then look at the whole result and try to improve it. A good-looking move can leave an awkward remainder or a dead end, so a greedy answer is a candidate, not proof that nothing better exists.
 
-**Example:** A game must make exactly 6 points using tokens worth 1, 3, and 4, with as few tokens as possible. Greedy takes 4 first, then 1 and 1, for 3 tokens. Two 3-point tokens make 6 in 2. The greedy answer is valid but not optimal; proving a best answer needs a separate argument or comparison.
+**Example:** In a game you must collect exactly 6 points using as few tokens as possible. Tokens are worth 1, 3 and 4 points, and you may use each kind as often as you like. The greedy rule: always take the biggest token that still fits. Take 4 (2 points remain), then 3 does not fit, so 1 and 1: 3 tokens in all. But two 3-point tokens also make 6, so the greedy answer is valid but not the best: the big token left a remainder of 2 that only small tokens can fill. Two is the minimum, since no single token is worth 6.
 
 **Useful for:** Quickly producing a first route, ordering, or allocation when a full search is too expensive.
 
@@ -700,7 +700,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 **Description:** Monitoring means pausing during a solution to compare evidence with the plan. Ask what the attempt established, what remains unknown, and why the next step should help. This separates missing knowledge from a bad strategy or a misread condition. Continue when an attempt produces information; otherwise change a reasoned part of the plan, not randomly or just because time was spent. Finish by checking the answer and recording the reusable lesson.
 
-**Example:** You want to improve a quiz score. Your first plan is rereading notes for 30 minutes. A 10-question self-test gives 2 correct answers. Reviewing the misses shows definitions were not recalled, although examples made sense, so the issue is recalling definitions rather than reading time. You switch to flashcards and practice questions, then score 7/10 on a similar test. The numbers do not prove mastery, but they show why the revised plan is more promising.
+**Example:** You have a quiz next week. You read your notes for 30 minutes, then take a 10-question practice test and get 2 right. Instead of reading more, you check the 8 mistakes: 6 were definitions you could not recall, while the example questions went fine. So the problem is recalling, not reading time. You switch to flashcards of definitions plus practice questions, and a similar test gives 7/10. That does not prove mastery, but it shows the new plan works better than the first. You note the lesson: after reading, test yourself with questions.
 
 **Useful for:** Long investigations, repeated failed attempts, learning, and any problem without an obvious method.
 
@@ -717,9 +717,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 37. Generalize to reveal the structure
 
-**Description:** Generalization replaces one fixed detail with a variable and studies a family of related cases. A parameter is a symbol whose allowed values must be stated. This can reveal a formula or structure hidden by one example, but testing several values is not a proof. A valid general claim needs an argument covering its full scope, such as every positive integer in a stated range, plus any exceptions. Only then substitute the original value.
+**Description:** Generalizing means replacing one fixed number with a letter, such as n for any whole number from 1 up, and studying the whole family of similar cases. A pattern seen in a few cases is only a guess. To be sure, show that it holds for the first case and that, whenever it holds for one case, it holds for the next one; then it holds for all, like a row of falling dominoes. Only then put the original number into the general result.
 
-**Example:** For the first n odd numbers, test 1 = 1² and 1 + 3 = 2². To prove the pattern for every positive integer n, assume the first n sum to n². The next odd number, 2n + 1, gives n² + 2n + 1 = (n + 1)². The base and this step cover every positive n. Therefore the first 4 sum to 4² = 16; a few examples alone would not prove the formula.
+**Example:** What is 1 + 3 + 5 + 7, the first four odd numbers? Small cases: 1 = 1 × 1, 1 + 3 = 2 × 2, so guess: n odd numbers add up to n². Picture an n × n square of dots. It grows in L-shaped layers of 1, 3, 5… dots; the next has 2n + 1 (7 when n = 3). If the first n odd numbers add up to n², adding the next one, 2n + 1, gives n² + 2n + 1 = (n + 1)². The formula holds for 1 and passes from each case to the next, so it always holds. For four numbers: 16.
 
 **Useful for:** Unexplained numerical patterns, reusable formulas, and problems with arbitrary-looking constants.
 
