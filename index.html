@@ -13,14 +13,14 @@
   --font-sans: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
   --font-mono: 'Roboto Mono', ui-monospace, 'SF Mono', Menlo, monospace;
   --paper: #FFFFFF;
-  --paper-2: #FBF7E6;
-  --paper-3: #F5EDCB;
+  --paper-2: #F5F3F0;
+  --paper-3: #EAE6E0;
   --surface: #FFFFFF;
   --ink: #1C1917;
-  --ink-2: #57534E;
-  --ink-3: #716961;
-  --line: #EDE7D2;
-  --line-2: #DDD4B6;
+  --ink-2: #44403C;
+  --ink-3: #625B53;
+  --line: #E0DBD3;
+  --line-2: #C9C2B7; --line-strong: #857C69; /* control borders >= 3:1 */ --track: color-mix(in srgb, var(--ink) 24%, transparent);
   --yellow: #FFD500;
   --yellow-600: #F0C800;
   --yellow-soft: #FFD500;
@@ -198,7 +198,7 @@ code { font-family: var(--font-mono); font-size: .9em; background: var(--paper-3
 .caution .card-label, .caution .side-text { color: inherit; }
 .sources-text { color: var(--ink-2); font-size: 13px; line-height: 1.55; }
 .notes-card { display: grid; gap: 9px; margin-top: 20px; }
-.notes-card textarea { width: 100%; min-height: 124px; resize: vertical; padding: 12px 13px; border: 1px solid var(--line-2); border-radius: var(--r-sm); background: var(--paper); color: var(--ink); font-size: 14px; line-height: 1.5; }
+.notes-card textarea { width: 100%; min-height: 124px; resize: vertical; padding: 12px 13px; border: 1px solid var(--line-strong); border-radius: var(--r-sm); background: var(--paper); color: var(--ink); font-size: 14px; line-height: 1.5; }
 .notes-card textarea::placeholder { color: var(--ink-3); }
 .notes-footer { display: flex; align-items: center; justify-content: space-between; gap: 9px; flex-wrap: wrap; color: var(--ink-3); font-size: 11px; }
 .notes-actions { display: flex; flex-wrap: wrap; gap: 7px; }
