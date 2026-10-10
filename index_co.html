@@ -5,9 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Praktyczny przewodnik po heurystykach rozwiązywania problemów.">
 <title>Heurystyki | edulab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap">
 <style>
 /* ─── Edulab tokens ─── */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap');
 :root {
   --font-display: 'Outfit', 'IBM Plex Sans', system-ui, sans-serif;
   --font-sans: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
@@ -31,14 +33,16 @@
   --blue-line: #1E8FC2;
   --blue-ink: #FFFFFF;
   --green: #00A651;
+  --green-600: #078342;
   --green-soft: #078342;
   --green-ink: #FFFFFF;
   --red: #E5322D;
+  --red-600: #C92823;
   --red-soft: #C92823;
   --red-line: #E5322D;
   --red-ink: #FFFFFF;
   --yellow-line: #FFD500;
-  --link: #1E8FC2;
+  --link: #177AA8;
   --overlay: rgba(28, 25, 23, .36);
   --shadow-sm: 0 1px 2px rgba(33, 30, 26, .06);
   --shadow-md: 0 8px 22px rgba(33, 30, 26, .10);
@@ -62,7 +66,7 @@ html { min-width: 0; background: var(--paper); }
 body { margin: 0; min-width: 0; min-height: 100vh; background: var(--paper); color: var(--ink); font-family: var(--font-sans); line-height: 1.55; }
 button, input, textarea { font: inherit; }
 button { color: inherit; }
-button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid transparent; outline-offset: 2px; box-shadow: var(--focus-ring); }
 a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 h1, h2, h3, h4, p { margin: 0; }
 code { font-family: var(--font-mono); font-size: .9em; background: var(--paper-3); padding: .1em .32em; border-radius: var(--r-xs); }
@@ -73,7 +77,7 @@ code { font-family: var(--font-mono); font-size: .9em; background: var(--paper-3
 .muted { color: var(--ink-3); }
 
 /* ─── Header ─── */
-.app-header { position: sticky; top: 0; z-index: 30; display: flex; align-items: center; gap: 16px; height: var(--header-h); padding: 0 22px; background: rgba(255, 255, 255, .85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+.app-header { position: sticky; top: 0; z-index: 30; display: flex; align-items: center; gap: 16px; height: var(--header-h); padding: 0 22px; background: var(--paper); border-bottom: 1px solid var(--line-2); }
 .brand { display: flex; align-items: center; min-width: 270px; }
 .edu-logo { display: block; width: 64px; height: 64px; margin-right: -6px; object-fit: contain; }
 .edu-wordmark { color: var(--ink); font-family: var(--font-display); font-size: 22px; font-weight: 700; letter-spacing: -.02em; }
@@ -84,8 +88,8 @@ code { font-family: var(--font-mono); font-size: .9em; background: var(--paper-3
 .header-nav button:hover { background: var(--paper-2); color: var(--ink); }
 .header-nav button[aria-current="page"] { background: var(--yellow); color: var(--yellow-ink); }
 .header-tools { display: flex; align-items: center; gap: 8px; margin-left: auto; min-width: 0; }
-.search { display: flex; align-items: center; gap: 8px; min-width: 148px; width: min(27vw, 260px); padding: 8px 12px; background: var(--paper-2); border: 1px solid transparent; border-radius: var(--r-pill); }
-.search:focus-within { border-color: var(--line-2); box-shadow: var(--focus-ring); }
+.search { display: flex; align-items: center; gap: 8px; min-width: 148px; width: min(27vw, 260px); padding: 8px 12px; background: var(--paper-2); border: 1px solid var(--line-strong); border-radius: var(--r-pill); }
+.search:focus-within { outline: 3px solid transparent; box-shadow: var(--focus-ring); }
 .search svg { flex: none; width: 16px; height: 16px; color: var(--ink-3); }
 .search input { min-width: 0; width: 100%; border: 0; outline: 0; background: transparent; color: var(--ink); font-size: 13px; }
 .search input::placeholder { color: var(--ink-3); }
@@ -104,7 +108,7 @@ code { font-family: var(--font-mono); font-size: .9em; background: var(--paper-3
 .sidebar-head h2 { font-family: var(--font-display); font-size: 19px; font-weight: 700; letter-spacing: -.02em; }
 .sidebar-head p { color: var(--ink-2); font-size: 12px; line-height: 1.42; }
 .sidebar-progress { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 9px 10px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-sm); color: var(--ink-2); font-size: 12px; }
-.sidebar-progress strong { color: var(--blue); font-family: var(--font-mono); font-size: 11px; }
+.sidebar-progress strong { color: var(--blue-600); font-family: var(--font-mono); font-size: 11px; }
 .sidebar-nav { display: none; gap: 4px; margin: 0 0 17px; padding: 12px 10px; border: 1px solid var(--line); border-radius: var(--r-md); background: var(--surface); }
 .sidebar-nav button { padding: 8px 9px; border: 0; border-radius: var(--r-sm); background: transparent; color: var(--ink-2); cursor: pointer; font-size: 13px; font-weight: 600; text-align: left; }
 .sidebar-nav button:hover { background: var(--paper-2); color: var(--ink); }
@@ -125,9 +129,9 @@ code { font-family: var(--font-mono); font-size: .9em; background: var(--paper-3
 /* ─── Main panel ─── */
 .main { min-width: 0; overflow: hidden; }
 .main-inner { width: 100%; margin: 0; padding: 46px clamp(22px, 5vw, 68px) 80px; }
-.content-intro { display: grid; gap: 20px; max-width: none; }
-.content-intro h1 { font-family: var(--font-display); font-size: clamp(31px, 4.4vw, 56px); font-weight: 800; letter-spacing: -.045em; line-height: 1.01; }
-.content-intro .lead { max-width: none; color: var(--ink-2); font-size: 17px; line-height: 1.58; }
+.content-intro { display: grid; gap: 14px; max-width: none; padding-bottom: 30px; border-bottom: 1px solid var(--line-2); text-align: left; }
+.content-intro h1 { font-family: var(--font-display); font-size: clamp(2.3rem, 5vw, 3.3rem); font-weight: 800; letter-spacing: -.025em; line-height: 1.05; color: var(--ink); }
+.content-intro .lead { max-width: none; color: var(--ink-2); font-size: 1.15rem; line-height: 1.6; }
 .home-banner { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(250px, .9fr); gap: 18px; margin-top: 28px; }
 .home-callout { display: grid; gap: 14px; padding: 28px; background: var(--blue-soft); color: var(--blue-ink); border: 0; border-radius: var(--r-xl); box-shadow: var(--shadow-md); }
 .home-callout h2, .chooser-heading h2 { font-family: var(--font-display); font-size: 21px; font-weight: 700; letter-spacing: -.025em; }
@@ -136,7 +140,7 @@ code { font-family: var(--font-mono); font-size: .9em; background: var(--paper-3
 .home-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
 .primary-btn, .secondary-btn { padding: 9px 13px; border-radius: var(--r-pill); cursor: pointer; font-size: 13px; font-weight: 600; }
 .primary-btn { border: 0; background: var(--yellow); color: var(--yellow-ink); }
-.secondary-btn { border: 1px solid var(--line-2); background: var(--surface); color: var(--ink-2); }
+.secondary-btn { border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink-2); }
 .primary-btn:hover { background: var(--yellow-600); }
 .secondary-btn:hover { background: var(--paper-2); }
 .home-stats { display: grid; align-content: center; gap: 13px; padding: 28px; background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--r-xl); }
@@ -145,15 +149,18 @@ code { font-family: var(--font-mono); font-size: .9em; background: var(--paper-3
 .stat-row strong { font-family: var(--font-display); font-size: 26px; font-weight: 800; }
 .stat-row span { color: var(--ink-3); font-size: 12px; text-align: right; }
 .section-block { margin-top: 64px; }
-.section-head { display: flex; align-items: end; justify-content: space-between; gap: 15px; margin-bottom: 20px; }
+.section-head { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; }
+.section-head::after { content: ""; flex: 1; height: 1px; background: var(--line-2); }
 .section-head h2 { font-family: var(--font-display); font-size: 27px; font-weight: 750; letter-spacing: -.035em; line-height: 1.1; }
-.section-head p { color: var(--ink-3); font-size: 13px; }
+.section-lead { margin-bottom: 20px; color: var(--ink-2); font-size: 15px; }
 
 /* ─── Chooser ─── */
 .chooser-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
-.obstacle-card { display: grid; gap: 14px; min-width: 0; padding: 22px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); }
-.obstacle-card:hover { border-color: var(--line-2); box-shadow: var(--shadow-md); }
+.obstacle-card { display: grid; grid-row: span 2; grid-template-rows: subgrid; gap: 0; min-width: 0; overflow: hidden; background: var(--surface); border: 1px solid var(--line-2); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); }
+.obstacle-card:hover { box-shadow: var(--shadow-md); }
+.obstacle-card .card-head { align-items: flex-start; }
 .obstacle-card h3 { color: var(--ink); font-family: var(--font-display); font-size: 15px; font-weight: 650; line-height: 1.3; }
+.obstacle-card .card-body { flex: 1; }
 .recommendations { display: flex; flex-wrap: wrap; gap: 6px; }
 .recommendation { max-width: 100%; padding: 7px 10px; border: 0; border-radius: var(--r-pill); background: var(--blue-soft); color: var(--blue-ink); cursor: pointer; font-size: 11px; line-height: 1.25; text-align: left; }
 .recommendation:hover { background: var(--blue-600); color: var(--blue-ink); }
@@ -162,58 +169,64 @@ code { font-family: var(--font-mono); font-size: .9em; background: var(--paper-3
 /* ─── Scheme reader ─── */
 .reader-back { display: inline-flex; align-items: center; gap: 6px; padding: 0; border: 0; background: transparent; color: var(--link); cursor: pointer; font-size: 13px; font-weight: 600; }
 .reader-back svg { width: 15px; height: 15px; }
-.reader-header { display: grid; gap: 14px; max-width: none; margin-top: 24px; }
-.reader-header h1 { font-family: var(--font-display); font-size: clamp(29px, 4vw, 47px); font-weight: 800; letter-spacing: -.045em; line-height: 1.03; }
+.reader-header { display: grid; gap: 14px; max-width: none; margin-top: 24px; padding-bottom: 30px; border-bottom: 1px solid var(--line-2); }
+.reader-header h1 { color: var(--ink); font-family: var(--font-display); font-size: clamp(2.3rem, 5vw, 3.3rem); font-weight: 800; letter-spacing: -.025em; line-height: 1.05; }
 .reader-header .description { max-width: none; color: var(--ink-2); font-size: var(--reader-text-size); line-height: 1.6; }
-.scheme-example { display: grid; gap: 12px; margin-top: 24px; padding: 24px; border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--paper-2); }
+.scheme-example { margin-top: 24px; overflow: hidden; border: 1px solid var(--line-2); border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--shadow-sm); }
 .scheme-example h2 { font-family: var(--font-display); font-size: var(--example-title-size); }
 .scheme-example p { color: var(--ink-2); font-size: var(--reader-text-size); line-height: 1.6; }
 .reader-meta { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 3px; }
 .meta-chip { padding: 5px 9px; border-radius: var(--r-pill); background: var(--paper-2); color: var(--ink-2); font-family: var(--font-mono); font-size: 10px; letter-spacing: .04em; }
 .reader-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(250px, .75fr); gap: 24px; align-items: start; margin-top: 36px; }
-.card { min-width: 0; padding: 28px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-xl); box-shadow: var(--shadow-md); }
-.card-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 17px; }
-.card-heading h2 { font-family: var(--font-display); font-size: 20px; font-weight: 700; letter-spacing: -.025em; }
-.progress-count { color: var(--green); font-family: var(--font-mono); font-size: 11px; font-weight: 500; white-space: nowrap; }
-.progress-track { height: 7px; margin: -6px 0 20px; overflow: hidden; border-radius: var(--r-pill); background: var(--paper-3); }
+.card { display: flex; flex-direction: column; min-width: 0; padding: 0; overflow: hidden; background: var(--surface); border: 1px solid var(--line-2); border-radius: var(--r-xl); box-shadow: var(--shadow-md); }
+.card-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 22px; background: var(--paper-2); border-bottom: 1px solid var(--line); }
+.card-head h2 { color: var(--ink); font-family: var(--font-display); font-size: 20px; font-weight: 700; letter-spacing: -.025em; line-height: 1.2; }
+.card-body { flex: 1; padding: 20px 22px; }
+.card-foot { padding: 14px 22px; border-top: 1px dashed var(--line-2); }
+.progress-count { color: var(--green-600); font-family: var(--font-mono); font-size: 11px; font-weight: 500; white-space: nowrap; }
+.progress-track { height: 7px; margin: 0 0 18px; overflow: hidden; border-radius: var(--r-pill); background: var(--paper-3); }
 .progress-track i { display: block; width: 0; height: 100%; border-radius: inherit; background: var(--green); transition: width .2s ease; }
 .procedure-list { display: grid; gap: 9px; margin: 0; padding: 0; list-style: none; counter-reset: procedure; }
 .procedure-item { display: grid; grid-template-columns: 31px minmax(0, 1fr); gap: 9px; align-items: start; padding: 10px 11px; border-radius: var(--r-sm); background: var(--paper-2); }
 .procedure-item::before { counter-increment: procedure; content: counter(procedure); display: grid; place-items: center; width: 27px; height: 27px; border-radius: var(--r-pill); background: var(--paper-3); color: var(--ink-2); font-family: var(--font-mono); font-size: 11px; }
 .procedure-item:has(input:checked) { background: var(--green-soft); color: var(--green-ink); }
-.procedure-item:has(input:checked)::before { background: var(--green); color: var(--green-ink); }
+.procedure-item:has(input:checked)::before { background: var(--paper); color: var(--green-600); }
 .step-label { display: grid; grid-template-columns: 19px minmax(0, 1fr); gap: 8px; align-items: start; color: var(--ink); font-size: 14px; line-height: 1.45; cursor: pointer; }
 .procedure-item:has(input:checked) .step-label { color: inherit; }
 .step-label input { width: 16px; height: 16px; margin: 2px 0 0; accent-color: var(--green); }
 .reader-side { display: grid; gap: 13px; align-content: start; }
-.reader-side .card { padding: 24px; }
-.card-label { margin-bottom: 8px; color: var(--ink-3); font-family: var(--font-mono); font-size: 10px; font-weight: 500; letter-spacing: .13em; text-transform: uppercase; }
+.reader-side .card.caution { padding: 22px 24px; }
+.card-label { margin: 0; color: var(--ink); font-family: var(--font-mono); font-size: 10px; font-weight: 500; letter-spacing: .13em; text-transform: uppercase; }
 .side-text { color: var(--ink-2); font-size: 14px; line-height: 1.55; }
 .caution { background: var(--yellow-soft); border: 0; color: var(--yellow-ink); }
+.caution .card-label { margin-bottom: 8px; }
 .caution .card-label, .caution .side-text { color: inherit; }
 .sources-text { color: var(--ink-2); font-size: 13px; line-height: 1.55; }
-.notes-card { display: grid; gap: 9px; margin-top: 20px; }
+.notes-card { margin-top: 20px; }
 .notes-card textarea { width: 100%; min-height: 124px; resize: vertical; padding: 12px 13px; border: 1px solid var(--line-strong); border-radius: var(--r-sm); background: var(--paper); color: var(--ink); font-size: 14px; line-height: 1.5; }
 .notes-card textarea::placeholder { color: var(--ink-3); }
 .notes-footer { display: flex; align-items: center; justify-content: space-between; gap: 9px; flex-wrap: wrap; color: var(--ink-3); font-size: 11px; }
 .notes-actions { display: flex; flex-wrap: wrap; gap: 7px; }
-.notes-actions button { padding: 6px 9px; border: 1px solid var(--line-2); border-radius: var(--r-pill); background: var(--surface); color: var(--ink-2); cursor: pointer; font-size: 11px; font-weight: 600; }
+.notes-actions button { padding: 6px 9px; border: 1px solid var(--line-strong); border-radius: var(--r-pill); background: var(--surface); color: var(--ink-2); cursor: pointer; font-size: 11px; font-weight: 600; }
 .notes-actions button:hover { background: var(--paper-2); }
 
 /* ─── Long-form guide and sources ─── */
 .longform { max-width: none; }
-.longform > h1 { font-family: var(--font-display); font-size: clamp(31px, 4.2vw, 50px); font-weight: 800; letter-spacing: -.045em; line-height: 1.04; }
-.longform > .lede { max-width: none; margin-top: 16px; color: var(--ink-2); font-size: 16px; line-height: 1.6; }
+.longform > h1 { color: var(--ink); font-family: var(--font-display); font-size: clamp(2.3rem, 5vw, 3.3rem); font-weight: 800; letter-spacing: -.025em; line-height: 1.05; }
+.longform > .lede { max-width: none; margin-top: 14px; padding-bottom: 30px; border-bottom: 1px solid var(--line-2); color: var(--ink-2); font-size: 1.15rem; line-height: 1.6; }
 .markdown-block { margin-top: 28px; }
-.markdown-block h2 { margin: 42px 0 13px; font-family: var(--font-display); font-size: 28px; font-weight: 750; letter-spacing: -.035em; line-height: 1.12; }
+.markdown-block h2 { display: flex; align-items: center; gap: 14px; margin: 42px 0 13px; font-family: var(--font-display); font-size: 28px; font-weight: 750; letter-spacing: -.035em; line-height: 1.12; }
+.markdown-block h2::after { content: ""; flex: 1; min-width: 0; height: 1px; background: var(--line-2); }
 .markdown-block h3 { margin: 25px 0 9px; color: var(--ink); font-family: var(--font-display); font-size: 19px; font-weight: 700; line-height: 1.2; }
 .markdown-block p { margin: 0 0 12px; color: var(--ink-2); font-size: 15px; line-height: 1.65; }
 .markdown-block ul, .markdown-block ol { margin: 8px 0 17px; padding-left: 24px; color: var(--ink-2); }
 .markdown-block li { margin: 5px 0; padding-left: 3px; font-size: 15px; line-height: 1.58; }
 .markdown-block strong { color: var(--ink); }
-.markdown-block table { width: 100%; margin: 16px 0 22px; border-collapse: separate; border-spacing: 0; overflow: hidden; border: 1px solid var(--line); border-radius: var(--r-md); font-size: 13px; }
+.markdown-block table { width: 100%; margin: 16px 0 22px; border-collapse: separate; border-spacing: 0; overflow: hidden; border: 1px solid var(--line-2); border-radius: var(--r-md); font-size: 13px; }
 .markdown-block th, .markdown-block td { padding: 11px 13px; border-bottom: 1px solid var(--line); vertical-align: top; text-align: left; }
-.markdown-block th { background: var(--paper-2); color: var(--ink); font-family: var(--font-display); font-size: 12px; font-weight: 700; }
+.markdown-block th { background: var(--paper-3); border-bottom-color: var(--line-2); color: var(--ink); font-family: var(--font-mono); font-size: 12px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; }
+.markdown-block tbody tr:nth-child(even) td { background: var(--paper-2); }
+.markdown-block td:first-child { color: var(--ink); font-weight: 600; }
 .markdown-block tr:last-child td { border-bottom: 0; }
 .markdown-block td { color: var(--ink-2); }
 .markdown-block blockquote { margin: 18px 0; padding: 16px 20px; border: 0; border-radius: var(--r-md); background: var(--yellow-soft); color: var(--yellow-ink); }
@@ -221,13 +234,13 @@ code { font-family: var(--font-mono); font-size: .9em; background: var(--paper-3
 .source-review { padding-bottom: 12px; }
 .source-review > h3 { scroll-margin-top: calc(var(--header-h) + 18px); padding-top: 8px; }
 .source-review .source-anchor { display: block; height: 0; scroll-margin-top: calc(var(--header-h) + 18px); }
-.verification { margin-top: 40px; padding: 18px; background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--r-lg); }
+.verification { margin-top: 40px; padding: 18px; background: var(--surface); border: 1px solid var(--line-2); border-radius: var(--r-lg); }
 .verification summary { cursor: pointer; color: var(--ink); font-family: var(--font-display); font-weight: 700; }
 .verification-results { display: grid; gap: 7px; margin-top: 14px; }
 .verification-results li { display: flex; gap: 8px; color: var(--ink-2); font-size: 12px; line-height: 1.4; }
-.verification-results .pass { color: var(--green); }
-.verification-results .fail { color: var(--red); }
-.verify-btn { margin-top: 13px; padding: 7px 11px; border: 1px solid var(--line-2); border-radius: var(--r-pill); background: var(--surface); cursor: pointer; font-size: 12px; font-weight: 600; }
+.verification-results .pass { color: var(--green-600); }
+.verification-results .fail { color: var(--red-600); }
+.verify-btn { margin-top: 13px; padding: 7px 11px; border: 1px solid var(--line-strong); border-radius: var(--r-pill); background: var(--surface); cursor: pointer; font-size: 12px; font-weight: 600; }
 .storage-warning { margin: 12px 0 0; padding: 12px 14px; border: 0; border-radius: var(--r-md); background: var(--red-soft); color: var(--red-ink); font-size: 12px; line-height: 1.45; }
 .footer-note { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--ink-3); font-family: var(--font-mono); font-size: 10px; letter-spacing: .04em; }
 
@@ -262,10 +275,9 @@ code { font-family: var(--font-mono); font-size: .9em; background: var(--paper-3
   .main-inner { padding: 28px 16px 60px; }
   .home-banner, .chooser-grid { grid-template-columns: 1fr; }
   .section-block { margin-top: 38px; }
-  .section-head { display: grid; gap: 5px; }
-  .content-intro h1, .reader-header h1, .longform > h1 { font-size: clamp(30px, 10vw, 42px); }
   .reader-side { grid-template-columns: 1fr; }
-  .card { padding: 17px; }
+  .card-head, .card-body, .card-foot { padding-inline: 16px; }
+  .reader-side .card.caution { padding: 17px; }
   .markdown-block table { display: block; overflow-x: auto; }
   .markdown-block th, .markdown-block td { min-width: 180px; }
 }
@@ -315,7 +327,6 @@ code { font-family: var(--font-mono); font-size: .9em; background: var(--paper-3
 <div class="workspace">
   <aside class="sidebar" id="sidebar" aria-label="Lista schematów" data-aria-label="sidebarLabel">
     <div class="sidebar-head">
-      <p class="kicker" data-ui="sidebarKicker">Biblioteka</p>
       <h2 data-ui="sidebarTitle">37 schematów myślenia</h2>
       <p data-ui="sidebarText">Wybierz przeszkodę albo przejdź po kolei. Postęp oznacza zaznaczone kroki bieżącego schematu.</p>
       <div class="sidebar-progress"><span data-ui="sidebarProgressLabel">Bieżący postęp</span><strong id="sidebarProgress">0/5</strong></div>
@@ -622,6 +633,12 @@ function textElement(tag, text, className) {
   element.textContent = text || '';
   return element;
 }
+function cardZone(className, child) {
+  const zone = document.createElement('div');
+  zone.className = className;
+  zone.appendChild(child);
+  return zone;
+}
 function inlineElement(tag, text, className) {
   const element = document.createElement(tag);
   if (className) element.className = className;
@@ -826,12 +843,12 @@ function renderHome() {
   section.className = 'section-block';
   const heading = document.createElement('div'); heading.className = 'section-head';
   heading.appendChild(textElement('h2', t('homeSection')));
-  heading.appendChild(textElement('p', t('homeSectionText')));
   section.appendChild(heading);
+  section.appendChild(textElement('p', t('homeSectionText'), 'section-lead'));
   const grid = document.createElement('div'); grid.className = 'chooser-grid';
   current.chooser.forEach(row => {
     const card = document.createElement('article'); card.className = 'obstacle-card';
-    card.appendChild(textElement('h3', row.obstacle));
+    card.appendChild(cardZone('card-head', textElement('h3', row.obstacle)));
     const recommendations = document.createElement('div'); recommendations.className = 'recommendations';
     row.recommendations.forEach(recommendation => {
       const button = document.createElement('button'); button.type = 'button'; button.className = 'recommendation'; button.dataset.openScheme = String(recommendation.id);
@@ -840,7 +857,7 @@ function renderHome() {
       button.appendChild(document.createTextNode(recommendation.label));
       recommendations.appendChild(button);
     });
-    card.appendChild(recommendations); grid.appendChild(card);
+    card.appendChild(cardZone('card-body', recommendations)); grid.appendChild(card);
   });
   section.appendChild(grid); refs.mainInner.appendChild(section);
   refs.mainInner.appendChild(textElement('p', 'edulab · ' + t('progressMeaning'), 'footer-note'));
@@ -866,15 +883,15 @@ function renderScheme() {
   example.className = 'scheme-example'; example.dataset.component = 'scheme-example'; example.dataset.scheme = String(scheme.id);
   example.setAttribute('aria-labelledby', 'exampleHeading');
   const exampleHeading = textElement('h2', t('example')); exampleHeading.id = 'exampleHeading';
-  example.appendChild(exampleHeading); example.appendChild(inlineElement('p', scheme.example));
+  example.appendChild(cardZone('card-head', exampleHeading)); example.appendChild(cardZone('card-body', inlineElement('p', scheme.example)));
   refs.mainInner.appendChild(example);
   const grid = document.createElement('div'); grid.className = 'reader-grid';
   const procedure = document.createElement('section'); procedure.className = 'card';
-  const heading = document.createElement('div'); heading.className = 'card-heading';
+  const heading = document.createElement('div'); heading.className = 'card-heading card-head';
   heading.appendChild(textElement('h2', t('procedure')));
   heading.appendChild(textElement('span', schemeCompleted(scheme.id) + '/5 ' + t('progressDone'), 'progress-count'));
   procedure.appendChild(heading);
-  const track = document.createElement('div'); track.className = 'progress-track'; const fill = document.createElement('i'); fill.style.width = (schemeCompleted(scheme.id) * 20) + '%'; track.appendChild(fill); procedure.appendChild(track);
+  const track = document.createElement('div'); track.className = 'progress-track'; const fill = document.createElement('i'); fill.style.width = (schemeCompleted(scheme.id) * 20) + '%'; track.appendChild(fill); const procedureBody = cardZone('card-body', track);
   const list = document.createElement('ol'); list.className = 'procedure-list';
   const checked = Array.isArray(state.steps[String(scheme.id)]) ? state.steps[String(scheme.id)] : [false, false, false, false, false];
   scheme.steps.slice(0, 5).forEach((step, index) => {
@@ -884,16 +901,16 @@ function renderScheme() {
     label.appendChild(checkbox); label.appendChild(inlineElement('span', step));
     item.appendChild(label); list.appendChild(item);
   });
-  procedure.appendChild(list); grid.appendChild(procedure);
+  procedureBody.appendChild(list); procedure.appendChild(procedureBody); grid.appendChild(procedure);
   const side = document.createElement('aside'); side.className = 'reader-side';
-  const uses = document.createElement('section'); uses.className = 'card'; uses.appendChild(textElement('p', t('usefulFor'), 'card-label')); uses.appendChild(inlineElement('p', scheme.uses, 'side-text')); side.appendChild(uses);
+  const uses = document.createElement('section'); uses.className = 'card'; uses.appendChild(cardZone('card-head', textElement('p', t('usefulFor'), 'card-label'))); uses.appendChild(cardZone('card-body', inlineElement('p', scheme.uses, 'side-text'))); side.appendChild(uses);
   const caution = document.createElement('section'); caution.className = 'card caution'; caution.appendChild(textElement('p', t('caution'), 'card-label')); caution.appendChild(inlineElement('p', scheme.caution, 'side-text')); side.appendChild(caution);
-  const source = document.createElement('section'); source.className = 'card'; source.appendChild(textElement('p', t('sources'), 'card-label')); source.appendChild(inlineElement('p', scheme.sources, 'sources-text')); side.appendChild(source);
+  const source = document.createElement('section'); source.className = 'card'; source.appendChild(cardZone('card-head', textElement('p', t('sources'), 'card-label'))); source.appendChild(cardZone('card-body', inlineElement('p', scheme.sources, 'sources-text'))); side.appendChild(source);
   grid.appendChild(side); refs.mainInner.appendChild(grid);
   const notes = document.createElement('section'); notes.className = 'card notes-card';
-  notes.appendChild(textElement('h2', t('notes')));
-  const textarea = document.createElement('textarea'); textarea.id = 'notes'; textarea.dataset.scheme = String(scheme.id); textarea.maxLength = 50000; textarea.placeholder = t('notesPlaceholder'); textarea.value = typeof state.notes[String(scheme.id)] === 'string' ? state.notes[String(scheme.id)] : ''; textarea.setAttribute('aria-label', t('notes')); notes.appendChild(textarea);
-  const noteFooter = document.createElement('div'); noteFooter.className = 'notes-footer';
+  notes.appendChild(cardZone('card-head', textElement('h2', t('notes'))));
+  const textarea = document.createElement('textarea'); textarea.id = 'notes'; textarea.dataset.scheme = String(scheme.id); textarea.maxLength = 50000; textarea.placeholder = t('notesPlaceholder'); textarea.value = typeof state.notes[String(scheme.id)] === 'string' ? state.notes[String(scheme.id)] : ''; textarea.setAttribute('aria-label', t('notes')); notes.appendChild(cardZone('card-body', textarea));
+  const noteFooter = document.createElement('div'); noteFooter.className = 'notes-footer card-foot';
   noteFooter.appendChild(textElement('span', t('notesSaved')));
   const noteActions = document.createElement('div'); noteActions.className = 'notes-actions';
   const copy = document.createElement('button'); copy.type = 'button'; copy.id = 'copyNotes'; copy.textContent = t('copyNotes'); noteActions.appendChild(copy);
