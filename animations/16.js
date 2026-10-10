@@ -34,7 +34,7 @@ HeurAnim.register(16, {
     api.text(TABLE_X, 50, { pl: 'liczba partii', en: 'number of games' }, 'ha-label--small');
     const rows = ROWS.map((label, i) => api.text(TABLE_X, ROW_YS[i], label));
     const adds = [null, { pl: '+2', en: '+2' }, { pl: '+3', en: '+3' }, { pl: '+19', en: '+19' }].map((label, i) => label ? api.text(610, ROW_YS[i], label, 'ha-label--small ha-label--end') : null);
-    const dotsRow = api.text(TABLE_X, 225, '…');
+    const dotsRow = api.text(TABLE_X, 222, '…', 'ha-label--small');
     const bottom = api.text(320, 328, '', 'ha-label--center ha-label--strong');
 
     // ─── Show (absolute state per step) ───

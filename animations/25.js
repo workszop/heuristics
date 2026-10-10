@@ -26,7 +26,7 @@ HeurAnim.register(25, {
     const dots = [];
     for (let i = 0; i < COUNT; i += 1) dots.push(api.circle(pos(i).x, pos(i).y, DOT_R));
     const centerText = api.text(CX, CY + 14, { pl: 'każdy mówi:\n„sąsiad z prawej\njest wyższy”', en: 'everyone says:\n“my right neighbor\nis taller”' }, 'ha-label--small ha-label--center');
-    const tag = api.text(pos(TALLEST).x - 36, pos(TALLEST).y, { pl: 'najwyższa', en: 'tallest' }, 'ha-label--strong ha-label--end');
+    const tag = api.text(pos(TALLEST).x, pos(TALLEST).y - DOT_R - 18, { pl: 'najwyższa', en: 'tallest' }, 'ha-label--strong ha-label--center');
     const need = api.text(pos(1).x + 40, pos(1).y - 36, { pl: 'wyższy od najwyższej?', en: 'taller than the tallest?' }, 'ha-label--small');
     const bottom = api.text(320, 334, '', 'ha-label--center ha-label--strong');
 

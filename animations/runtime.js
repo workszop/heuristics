@@ -103,7 +103,7 @@
       return node;
     }
     function text(x, y, value, extra, parent) { return setText(el('text', { x, y, class: cls('ha-label', extra) }, parent), value); }
-    function group(extra, parent) { return el('g', { class: extra || null }, parent); }
+    function group(extra, parent) { return el('g', { class: cls('ha-group', extra) }, parent); }
     function box(x, y, w, h, label, extra, parent) {
       const node = group(cls('ha-box', extra), parent);
       el('rect', { x, y, width: w, height: h, rx: 10 }, node);

@@ -17,7 +17,7 @@ HeurAnim.register(29, {
     const midX = i => blockX(i) + BLOCK_W / 2;
     const arc = (from, to, lift) => 'M ' + midX(from) + ' ' + (topY(from) - 8) + ' Q ' + ((midX(from) + midX(to)) / 2) + ' ' + (Math.min(topY(from), topY(to)) - lift) + ' ' + midX(to) + ' ' + (topY(to) - 10);
     const COUNTS = ['1', '2', '3', '5'];
-    const ROUTES = '1+1+1+1 · 1+1+2 · 1+2+1 · 2+1+1 · 2+2';
+    const ROUTES = '1 + 1 + 1 + 1 · 1 + 1 + 2 · 1 + 2 + 1 · 2 + 1 + 1 · 2 + 2';
 
     // ─── Scene ───
     const blocks = HEIGHTS.map((h, i) => {

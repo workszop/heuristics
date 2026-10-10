@@ -68,6 +68,7 @@
 .ha-label.is-good { fill: var(--anim-good); }
 .ha-label.is-bad { fill: var(--anim-bad); }
 .ha-label.is-info { fill: var(--anim-info); }
+.ha-group { }
 .ha-box rect { fill: var(--anim-box); stroke: var(--anim-box-line); stroke-width: 2; }
 .ha-box--ghost rect { fill: none; stroke-dasharray: 8 6; }
 .ha-box.is-accent rect { fill: var(--anim-accent); stroke: var(--anim-accent); }

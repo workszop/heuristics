@@ -214,10 +214,10 @@ async function regressions(page, errors) {
   check('unregistered id renders the unavailable fallback', fallback);
 }
 // Motion context: a playing animation must stop completely when the view or language changes.
-async function waitPlaying(page, pageName) {
+async function waitPlaying(page, pageName, label) {
   let started = true;
   await page.waitForFunction(() => { const host = document.querySelector('[data-component="scheme-animation"]'); return host && host.dataset.animState === 'playing'; }, null, { timeout: 5000 }).catch(() => { started = false; });
-  check(`${pageName} motion probe: playback started`, started);
+  check(`${pageName} motion probe: playback started${label ? ' (' + label + ')' : ''}`, started);
 }
 async function motionRegressions(page, errors, pageName) {
   const id = IDS[0];
@@ -243,7 +243,7 @@ async function motionRegressions(page, errors, pageName) {
   for (const [label, act] of actions) {
     await page.evaluate(() => window.App.navigate('home'));
     await openScheme(page, id);
-    await waitPlaying(page, pageName);
+    await waitPlaying(page, pageName, label);
     await page.evaluate(() => { window.__oldHost = document.querySelector('[data-component="scheme-animation"]'); });
     await act(page);
     const stepAfter = await page.evaluate(() => window.__oldHost.dataset.animStep);

@@ -4,7 +4,7 @@ HeurAnim.register(22, {
   steps: [
     { pl: 'Mapa: czworo uczniów wysyła slajdy do redaktorki, która składa prezentację na termin.', en: 'The map: four students send slides to the editor, who assembles the presentation by the deadline.' },
     { pl: 'Zachęta: nauczyciel daje punkt za każdy slajd, więc uczniowie wysyłają ich coraz więcej.', en: 'The incentive: the teacher gives a point per slide, so students send more and more.' },
-    { pl: 'Do redaktorki trafia 18 slajdów, część się powtarza. To wąskie gardło: termin przepada.', en: 'The editor receives 18 slides, many repeated. This is the bottleneck: the deadline is missed.' },
+    { pl: 'Redaktorka to wąskie gardło: za dużo slajdów, termin przepada.', en: 'The editor is the bottleneck: too many slides, the deadline is missed.' },
     { pl: 'Próba: ocena całej prezentacji i najwyżej 3 slajdy na osobę, czyli 4 × 3 = 12.', en: 'The trial: grade the whole presentation and at most 3 slides per student, so 4 × 3 = 12.' },
     { pl: '12 slajdów bez powtórzeń i termin dotrzymany. To próba, nie dowód, że reguła spowodowała wszystko.', en: '12 slides without repeats and the deadline is met. A trial, not proof that the rule caused everything.' }
   ],

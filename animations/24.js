@@ -1,12 +1,12 @@
 /* Scheme 24 – Test the opposite and search for a counterexample.
-   Claim 1 is rejected by one counterexample (15); claim 2 is confirmed by contradiction (an odd multiple of 4 would also be even). */
+   Claim 1 is rejected by one counterexample (15); claim 2 is confirmed by contradiction (a largest whole number N would be smaller than N + 1). */
 HeurAnim.register(24, {
   steps: [
     { pl: 'Twierdzenie: „Każda liczba kończąca się na 5 jest pierwsza”. Spróbuj je podważyć.', en: 'Claim: “Every number ending in 5 is prime.” Try to break it.' },
     { pl: 'Przykład 5 pasuje, ale jeden przykład niczego nie dowodzi.', en: 'The example 5 fits, but one example proves nothing.' },
     { pl: 'Kontrprzykład: 15 kończy się na 5, ale 15 = 3 × 5. Jeden taki przypadek obala twierdzenie.', en: 'Counterexample: 15 ends in 5, but 15 = 3 × 5. One such case rejects the claim.' },
-    { pl: 'Inne twierdzenie: „Każda wielokrotność 4 jest parzysta”. Załóż jego przeciwieństwo.', en: 'Another claim: “Every multiple of 4 is even.” Assume its opposite.' },
-    { pl: 'Skutek jest niemożliwy: liczba byłaby nieparzysta i parzysta naraz. Przeciwieństwo odpada.', en: 'The result is impossible: the number would be odd and even at once. The opposite fails.' }
+    { pl: 'Inne twierdzenie: „Nie istnieje największa liczba całkowita”. Załóż jego przeciwieństwo.', en: 'Another claim: “There is no largest whole number.” Assume its opposite.' },
+    { pl: 'Skutek jest niemożliwy: N byłoby największe i nie największe naraz. Przeciwieństwo odpada.', en: 'The result is impossible: N would be the largest and not the largest at once. The opposite fails.' }
   ],
   build(api) {
     // ─── Layout ───
@@ -16,15 +16,15 @@ HeurAnim.register(24, {
 
     // ─── Scene ───
     const claimOne = api.box(CARD_X, CARD_Y, CARD_W, CARD_H, { pl: 'Każda liczba kończąca się na 5 jest pierwsza', en: 'Every number ending in 5 is prime' }, 'ha-node');
-    const claimTwo = api.box(CARD_X, CARD_Y, CARD_W, CARD_H, { pl: 'Każda wielokrotność 4 jest parzysta', en: 'Every multiple of 4 is even' }, 'ha-node');
+    const claimTwo = api.box(CARD_X, CARD_Y, CARD_W, CARD_H, { pl: 'Nie istnieje największa liczba całkowita', en: 'There is no largest whole number' }, 'ha-node');
     const strike = api.line(CARD_X + 20, CARD_Y + CARD_H / 2, CARD_X + CARD_W - 20, CARD_Y + CARD_H / 2);
     const tileFive = api.box(180, TILE_Y, TILE_W, TILE_H, '5', 'ha-node');
     const tileFifteen = api.box(340, TILE_Y, TILE_W, TILE_H, '15 = 3 × 5', 'ha-node');
     const tileNote = api.text(320, 250, '', 'ha-label--center');
     const chain = [
-      api.box(CHAIN_X, CHAIN_YS[0], CHAIN_W, CHAIN_H, { pl: 'Załóż: pewna wielokrotność 4 jest nieparzysta', en: 'Assume: some multiple of 4 is odd' }, 'ha-node'),
-      api.box(CHAIN_X, CHAIN_YS[1], CHAIN_W, CHAIN_H, { pl: 'Ale 4 × k = 2 × (2 × k): dzieli się przez 2', en: 'But 4 × k = 2 × (2 × k): it divides by 2' }, 'ha-node'),
-      api.box(CHAIN_X, CHAIN_YS[2], CHAIN_W, CHAIN_H, { pl: 'Nieparzysta i parzysta naraz: niemożliwe', en: 'Odd and even at once: impossible' }, 'ha-node')
+      api.box(CHAIN_X, CHAIN_YS[0], CHAIN_W, CHAIN_H, { pl: 'Załóż: istnieje największa liczba całkowita N', en: 'Assume: there is a largest whole number N' }, 'ha-node'),
+      api.box(CHAIN_X, CHAIN_YS[1], CHAIN_W, CHAIN_H, { pl: 'Ale N + 1 też jest liczbą całkowitą, większą od N', en: 'But N + 1 is also a whole number, larger than N' }, 'ha-node'),
+      api.box(CHAIN_X, CHAIN_YS[2], CHAIN_W, CHAIN_H, { pl: 'Największa i nie największa naraz: niemożliwe', en: 'Largest and not largest at once: impossible' }, 'ha-node')
     ];
     const bottom = api.text(320, 330, '', 'ha-label--center ha-label--strong');
 
