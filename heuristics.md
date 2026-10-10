@@ -147,9 +147,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 7. Estimate from parts and comparable cases
 
-**Description:** Estimate a task in two ways. First split it into non-overlapping pieces and use a comparable rate, such as minutes per edited clip. Add shared work like coordination and uploading. Then compare the total with a similar whole task. A mismatch is a clue to investigate, not an error to hide. Remember that effort, the amount of work, differs from elapsed time, the calendar time from start to finish, when people work in parallel.
+**Description:** Estimate a task in two ways, then compare. First split it into pieces that do not overlap and price each piece from similar past work, such as minutes per edited clip. Add work that belongs to the whole, like a shared introduction. Then compare the total with how long a similar whole task took; if they differ, look for the reason. Two routes that agree make it more trustworthy. Also keep two numbers apart: effort is everyone's working time added up, while elapsed time runs from start to finish and is shorter when people work in parallel.
 
-**Example:** A class podcast has four interviews. Earlier edits averaged 15 minutes each, so editing is about 4 × 15 = 60 minutes. Add 30 minutes for the shared introduction and upload: 90 minutes of effort. Two students can edit in parallel, so elapsed time may be closer to 60 minutes. If the last whole podcast took 2 hours, compare the difference and update the rate after this episode.
+**Example:** A class podcast has four interviews, and you estimate the editing. One interview took 15 minutes to edit before, so 4 × 15 = 60 minutes. Add 30 minutes for the shared introduction and upload: 90 minutes of effort. Two students each edit two interviews (30 minutes), then one of them adds the introduction and uploads (30 minutes), so the clock shows 30 + 30 = 60 minutes. The last podcast, also with four interviews, took 120 minutes of effort. The 30-minute gap has a reason: back then the teacher also asked for corrections, and this time there is no such step. So 90 minutes looks believable. After finishing, write down the real time and fix the 15-minute rate.
 
 **Useful for:** Effort, capacity, quantity, and cost estimates where relevant past data exist.
 
@@ -166,9 +166,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 8. Check whether a mental shortcut is misleading you
 
-**Description:** Treat your first judgment as a hypothesis, not a verdict. Availability is the pull of an example that is easy to remember; representativeness is judging by resemblance; anchoring is being pulled toward the first number. Ask which shortcut is operating, seek comparable data and evidence against your first idea, then make a second estimate by another route. Compare both and state what remains uncertain.
+**Description:** Your first answer may come from a mental shortcut. The most common one is availability: what is easy to remember feels more frequent than it is, like two late buses you just waited for. Others are judging by resemblance and clinging to the first number you heard. So treat the first answer as a guess to test. Ask which shortcut may be behind it, look for data about similar cases, including data against your guess, and estimate the same thing by another route. Compare both answers and say what you still do not know.
 
-**Example:** After two late buses, you predict half of your next ten trips will be late. The vivid delays make risk feel larger. Ten earlier trips include two late ones, so 20 percent fits that small sample better than 50. Weather could change the result, so keep uncertainty instead of declaring buses reliable. The check corrected an impression without proving the future.
+**Example:** Your school bus was late two times in a row, so you guess that half of the next ten trips, 5, will be late. Those two delays are easy to remember because they were annoying: that is availability. Second route: your notes on the last ten trips show only 2 late ones, the same two you remember. That is 20 percent, a better fit than 50. Ten trips is a small sample and rain could change the result, so you do not say "the bus is punctual" but "about 2 trips in 10 are late, not certain". The check corrected an impression without predicting the future.
 
 **Useful for:** Uncertain judgments, interpreting evidence, and reviewing estimates.
 
@@ -185,9 +185,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 9. Temporarily remove a difficult constraint
 
-**Description:** Constraint relaxation means temporarily solving an easier version of the same problem by removing or weakening one rule. Keep the goal, inspect what the relaxed answer violates, and restore the original rules before delivering anything. This can reveal a hidden bottleneck or a useful bound. It is a model for thinking, not permission to ignore real safety, legal, or accessibility requirements.
+**Description:** Pick one rule that makes the task hard and, on a draft only, pretend it does not exist. For a duty rota that could be "nobody two days in a row". Now the task is easy, so you get a complete draft quickly. Then check the draft against the dropped rule: the places that break it show where the real difficulty is. Restore the rule and repair only those places. Sometimes the draft also shows how good an answer could be at best (see heuristic 11). Safety, legal and accessibility rules are never dropped from the final result.
 
-**Example:** Your group must finish a video, but everyone must attend every work session. Temporarily remove that rule in a planning sheet: two pairs edit scenes, then meet for a 20-minute recording. This reveals shared editing as the bottleneck. Restore the original rule and redesign around one longer session with everyone present; the relaxed version was only a clue. If a teacher changes requirements, record that separately. Safety and permissions were never relaxed.
+**Example:** A class needs a duty rota for Monday to Friday: 2 students per day, each of five students (A–E) on duty exactly twice, and nobody two days in a row. All three rules together are hard to juggle. Drop the last one for a moment and fill the table at once: Mon A B, Tue A C, Wed D E, Thu E B, Fri C D. Now check the dropped rule: A works Mon and Tue, E works Wed and Thu. Only two students are the problem. Swap A on Tuesday with E on Wednesday: Tue E C, Wed D A. Check again: every rule holds, and the draft only showed where the trouble was.
 
 **Useful for:** Overconstrained plans, allocation, scheduling, and optimization.
 
@@ -223,9 +223,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 11. Use bounds to judge how much improvement is possible
 
-**Description:** A bound is a limit that the true answer cannot cross. When seeking the smallest result, a relaxed problem can give a lower bound and a valid solution an upper bound; when seeking the largest, reverse them. If the two values match, you have proved the answer is best possible. If they differ, the gap tells you how much uncertainty remains. The bound must be justified, not guessed from an approximate calculation.
+**Description:** A bound is a value beyond which the best answer cannot lie. Looking for the shortest route, drop a rule, for example "stay on the streets", and solve that task. Every real route is allowed there too, so its best answer is shorter or equal: a lower bound. A real route you find shows the best is at most that long: an upper bound. The best answer lies between them, and the gap shows how much more you can gain. If they meet, it is proved best. For the biggest result, swap roles. Give each bound a reason.
 
-**Example:** Find the shortest route between three school stops. Ignoring one difficult rule, the relaxed problem’s shortest route is 8 minutes, so no route obeying every rule can be shorter. A valid route takes 10 minutes. The best is between 8 and 10, leaving a 2-minute gap; do not claim 8 is achievable. If a valid 8-minute route appears, matching bounds prove optimality.
+**Example:** You cycle from home to school and look for the shortest route along the streets. Drop the street rule for a moment: in a straight line the distance is 8 km. Every street route is also allowed in that easier version, so none can be shorter: 8 km is a lower bound. You find a street route of 10 km, so the best one is at most 10 km. The best street route lies between 8 and 10 km, and further searching can save at most 2 km (20 percent). Later you find a 9 km route: the range shrinks to 8–9 km. Only a street route of exactly 8 km would prove it best.
 
 **Useful for:** Optimization, feasibility checks, and deciding whether further search is worthwhile.
 
