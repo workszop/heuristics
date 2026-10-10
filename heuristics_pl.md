@@ -565,9 +565,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 29. Zbuduj duży przypadek z mniejszych
 
-**Opis:** Rekurencja pozwala obliczyć kolejny wynik na podstawie wcześniejszych. Indukcja matematyczna służy natomiast do dowodzenia: najpierw sprawdzasz przypadki początkowe, a potem wykazujesz, że prawdziwość twierdzenia dla potrzebnych mniejszych przypadków pozwala przejść do następnego. Obie metody wykorzystują mniejsze przypadki, ale do czego innego. Obliczenie kilku wartości z rekurencji nie zastępuje dowodu dla każdego dopuszczalnego rozmiaru. W indukcji nie możesz zakładać poprawności właśnie tego przypadku, który masz dopiero wykazać. Musisz też sprawdzić wszystkie przypadki początkowe potrzebne do rozpoczęcia kolejnych kroków.
+**Opis:** Najpierw policz ręcznie najmniejsze przypadki, a potem każdy większy zbuduj z mniejszych, które już masz. Zapytaj: jak może wyglądać ostatni ruch prowadzący do tego rozmiaru? Każdy taki sposób wraca do mniejszego, już rozwiązanego przypadku, więc wyniki dodają się krok po kroku. Reguła, która wylicza kolejny wynik z wcześniejszych, nazywa się rekurencją. Daje wartości; udowodnienie wzoru dla każdego rozmiaru to osobne zadanie, zwane indukcją.
 
-**Przykład:** Na ile sposobów robot może dotrzeć na n-ty stopień, skacząc o 1 albo 2 stopnie? Oznacz tę liczbę przez a(n). Masz a(1) = 1 i a(2) = 2. Ostatni skok na n-ty stopień musi prowadzić ze stopnia n-1 albo n-2, więc a(n) = a(n-1) + a(n-2). Stąd a(3) = 3 i a(4) = 5. Rekurencja pozwala obliczać kolejne wartości. Gdy chcesz dowieść ogólnego wzoru przez indukcję, potrzebujesz przypadków początkowych i uzasadnienia kroku przejścia dla dowolnego dopuszczalnego n.
+**Przykład:** Robot wchodzi po schodach, a każdy skok to 1 albo 2 stopnie. Na ile różnych sposobów może dojść na 4. stopień? Małe przypadki policz ręcznie: na stopień 1 jest 1 sposób (skok o 1), na stopień 2 są 2 sposoby (1 + 1 albo 2). Ostatni skok na stopień 3 zaczyna się na stopniu 2 (skok o 1) albo na stopniu 1 (skok o 2), więc sposobów na stopień 3 jest tyle, ile na stopień 2, plus tyle, ile na stopień 1: 2 + 1 = 3. Tak samo na stopień 4: 3 + 2 = 5. Sprawdzenie listą: 1+1+1+1, 1+1+2, 1+2+1, 2+1+1, 2+2 – pięć.
 
 **Kiedy się przydaje:** Przy zliczaniu, ciągach, procedurach rekurencyjnych i dowodach indeksowanych liczbami całkowitymi.
 
@@ -584,9 +584,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 30. Rozpatrz lub policz dopełnienie
 
-**Opis:** Czasem łatwiej policzyć przypadki, które nie spełniają warunku, niż te, których szukasz. Tworzą one dopełnienie w zbiorze wszystkich dopuszczalnych wyników. Policz więc całość i odejmij dopełnienie. Przy prawdopodobieństwie możesz użyć P(sukces) = 1 - P(porażka), ale najpierw ustal model. Iloraz liczby wyników sprzyjających i wszystkich wyników daje prawdopodobieństwo tylko przy jednakowych szansach poszczególnych możliwości. Uważaj też na powtórzenia: jeśli kategorie niepowodzeń się nakładają, nie możesz po prostu dodać ich liczebności.
+**Opis:** Gdy w zadaniu jest „co najmniej jeden”, policz zamiast tego przypadek przeciwny: wyniki, w których nic takiego się nie zdarza. Tworzą one dopełnienie. Od liczby wszystkich możliwych wyników odejmij dopełnienie. To łatwiejsze, bo „żadnego” opisuje jeden prosty warunek, a „co najmniej jeden” kryje kilka przypadków naraz. Prawdopodobieństwo to liczba dobrych wyników podzielona przez liczbę wszystkich, ale tylko wtedy, gdy każdy wynik ma taką samą szansę, jak przy uczciwej kostce.
 
-**Przykład:** Rzucasz dwa razy symetryczną sześcienną kostką. Jakie jest prawdopodobieństwo wyrzucenia co najmniej jednej szóstki? Łatwiej policzyć dopełnienie, czyli wyniki bez szóstki w obu rzutach. Wszystkich uporządkowanych wyników jest 6 × 6 = 36 i mają jednakowe szanse. Bez szóstki jest ich 5 × 5 = 25. Szukanych wyników pozostaje 36 - 25 = 11, więc prawdopodobieństwo wynosi 11/36. Gdyby liczyć osobno szóstkę w pierwszym i drugim rzucie, wynik z dwiema szóstkami zostałby policzony dwa razy.
+**Przykład:** Rzucasz dwa razy uczciwą kostką i chcesz wyrzucić co najmniej jedną szóstkę. Liczenie wprost wymaga trzech przypadków: szóstka w pierwszym rzucie, w drugim albo w obu. Policz więc przypadek przeciwny: żadnej szóstki. Każdy wynik to para (pierwszy rzut, drugi rzut), więc wszystkich par jest 6 × 6 = 36 i każda ma taką samą szansę. Bez szóstki każdy rzut ma 5 możliwości, czyli 5 × 5 = 25 par. Co najmniej jedna szóstka pada więc w 36 − 25 = 11 parach, a prawdopodobieństwo wynosi 11/36. Dodanie par z szóstką w pierwszym rzucie (6) i w drugim (6) dałoby 12, bo parę (6, 6) policzono by dwa razy.
 
 **Kiedy się przydaje:** Przy zliczaniu, prawdopodobieństwie i warunkach typu „co najmniej jeden” lub „nie wszystkie”.
 
@@ -603,9 +603,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 31. Policz to samo na dwa sposoby
 
-**Opis:** Policz ten sam zbiór na dwa sposoby. Skoro obie metody dotyczą tych samych obiektów, powinny dać zgodne wyniki. Możesz tak odkryć wzór, uprościć rachunki lub znaleźć błąd. Najpierw dokładnie ustal, co liczysz i czy kolejność ma znaczenie. Przy każdej metodzie sprawdź, ile razy uwzględniasz jeden obiekt. Jeśli wcześniejsze wybory już przesądzają o następnym, nie licz go ponownie jako niezależnej możliwości. Inaczej wynik będzie zawyżony. Każdą różnicę między rachunkami trzeba wyjaśnić.
+**Opis:** Policz to samo dwa razy, z dwóch różnych punktów widzenia. Oba rachunki dotyczą tych samych obiektów, więc wyniki muszą się zgadzać. Dzięki temu trudne liczenie można zastąpić łatwiejszym, a niezgodność zdradza błąd. Zanim zaczniesz, ustal, co dokładnie jest jednym obiektem i czy kolejność ma znaczenie. Zastanów się też, ile razy każdy obiekt trafia do każdego rachunku; jeśli więcej niż raz, trzeba to potem poprawić.
 
-**Przykład:** Sześciu uczniów podaje sobie ręce, każda para dokładnie raz. Każdy uczeń uczestniczy w 5 uściskach, więc po zsumowaniu dla wszystkich otrzymujesz 6 × 5 = 30. Każdy uścisk policzono jednak u dwóch osób. Jeśli spojrzysz od strony uścisków, każdy z nich wnosi do tej sumy 2. Jest ich zatem 30/2 = 15. Możesz też od razu liczyć pary uczestników: 6 × 5 / 2 = 15. Oba sposoby dają ten sam wynik.
+**Przykład:** Sześcioro uczniów wita się uściskiem dłoni, każda para dokładnie raz. Ile jest uścisków? Pierwszy rachunek, po uczniach: każdy ściska 5 dłoni, więc razem uczniowie mają 6 × 5 = 30 końców uścisków (uścisk ma dwa końce, po jednym w dłoni każdej z dwóch osób). Drugi rachunek, po uściskach: każdy uścisk policzono dwa razy, raz u każdej osoby, więc uścisków jest 30 / 2 = 15. Sprawdzenie z trzeciej strony: pierwszą osobę z pary można wybrać na 6 sposobów, drugą na 5, ale para (A, B) to ta sama para co (B, A), więc znów 6 × 5 / 2 = 15. Brak dzielenia przez 2 dałby błędne 30.
 
 **Kiedy się przydaje:** Przy tożsamościach kombinatorycznych, audytach, sprawdzaniu spójności i zapisywaniu układów obiektów w prostszej postaci.
 
@@ -622,9 +622,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 32. Dodaj pomocniczy obiekt lub wielkość pośrednią
 
-**Opis:** Czasem warto dorysować prostą, wprowadzić zmienną, obliczyć sumę częściową albo wyznaczyć cel pośredni, choć zadanie o to nie pyta. Taki element pomocniczy powinien pokazać związek między tym, co wiesz, a tym, czego szukasz. Zanim go dodasz, zastanów się, do czego go użyjesz. Opisz go dokładnie i sprawdź, czy może istnieć przy podanych warunkach. Nie wolno przemycić w ten sposób dodatkowego założenia ani uznać szukanego wniosku za prawdę. Na końcu odpowiedz na pierwotne pytanie.
+**Opis:** Gdy to, co wiesz, nie łączy się z tym, czego szukasz, dodaj coś, o co zadanie nie pytało: dorysuj odcinek, oznacz niewiadomą literą albo policz sumę pośrednią. Wybierz to tak, żeby powiązało to, co wiesz, z tym, czego szukasz. To most, a nie nowe założenie: to, co dodajesz, musi dać się narysować i nie może zakładać tego, co chcesz wykazać. Na końcu wróć do pierwotnego pytania.
 
-**Przykład:** Prostokątne boisko szkolne ma boki 6 m i 8 m. Dorysuj przekątną: otrzymasz trójkąt prostokątny. Z twierdzenia Pitagorasa wiesz, że kwadrat jego najdłuższego boku jest sumą kwadratów pozostałych. Zatem d² = 6² + 8² = 100, czyli d = 10 m. Dorysowany odcinek pozwolił powiązać znane długości boków z szukaną odległością. Nie zmienił przy tym ani kształtu, ani wymiarów boiska.
+**Przykład:** Prostokątne boisko szkolne ma boki 6 m i 8 m. Jaka odległość dzieli dwa przeciwległe narożniki? Same boki jej nie podają, więc dorysuj przekątną. Dzieli ona boisko na dwa trójkąty prostokątne, a przekątna jest w każdym z nich najdłuższym bokiem. Z twierdzenia Pitagorasa kwadrat najdłuższego boku to suma kwadratów dwóch pozostałych: d² = 6² + 8² = 36 + 64 = 100 (d² znaczy d · d). Skoro 10 · 10 = 100, to d = 10 m. Dorysowana linia pomogła tylko w obliczeniu, boiska nie zmieniła.
 
 **Kiedy się przydaje:** W geometrii, przy niewygodnych wyrażeniach i problemach, w których dane wydają się niezwiązane z celem.
 
@@ -641,9 +641,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 33. Systematycznie wypisuj przypadki i eliminuj niemożliwe
 
-**Opis:** Gdy możliwości jest niewiele, wypisz je w ustalonym porządku, na przykład w tabeli lub na rozgałęzionej liście. Podział powinien obejmować wszystko i nie zawierać powtórzeń. Najpierw sprawdź warunki, które szybko wykluczają wiele przypadków. Skreślaj niemożliwe warianty i zapisuj powód każdego odrzucenia. Dzięki temu łatwiej śledzić, co już sprawdzono, a co jeszcze zostało. Tylko pełne przeszukanie pozwala stwierdzić, że innych odpowiedzi nie ma. Sprawdzając część listy, możesz znaleźć rozwiązanie, lecz pozostałe możliwości nadal są niezbadane.
+**Opis:** Wypisz wszystkie możliwości w ustalonym porządku, na przykład w tabeli albo na rozgałęzionej liście, i skreślaj te, które łamią regułę. Zacznij od reguły, która od razu skreśla najwięcej, a przy każdym skreśleniu zapisz powód. Podziel możliwości tak, żeby każda trafiła do dokładnie jednej gałęzi: niczego nie brakuje i nic się nie powtarza. Metoda działa, gdy pełna lista jest dość krótka. Jeśli sprawdzisz tylko część, możesz znaleźć rozwiązanie, ale nie możesz twierdzić, że innych nie ma.
 
-**Przykład:** Kod do szafki zawiera cyfry 1, 2, 3 i 4, każdą dokładnie raz. Ostatnia musi być parzysta, a pierwsza mniejsza od drugiej. Podziel możliwości według ostatniej cyfry. Jeśli jest nią 2, po sprawdzeniu pozostałych warunków zostają 1342, 1432 i 3412. Jeśli jest nią 4, zostają 1234, 1324 i 2314. Inna cyfra nie może być na końcu. Te sześć kodów obejmuje więc wszystkie możliwości, a każdy spełnia warunki.
+**Przykład:** Kod do szafki składa się z cyfr 1, 2, 3, 4, każdej dokładnie raz. Reguły: ostatnia cyfra jest parzysta, a pierwsza mniejsza od drugiej. Podziel kody według ostatniej cyfry. Kody z końcówką 1 albo 3 skreślasz od razu, bo te cyfry są nieparzyste. Gałąź z końcówką 2: na pierwszych trzech miejscach cyfry 1, 3, 4 mogą stać w 6 kolejnościach. Skreślasz 3142, 4132 i 4312, bo pierwsza cyfra jest większa od drugiej; zostają 1342, 1432 i 3412. Gałąź z końcówką 4 sprawdzasz tak samo, zostają 1234, 1324 i 2314. Gałęzie się nie nakładają i obejmują każde dozwolone zakończenie, więc kodów jest dokładnie sześć.
 
 **Kiedy się przydaje:** W zagadkach logicznych, niewielkich zbiorach konfiguracji, problemach porządkowania i poszukiwaniu wszystkich rozwiązań.
 

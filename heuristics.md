@@ -565,9 +565,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 29. Build the large case from smaller cases
 
-**Description:** A recurrence is a rule for calculating one case from earlier cases. Mathematical induction is a proof method: check starting cases, then show that a claim for the needed earlier size implies it for the next. Both build large cases from small ones, but recurrence produces values whereas induction justifies a statement for every allowed whole-number size. The step uses only justified cases, and the base covers every size the rule needs.
+**Description:** Work out the smallest cases by hand, then build each bigger case from smaller ones you already have. Ask: how can the last move into this size be made? Every way leads back to a smaller case that is already solved, so the answers add up step by step. A rule that calculates each answer from earlier ones is called a recurrence. It gives values; proving a pattern for every size is a separate job, called induction.
 
-**Example:** Count routes for a robot climbing n steps with jumps of 1 or 2. Let a(n) be the number of routes, with a(1) = 1 and a(2) = 2. The last jump comes from n-1 or n-2, so a(n) = a(n-1) + a(n-2); thus a(3) = 3 and a(4) = 5. This recurrence computes values. It does not prove a formula for every n. Induction would check the base cases and prove the step for arbitrary n.
+**Example:** A robot climbs a staircase, and every jump goes up 1 or 2 steps. How many different routes lead to step 4? Count the small cases by hand: to step 1 there is 1 route (a jump of 1), to step 2 there are 2 (1 + 1, or 2). The last jump into step 3 starts from step 2 (a jump of 1) or from step 1 (a jump of 2), so the routes to step 3 are those to step 2 plus those to step 1: 2 + 1 = 3. Likewise for step 4: 3 + 2 = 5. Check by listing: 1+1+1+1, 1+1+2, 1+2+1, 2+1+1, 2+2 – five.
 
 **Useful for:** Counting, sequences, recursive procedures, and proofs indexed by whole numbers.
 
@@ -584,9 +584,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 30. Solve or count the complement
 
-**Description:** The complement is the set of all allowed outcomes that fail the condition you want. If success is hard to describe but failure is simple, count the whole set and subtract the failures. In probability, use P(success) = 1 - P(failure), but first specify the model. Dividing favorable outcomes by all outcomes works only when the elementary outcomes are equally likely. Failure cases must also be disjoint, or overlaps need correcting.
+**Description:** When a problem says "at least one", count the opposite instead: the outcomes where it never happens. These form the complement. Take the number of all possible outcomes and subtract the complement. This is easier because "none" is one simple condition, while "at least one" hides several cases at once. A probability is the number of good outcomes divided by the number of all outcomes, but only when every outcome is equally likely, as with a fair die.
 
-**Example:** Roll a fair six-sided die twice and ask for at least one six. The complement is no six on either roll. There are 6 × 6 = 36 equally likely ordered outcomes; 5 × 5 = 25 have no six. Thus success has 36 - 25 = 11 outcomes, so P = 11/36. Counting a six on each roll separately would double-count the outcome with two sixes.
+**Example:** You roll a fair die twice and want at least one six. Counting that directly needs three cases: a six on the first roll, on the second, or on both. Count the opposite instead: no six at all. Each result is a pair (first roll, second roll), so there are 6 × 6 = 36 pairs, all equally likely. Without a six each roll has 5 options: 5 × 5 = 25 pairs. So at least one six appears in 36 − 25 = 11 pairs, a probability of 11/36. Adding the pairs with a six on the first roll (6) and on the second (6) would give 12, because the pair (6, 6) is counted twice.
 
 **Useful for:** Counting, probability, and requirements such as "at least one" or "not all."
 
@@ -603,9 +603,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 31. Count the same thing in two ways
 
-**Description:** Double counting means counting one clearly defined set from two viewpoints. Because both methods describe the same objects, their totals must agree. This can reveal a formula, replace a hard count with an easier one, or catch an error. Decide first whether order matters and whether each object appears once or several times in each count. If one method lists choices, check whether later choices were already forced; treating them as independent creates overcounting.
+**Description:** Count the same thing twice, from two different viewpoints. Both counts describe the same objects, so the results must match. This can turn a hard count into an easy one, and a mismatch reveals a mistake. Before you start, decide what exactly counts as one object and whether order matters. Also ask how many times each object enters each count; if more than once, correct for it afterwards.
 
-**Example:** Six students each shake hands with every other student once. Each meets 5 others, giving 6 × 5 = 30 handshake ends. An actual handshake has two ends, so every handshake was counted twice: 30/2 = 15. Directly choosing two participants also gives 6 × 5 / 2 = 15. Agreement confirms the total; forgetting to divide by 2 would report 30.
+**Example:** Six students greet each other with a handshake, every pair exactly once. How many handshakes are there? First count, by student: each student shakes 5 hands, so together the students have 6 × 5 = 30 handshake ends (a handshake has two ends, one in each person's hand). Second count, by handshake: every handshake was counted twice, once for each of its two people, so there are 30 / 2 = 15 handshakes. Check from a third side: choose the first student in 6 ways and the second in 5, but the pair (A, B) equals (B, A), so again 6 × 5 / 2 = 15. Forgetting to divide by 2 would give 30.
 
 **Useful for:** Counting identities, audits, consistency checks, and translating arrangements into simpler codes.
 
@@ -622,9 +622,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 32. Add a helpful object or intermediate quantity
 
-**Description:** An auxiliary object is a new line, variable, subtotal, diagram, or intermediate target that the problem did not ask for. Add it for a specific reason: it should expose a relationship linking the given information to the goal. Define it precisely and check that it is allowed. It is a bridge, not an extra assumption; if it cannot exist or merely repeats the desired conclusion, the argument fails. Translate the result back to the original question.
+**Description:** When the facts you have do not connect to what you want, add something the problem did not ask for: draw a line, name an unknown with a letter, or work out a subtotal. Choose it so that it links what you know to what you want. It is a bridge, not a new assumption: it must be possible to draw it, and it must not assume the very thing you want to show. At the end, return to the original question.
 
-**Example:** A rectangular school court is 6 m by 8 m. Draw the diagonal to make a right triangle. For such a triangle, the Pythagorean rule says the square of the longest side equals the sum of the other squares: d² = 6² + 8² = 100, so d = 10 m. The added line connected the known sides to the requested distance without changing the court.
+**Example:** A rectangular school court is 6 m by 8 m. How far is it from one corner to the opposite one? The sides alone do not give that distance, so draw the diagonal. It cuts the court into two right triangles, and in each the diagonal is the longest side. By the Pythagorean rule, the square of the longest side equals the sum of the squares of the other two: d² = 6² + 8² = 36 + 64 = 100 (d² means d × d). Since 10 × 10 = 100, d = 10 m. The added line only helped the calculation; it did not change the court.
 
 **Useful for:** Geometry, awkward expressions, and problems where the givens seem disconnected from the goal.
 
@@ -641,9 +641,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 33. List cases systematically and eliminate impossibilities
 
-**Description:** An exhaustive case search writes every allowed possibility in a controlled order, usually as a table or branching list. Exhaustive means no option is omitted; disjoint means no option appears in two branches. Use a strong quick condition first to cross out impossible cases, and keep the reason for each deletion. This helps when the remaining search is small. If you inspect only some candidates, you may find a solution, but cannot claim no other solution exists.
+**Description:** Write down all possibilities in a fixed order, for example in a table or a branching list, and cross out those that break a rule. Start with the rule that crosses out the most at once, and note the reason for every deletion. Split the possibilities so that each lands in exactly one branch: nothing is missing and nothing repeats. This works when the full list is short enough to write. If you check only part of it, you may find a solution, but you cannot say there are no others.
 
-**Example:** A four-digit locker code uses 1, 2, 3, 4 once each, must end even, and must have first digit smaller than second. Split by last digit. For last 2, testing the inequality leaves 1342, 1432, 3412. For last 4, it leaves 1234, 1324, 2314. These branches are disjoint, and only 2 or 4 can be last, so the six codes cover every possibility. Each satisfies the rules, proving there are exactly six.
+**Example:** A locker code uses the digits 1, 2, 3, 4, each exactly once. Rules: the last digit is even, and the first digit is smaller than the second. Split by the last digit. Ending in 1 or 3 is crossed out at once, because those digits are odd. Ending in 2: the first three places hold 1, 3, 4 in 6 orders. Cross out 3142, 4132 and 4312, where the first digit is bigger than the second; 1342, 1432 and 3412 stay. Ending in 4 works the same way and leaves 1234, 1324 and 2314. The branches cannot overlap and together cover every allowed ending, so there are exactly six codes.
 
 **Useful for:** Logic puzzles, small configuration searches, ordering problems, and finding all solutions.
 
