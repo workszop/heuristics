@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Embed heuristics.md and heuristics_pl.md into the guide-data JSON of both reader pages.
 
-Usage: python3 tools/sync_guide_data.py [--check]
+Usage: python3 tests/tools/sync_guide_data.py [--check]
 --check only reports stale pages (exit 1) without writing.
 """
 import json
@@ -9,7 +9,7 @@ import pathlib
 import sys
 
 # ─── Constants ───
-ROOT = pathlib.Path(__file__).resolve().parent.parent
+ROOT = pathlib.Path(__file__).resolve().parents[2]
 PAGES = ['index.html', 'index_co.html']
 OPEN_TAG = '<script id="guide-data" type="application/json">'
 
