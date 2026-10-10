@@ -295,6 +295,50 @@ code { font-family: var(--font-mono); font-size: .9em; background: var(--paper-3
   }
 }
 .scheme-example p { white-space: pre-line; }
+
+/* ─── Scheme families: colour by primary source (S1-S5) ─── */
+:root {
+  --play-berry: #C6478B; --play-grape: #7A5AC2;
+  --fam-s1: var(--blue-soft);  --fam-s1-ink: var(--blue-ink);
+  --fam-s2: var(--green-soft); --fam-s2-ink: var(--green-ink);
+  --fam-s3: var(--play-grape); --fam-s3-ink: var(--paper);
+  --fam-s4: color-mix(in srgb, var(--play-berry) 88%, var(--ink)); --fam-s4-ink: var(--paper);
+  --fam-s5: var(--ink);        --fam-s5-ink: var(--paper);
+}
+[data-family="s1"] { --fam: var(--fam-s1); --fam-ink: var(--fam-s1-ink); }
+[data-family="s2"] { --fam: var(--fam-s2); --fam-ink: var(--fam-s2-ink); }
+[data-family="s3"] { --fam: var(--fam-s3); --fam-ink: var(--fam-s3-ink); }
+[data-family="s4"] { --fam: var(--fam-s4); --fam-ink: var(--fam-s4-ink); }
+[data-family="s5"] { --fam: var(--fam-s5); --fam-ink: var(--fam-s5-ink); }
+
+/* Sidebar: zebra rows, a gap between families, family-coloured numbers, active row = yellow */
+.scheme-list { gap: 2px; }
+.scheme-link.is-alt { background: var(--paper); }
+.scheme-link:hover, .scheme-link.is-alt:hover { background: var(--paper-3); }
+.scheme-link[data-family-start="true"] { margin-top: 10px; }
+.scheme-number { background: var(--fam, var(--paper-3)); color: var(--fam-ink, var(--ink-2)); font-weight: 500; }
+.scheme-link[aria-current="true"], .scheme-link[aria-current="true"].is-alt { background: var(--yellow); border-color: var(--yellow); box-shadow: none; }
+.scheme-link[aria-current="true"] .scheme-number { background: var(--fam); color: var(--fam-ink); }
+.scheme-link[aria-current="true"] .scheme-name { color: var(--yellow-ink); }
+.scheme-link[aria-current="true"] .scheme-meter { background: color-mix(in srgb, var(--ink) 18%, transparent); }
+
+/* Home: recommendation pills take their scheme's family colour */
+.recommendation[data-family] { background: var(--fam); color: var(--fam-ink); }
+.recommendation[data-family]:hover { background: color-mix(in srgb, var(--fam) 82%, var(--ink)); color: var(--fam-ink); }
+
+/* Scheme view: family chip, coloured example head, family step numbers */
+.family-chip { display: inline-flex; align-items: center; padding: 5px 10px; border-radius: var(--r-pill); background: var(--fam); color: var(--fam-ink); font-family: var(--font-mono); font-size: 10px; letter-spacing: .04em; }
+.scheme-example[data-family] .card-head { background: var(--fam); border-bottom-color: transparent; }
+.scheme-example[data-family] .card-head h2 { color: var(--fam-ink); }
+.reader-grid[data-family] .procedure-item::before { background: var(--fam); color: var(--fam-ink); }
+
+/* Break the long text blocks: first sentence as a lead, example as paragraphs */
+.reader-header .description { display: grid; gap: 10px; max-width: 75ch; }
+.reader-header .description-lead { color: var(--ink); font-size: calc(var(--reader-text-size) * 1.12); font-weight: 500; line-height: 1.5; }
+.reader-header .description-rest { color: var(--ink-2); font-size: var(--reader-text-size); line-height: 1.65; }
+.scheme-example .card-body { display: grid; gap: 12px; }
+.scheme-example .card-body p { max-width: 75ch; }
+.scheme-example .card-body p.example-task { max-width: none; padding: 14px 16px; border-radius: var(--r-md); background: var(--paper-2); color: var(--ink); }
 </style>
 </head>
 <body data-menu="closed">
@@ -645,6 +689,35 @@ function inlineElement(tag, text, className) {
   appendInline(element, text || '');
   return element;
 }
+function familyOf(scheme) {
+  const match = /\[S(\d)\]/.exec(scheme && scheme.sources ? scheme.sources : '');
+  return match ? 's' + match[1] : 's1';
+}
+function familyName(family) {
+  const current = model[state.lang] || model.pl;
+  const match = new RegExp('^###\\s+' + family.toUpperCase() + '\\s+(.+)$', 'm').exec(current && current.sourcesChunk ? current.sourcesChunk : '');
+  return match ? plainInline(match[1]) : family.toUpperCase();
+}
+function descriptionElement(text) {
+  // First sentence becomes the lead; the separating space stays in the DOM so textContent is unchanged.
+  const wrapper = document.createElement('div');
+  wrapper.className = 'description';
+  const value = String(text || '');
+  const match = /^([\s\S]*?[.!?…])(\s+)(?=[A-ZĄĆĘŁŃÓŚŹŻ„"(])/.exec(value);
+  if (!match || match[0].length >= value.length) { wrapper.appendChild(inlineElement('p', value, 'description-lead')); return wrapper; }
+  wrapper.appendChild(inlineElement('p', match[1] + match[2], 'description-lead'));
+  wrapper.appendChild(inlineElement('p', value.slice(match[0].length), 'description-rest'));
+  return wrapper;
+}
+function exampleBody(text) {
+  // One <p> per paragraph; the original blank-line separators stay as text nodes so textContent is unchanged.
+  const fragment = document.createDocumentFragment();
+  String(text || '').split(/(\n\s*\n)/).forEach((part, index) => {
+    if (index % 2 === 1) { fragment.appendChild(document.createTextNode(part)); return; }
+    if (part) fragment.appendChild(inlineElement('p', part, index === 0 ? 'example-task' : ''));
+  });
+  return fragment;
+}
 function schemeById(id) {
   const current = model[state.lang] || model.pl;
   return current.schemes.find(item => item.id === Number(id)) || null;
@@ -788,6 +861,7 @@ function renderSidebar() {
     link.type = 'button';
     link.className = 'scheme-link';
     link.dataset.schemeId = String(scheme.id);
+    link.dataset.family = familyOf(scheme);
     link.hidden = Boolean(query && !haystack.includes(query));
     link.setAttribute('aria-current', state.view === 'scheme' && state.selected === scheme.id ? 'true' : 'false');
     link.title = scheme.title;
@@ -801,6 +875,12 @@ function renderSidebar() {
     meter.appendChild(fill);
     link.appendChild(meter);
     refs.schemeList.appendChild(link);
+  });
+  let previousFamily = null;
+  [...refs.schemeList.querySelectorAll('.scheme-link')].filter(item => !item.hidden).forEach((item, index) => {
+    item.classList.toggle('is-alt', index % 2 === 1);
+    item.dataset.familyStart = String(previousFamily !== null && item.dataset.family !== previousFamily);
+    previousFamily = item.dataset.family;
   });
   const visible = [...refs.schemeList.querySelectorAll('.scheme-link')].some(item => !item.hidden);
   refs.sidebarEmpty.hidden = visible || !query;
@@ -851,7 +931,7 @@ function renderHome() {
     card.appendChild(cardZone('card-head', textElement('h3', row.obstacle)));
     const recommendations = document.createElement('div'); recommendations.className = 'recommendations';
     row.recommendations.forEach(recommendation => {
-      const button = document.createElement('button'); button.type = 'button'; button.className = 'recommendation'; button.dataset.openScheme = String(recommendation.id);
+      const button = document.createElement('button'); button.type = 'button'; button.className = 'recommendation'; button.dataset.openScheme = String(recommendation.id); button.dataset.family = familyOf(schemeById(recommendation.id));
       const number = textElement('b', String(recommendation.id) + ' ');
       button.appendChild(number);
       button.appendChild(document.createTextNode(recommendation.label));
@@ -869,23 +949,25 @@ function renderScheme() {
   const back = document.createElement('button'); back.type = 'button'; back.className = 'reader-back'; back.dataset.nav = 'home';
   const arrow = document.createElementNS('http://www.w3.org/2000/svg', 'svg'); arrow.setAttribute('viewBox', '0 0 24 24'); arrow.setAttribute('fill', 'none'); arrow.setAttribute('stroke', 'currentColor'); arrow.setAttribute('stroke-width', '2'); arrow.innerHTML = '<path d="m15 18-6-6 6-6"></path>'; back.appendChild(arrow); back.appendChild(document.createTextNode(t('backHome')));
   refs.mainInner.appendChild(back);
-  const header = document.createElement('header'); header.className = 'reader-header';
+  const family = familyOf(scheme);
+  const header = document.createElement('header'); header.className = 'reader-header'; header.dataset.family = family;
   header.appendChild(textElement('h1', scheme.title));
-  const explanation = inlineElement('p', scheme.description, 'description');
+  const explanation = descriptionElement(scheme.description);
   explanation.dataset.component = 'scheme-explanation';
   header.appendChild(explanation);
   const meta = document.createElement('div'); meta.className = 'reader-meta';
+  meta.appendChild(textElement('span', family.toUpperCase() + ' · ' + familyName(family), 'family-chip'));
   meta.appendChild(textElement('span', t('selectedScheme') + ' ' + scheme.id, 'meta-chip'));
   meta.appendChild(textElement('span', t('progressMeaning'), 'meta-chip'));
   meta.appendChild(textElement('span', scheme.id + ' / 37', 'meta-chip'));
   header.appendChild(meta); refs.mainInner.appendChild(header);
   const example = document.createElement('section');
-  example.className = 'scheme-example'; example.dataset.component = 'scheme-example'; example.dataset.scheme = String(scheme.id);
+  example.className = 'scheme-example'; example.dataset.component = 'scheme-example'; example.dataset.scheme = String(scheme.id); example.dataset.family = family;
   example.setAttribute('aria-labelledby', 'exampleHeading');
   const exampleHeading = textElement('h2', t('example')); exampleHeading.id = 'exampleHeading';
-  example.appendChild(cardZone('card-head', exampleHeading)); example.appendChild(cardZone('card-body', inlineElement('p', scheme.example)));
+  example.appendChild(cardZone('card-head', exampleHeading)); example.appendChild(cardZone('card-body', exampleBody(scheme.example)));
   refs.mainInner.appendChild(example);
-  const grid = document.createElement('div'); grid.className = 'reader-grid';
+  const grid = document.createElement('div'); grid.className = 'reader-grid'; grid.dataset.family = family;
   const procedure = document.createElement('section'); procedure.className = 'card';
   const heading = document.createElement('div'); heading.className = 'card-heading card-head';
   heading.appendChild(textElement('h2', t('procedure')));
