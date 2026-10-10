@@ -52,9 +52,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 2. Reuse the structure of a solved problem
 
-**Description:** An analogy is a comparison between situations that share important relationships. Instead of matching topics or copying an answer, identify what depends on what, what is limited, and what counts as success. Map those roles from a solved problem to the new one, then test differences that could break the match. The method can suggest a useful route when the subject feels unfamiliar, but surface resemblance alone is weak evidence. The relationships matter, not the decoration.
+**Description:** An analogy: the new problem works like one you have already solved – a different story, the same relationships. Do not copy the answer or match only the topic. Find what depends on what, what is limited and what you want. Match each part of the solved problem to a part of the new one, then reuse the method, because the same relationships make the same method work. Before you trust the match, check the differences that could break it.
 
-**Example:** A board-game level requires keys before doors open. Use that structure to plan a group presentation: keys become sources, doors slides, and the final gate rehearsal. Several people can gather sources at once, so adjust the analogy instead of copying game moves. The map shows that a missing source blocks a slide, while parallel research saves time. The dependency pattern helped; the game’s theme did not.
+**Example:** You have already solved this: tap A fills a pool in 3 hours and tap B in 6 hours. Together they need 2 hours, because in one hour A fills 1/3 of the pool and B 1/6, which is 1/2 together. New problem: Ola paints a fence in 3 hours and Kuba in 6. The story differs, the structure is the same: each painter is a tap, the fence is the pool, and the rates add up. So 1/3 + 1/6 = 1/2 of the fence per hour, which is 2 hours. One difference must be checked: this works only if they paint at the same time without getting in each other's way, for example with two brushes.
 
 **Useful for:** Unfamiliar problems, design, troubleshooting, and learning a new subject.
 
@@ -71,9 +71,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 3. Break the problem into parts
 
-**Description:** Break a large problem into smaller tasks with clear outputs, then combine those outputs and check the connections. Mark dependencies, meaning tasks that cannot start until another result exists. This reduces overload and makes work shareable, but it does not stop parts affecting one another: good pieces can clash when joined. The final check must still test the original goal and all constraints.
+**Description:** When a problem is too big to grasp at once, split it into smaller tasks and write down what each one should produce. Note which task must wait for another result: you cannot book a room before you have permission. Small tasks are easier to start and easy to share between people. Then join the results and check the connections, because parts that work alone can clash together. The final check must test the original goal and all the conditions.
 
-**Example:** Planning a class film night feels like one huge job. Split it into permission and room, film choice, snacks, timing, and publicity. Permission comes before booking, and the film length sets the finish time. Two students choose snacks separately, but their lists exceed the budget, so the class combines them and removes one item. Dividing the work makes ownership clear; reconnecting the pieces catches the budget and timing conflicts.
+**Example:** A class wants a film night, which looks like one huge job. Split it into five parts: permission, room, film, snacks, announcement. Mark what must wait: the room comes after permission, and the announcement needs the film and the room. One student plans the drinks and another the food, each list costing 6 euros; the class budget is 10 euros. Joined, the lists cost 12 euros, so the class drops one 2-euro item and gets exactly 10. Splitting shows who does what; only checking the whole catches the budget.
 
 **Useful for:** Projects, complex calculations, system design, and multi-stage investigations.
 
@@ -92,7 +92,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 **Description:** Controlled trial and error means each attempt is a small experiment: choose a plausible candidate, predict an outcome, test it safely, and record what the result teaches you. Change one relevant feature when possible, so you can connect cause and effect. A failed attempt is useful when it rules out an option; repeating random guesses is not. Use this only where the cost and risk are limited.
 
-**Example:** Your team predicts that folded strips will strengthen a paper bridge. Build the same 20-centimeter bridge with three strips, then five, changing only their number. Add identical books one by one until each version collapses: three strips hold four books, while five hold eight. Capacity is the measured outcome, not a guess. The second test supports using more strips, but it does not prove that every bridge needs five.
+**Example:** Your team predicts that folded paper strips make a paper bridge stronger. You build two identical 20-centimeter bridges, one with three strips and one with five, so the number of strips is the only difference. Then you add identical books one by one until each bridge collapses: three strips hold four books, five strips hold eight. Since nothing else changed, the extra books most likely come from the strips. The prediction held in this test, because you counted the books. It does not prove that every bridge needs five strips.
 
 **Useful for:** Troubleshooting, prototypes, and small searches where tests are cheap and safe.
 
@@ -111,7 +111,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 **Description:** Start with any solution that meets the hard requirements, then improve it through nearby changes, such as swapping two items. Keep changes that improve the chosen score. If small changes stop helping, you may be at a local optimum, meaning nothing nearby is better, so save the best version and restart or make a larger change. This search can find a better answer without proving it is the best possible one.
 
-**Example:** Your group has a valid study schedule for five subjects, but three tests land on one evening. Swapping two blocks improves the score by giving each test review time. After three swaps, nearby versions are worse. Save it and rebuild from another subject order. The second plan spreads review sessions around the fixed tests; deadlines and subjects stay fixed. One score prevents choosing a prettier but weaker plan.
+**Example:** A class has five evenings, Monday to Friday, to study five subjects, one subject per evening. The tests are fixed: Maths on Wednesday, Physics on Thursday, Biology on Friday. A plan scores one point for each test whose subject is studied the evening before. Start with Maths, Physics, History, Biology, Geography: only Biology fits, score 1. Swapping Monday and Tuesday puts Maths on Tuesday: score 2. Now every swap of neighbouring evenings gives only 1 (a bigger change, such as swapping Monday with Wednesday, would also help): a local optimum. Restart from History, Geography, Maths, Physics, Biology (score 0). Three swaps give History, Maths, Physics, Biology, Geography: score 3, the maximum, since there are only three tests.
 
 **Useful for:** Schedules, layouts, routes, resource allocation, and designs with many possible answers.
 
@@ -130,7 +130,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 **Description:** An order-of-magnitude estimate asks roughly how large a result is before you spend time on exact arithmetic. Round uncertain inputs, keep units, state assumptions, and use a low and high case to create a range. This catches a misplaced zero or an unrealistic plan early. It is a reality check, not an exact answer, guarantee, or fixed price; use a rigorous calculation when the decision needs one.
 
-**Example:** Your class wants to raise 100 euros by selling snacks. A quick estimate uses 20 students, 3 items each, and 2 euros per item: 20 × 3 × 2 = 120 euros. If some sell only 2 and others sell 4, a rough range is 80 to 160 euros. The range shows the target is plausible, while exact costs and unsold snacks still need checking.
+**Example:** Your class wants to raise 100 euros by selling snacks. A quick estimate: 20 students, 3 snacks each, 2 euros per snack, so 20 × 3 × 2 = 120 euros. Some students will sell only 2 snacks and others 4, which gives 20 × 2 × 2 = 80 euros at the low end and 20 × 4 × 2 = 160 euros at the high end. The range from 80 to 160 contains 100, so the goal is realistic. If an exact calculation later gave 1200 euros, the estimate would show at once that an extra zero slipped in. Costs and unsold snacks still need checking.
 
 **Useful for:** Early planning, quick feasibility checks, and catching implausible calculations.
 
