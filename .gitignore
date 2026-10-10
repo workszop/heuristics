@@ -1,8 +1,17 @@
+# Local-only working area: plans, reviews, scratch scripts, screenshots, drafts.
+# Never committed. See README.md for the list of files that ARE in the repo.
+_local/
+
+# Agent/tool state that may be recreated at the repo root
+.superpowers/
+__pycache__/
+
+# Safety net for stray working artifacts outside _local/
 mockups/
 plans/
 superpowers/
+scratch/
 progress.md
 review*.md
 *.plan.md
 *.draft.*
-scratch/
