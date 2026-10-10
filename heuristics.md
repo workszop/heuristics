@@ -111,7 +111,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 **Description:** Start with any solution that meets the hard requirements, then improve it through nearby changes, such as swapping two items. Keep changes that improve the chosen score. If small changes stop helping, you may be at a local optimum, meaning nothing nearby is better, so save the best version and restart or make a larger change. This search can find a better answer without proving it is the best possible one.
 
-**Example:** A class has five evenings, Monday to Friday, to study five subjects, one subject per evening. The tests are fixed: Maths on Wednesday, Physics on Thursday, Biology on Friday. A plan scores one point for each test whose subject is studied the evening before. Start with Maths, Physics, History, Biology, Geography: only Biology fits, score 1. Swapping Monday and Tuesday puts Maths on Tuesday: score 2. Now every swap of neighbouring evenings gives only 1 (a bigger change, such as swapping Monday with Wednesday, would also help): a local optimum. Restart from History, Geography, Maths, Physics, Biology (score 0). Three swaps give History, Maths, Physics, Biology, Geography: score 3, the maximum, since there are only three tests.
+**Example:** A class has five evenings, Monday to Friday, to study five subjects, one subject per evening. The tests are fixed: Maths on Wednesday, Physics on Thursday, Biology on Friday. A plan scores one point for each test whose subject is studied the evening before. Start with Maths, Physics, History, Biology, Geography: only Biology fits, score 1. Swapping Monday and Tuesday puts Maths on Tuesday: score 2. Now every swap of neighbouring evenings gives only 1 (a bigger change, such as swapping Monday with Wednesday, would also help): a local optimum. Restart from History, Geography, Maths, Physics, Biology (score 0). Three swaps give History, Maths, Physics, Biology, Geography: score 3, the maximum possible, since there are only three tests.
 
 **Useful for:** Schedules, layouts, routes, resource allocation, and designs with many possible answers.
 
@@ -206,7 +206,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 **Description:** Some choices cannot be split: a booth is built whole or not at all, a bus is hired whole, a person is not assigned by halves. With several such choices you would have to test many combinations. So pretend for a moment that splitting is allowed: half a booth takes half the time and earns half the points. Then you only take, one by one, whatever pays most per hour, and the result shows the most you could possibly get. Finally return to whole choices and test real combinations, because a rounded fraction can break the limit.
 
-**Example:** The student council has 6 hours for booths and wants the most points. Booth A takes 4 hours and earns 8 points, B 3 hours and 6 points, C 2 hours and 3 points. Booths cannot be halved, but pretend they can: A and B earn 2 points per hour, C only 1.5. Take all of A and 2/3 of B for the last 2 hours (4 points): 12 in total. Every real plan is also allowed in the pretend version, where 12 is the maximum, so no real plan beats 12. Whole booths: A + B needs 7 hours, too many; A + C fits in 6 hours for 11 points, beating B + C (9) and A (8).
+**Example:** The student council has 6 hours for fair booths and wants the most points. Booth A takes 4 hours and earns 8 points, B 3 hours and 6 points, C 2 hours and 3 points. Booths cannot be halved, but pretend they can: A and B earn 2 points per hour, C only 1.5. Take all of A and 2/3 of B for the last 2 hours (4 points): total 12. Every real plan is also allowed in the pretend version, where 12 is the maximum, so no real plan beats it. Whole booths: A + B needs 7 hours, too many; A + C fits in 6 hours for 11 points, beating B + C (9) and A (8).
 
 **Useful for:** Selecting items, assigning resources, and planning quantities that must eventually be whole numbers.
 
@@ -223,7 +223,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 11. Use bounds to judge how much improvement is possible
 
-**Description:** A bound is a value beyond which the best answer cannot lie. Looking for the shortest route, drop a rule, for example "stay on the streets", and solve that task. Every real route is allowed there too, so its best answer is shorter or equal: a lower bound. A real route you find shows the best is at most that long: an upper bound. The best answer lies between them, and the gap shows how much more you can gain. If they meet, it is proved best. For the biggest result, swap roles. Give each bound a reason.
+**Description:** A bound is a value beyond which the best answer cannot lie. Looking for the shortest route, drop a rule, for example "stay on the streets", and solve that task. Every real route is allowed there too, so its best answer is shorter or equal: a lower bound. A real route you find shows the best is at most that long: an upper bound. The best answer lies between them, and the gap shows how much more you can gain. If they meet, it is proved best. For the biggest result, swap roles. Every bound must be justified, not guessed.
 
 **Example:** You cycle from home to school and look for the shortest route along the streets. Drop the street rule for a moment: in a straight line the distance is 8 km. Every street route is also allowed in that easier version, so none can be shorter: 8 km is a lower bound. You find a street route of 10 km, so the best one is at most 10 km. The best street route lies between 8 and 10 km, and further searching can save at most 2 km (20 percent). Later you find a 9 km route: the range shrinks to 8–9 km. Only a street route of exactly 8 km would prove it best.
 
@@ -434,7 +434,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 **Description:** Draw the problem as a map: people or parts as dots, and arrows for who passes work or influence to whom. On the map look for the bottleneck, the spot that limits the speed of the whole process, and for incentives, the rewards that make people choose a certain action. Such a map helps predict side effects of a change. It shows connections, not causes, so try a small change first and check the result as a whole.
 
-**Example:** Four students each send slides to one classmate, the editor, who assembles the presentation before the deadline. The teacher gives one point per slide, so everyone sends more and more. The editor gets 18 slides late, many repeating the same content, and cannot finish. The map shows why: the point per slide is the incentive that floods the editor, the bottleneck. The students ask the teacher for a trial: grade the whole presentation and allow at most 3 slides per student. Now 4 × 3 = 12 slides arrive without repeats and the editor finishes on time. One trial suggests the rule helped, but does not prove it caused every improvement.
+**Example:** Four students each send 4 or 5 slides to one classmate, the editor, who assembles the presentation before the deadline. The teacher gives one point per slide, so everyone sends more and more. The editor gets 18 slides late, many repeating the same content, and cannot finish. The map shows why: the point per slide is the incentive that floods the editor, the bottleneck. The students ask the teacher for a trial: grade the whole presentation and allow at most 3 slides per student. Now 4 × 3 = 12 slides arrive without repeats and the editor finishes on time. One trial suggests the rule helped, but does not prove it caused every improvement.
 
 **Useful for:** Organizational problems, process bottlenecks, coordination, and changes with side effects.
 
@@ -451,7 +451,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 23. Experiment, find a pattern, then explain it
 
-**Description:** Run a few small experiments to discover a possible pattern, then find the reason it should hold. A pattern is a repeated relationship; a proof explains why it must hold under the given rules. Record examples in a consistent way and test one awkward case. The first few results fit many different rules, so examples suggest a rule but do not prove it always works. If a test fails, fix the rule instead of hiding the exception.
+**Description:** Run a few small experiments to discover a possible pattern, then find the reason it should hold. A pattern is a repeated relationship; a proof explains why it must hold under the given rules. Record examples in a consistent way. The first few results fit many different rules, so examples suggest a rule but do not prove it always works. If a test fails, fix the rule instead of hiding the exception.
 
 **Example:** Squares are made from matchsticks and placed in a row so that neighbors share a side. One square needs 4 matchsticks, two need 7, three need 10. Each time 3 more are added, so eight squares should need 4 + 7 × 3 = 25 matchsticks. Why? A new square already shares one side with the previous one, so only three matchsticks are added. That explains any straight row. The numbers 4, 7 and 10 alone would not be proof, because other rules fit them too.
 
@@ -472,7 +472,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 **Description:** To check a claim, try to break it. If you suspect it is false, look for a counterexample: one case that meets the starting conditions but not the conclusion. One is enough to reject the claim. If you suspect it is true, assume the opposite and follow the consequences. If they lead to something impossible, the opposite is out and the claim stays (this is a proof by contradiction). Not finding a counterexample after a few tries proves nothing.
 
-**Example:** Claim 1: ‘Every number ending in 5 is prime.’ The example 5 fits, but one example proves nothing, so look for a case that breaks it. The number 15 ends in 5 and 15 = 3 × 5, so it is not prime. One counterexample is enough to reject the claim. Claim 2: ‘Every multiple of 4 is even.’ Assume the opposite: some multiple of 4 is odd. But every multiple of 4 is 4 times a whole number k, and 4 × k = 2 × (2 × k), so it divides by 2 and is even. Odd and even at once is impossible, so the opposite fails and the claim stays.
+**Example:** Claim 1: ‘Every number ending in 5 is prime.’ The example 5 fits, but one example proves nothing, so look for a case that breaks it. The number 15 ends in 5 and 15 = 3 × 5, so it is not prime. One counterexample is enough to reject the claim. Claim 2: ‘There is no largest whole number.’ Assume the opposite: there is a largest one, N. But N + 1 is also a whole number, and it is larger than N. A largest number that is not the largest is impossible, so the opposite fails and the claim stays.
 
 **Useful for:** Proofs, reviewing universal claims, and exposing faulty rules.
 
@@ -489,7 +489,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 25. Focus on an extreme element
 
-**Description:** Pick an extreme member of the group: the tallest person, the smallest number, the first or last step. A member at the end of the scale cannot have things that an ordinary member could have, so one look at it can replace checking everyone. First make sure it exists (a finite group always has a tallest). Then ask what the claim would demand of it. If it demands something even bigger or smaller, you have a contradiction. Choose a member really in the group, not a huge number invented as a test.
+**Description:** Pick an extreme member of the group: the tallest person, the smallest number, the first or last step. A member at the end of the scale cannot have things that an ordinary member could have, so one look at it can replace checking everyone. First make sure it exists (a finite group always has a tallest). Then ask what the claim would demand of it. If it demands something even bigger or smaller, you have a contradiction. Pick someone who really is in the group, not an imagined person taller than everyone.
 
 **Example:** Five friends stand in a circle. Each says: ‘The person on my right is taller than me.’ Can all five be telling the truth? You do not need to know anyone's height or try every arrangement. Take the tallest person. If she is telling the truth, her right neighbor is taller than the tallest person in the circle, which is impossible. So at least one friend is wrong. The same argument works for a circle of any size.
 
@@ -510,7 +510,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 **Description:** The pigeonhole principle says: if you put more objects into fewer categories, some category gets at least two objects. The objects can be people, dates, files or game pieces; the categories are whatever you sort them by. This lets you prove that a repetition or collision cannot be avoided, even when you cannot say which category it will happen in. For a stronger claim, multiply the number of categories by 2: more than 12 × 2 objects in 12 categories force some category to hold at least 3.
 
-**Example:** In a class of 25 students, can you be sure that at least three were born in the same month? Sort the students by birth month. That gives 12 slots, and each student fits exactly one. Try to refute it. Suppose every month had at most 2 students. Then the class would have at most 12 × 2 = 24 students. But there are 25, so some month has at least 3. You know such a month exists without checking a single birthday, though the principle does not say which month it is.
+**Example:** In a class of 25 students, can you be sure that at least three were born in the same month? Sort the students by birth month. That gives 12 categories, and each student fits exactly one. Try to refute it. Suppose every month had at most 2 students. Then the class would have at most 12 × 2 = 24 students. But there are 25, so some month has at least 3. You know such a month exists without checking a single birthday, though the principle does not say which month it is.
 
 **Useful for:** Proving unavoidable repetitions, collisions, close pairs, and capacity limits.
 
@@ -527,7 +527,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 27. Find something that cannot change
 
-**Description:** An invariant is something that no allowed move can change, such as the parity (odd or even) of a count, a total or a remainder. Write down the moves, pick a candidate property and check that every move keeps it. If the start and the target have different values of it, the target cannot be reached. If the values match, you have learned nothing yet: the target may still be out of reach for other reasons, so you must study the moves further.
+**Description:** An invariant is something that no allowed move can change, such as the parity (odd or even) of the number of switches that are on, a total or a remainder. Write down the moves, pick a candidate property and check that every move keeps it. If the start and the target have different values of it, the target cannot be reached. If the values match, you have learned nothing yet: the target may still be out of reach for other reasons, so you must study the moves further.
 
 **Example:** Three switches are all off: 000, where 1 means on. The only allowed move flips switches 1 and 2 together. Can you reach 100? Count the switches that are on. A move flips two switches, and each one adds 1 or removes 1, so the count changes by +2, 0 or -2 and stays even. State 100 has one switch on, an odd number, so it is impossible. What about 101? Two on is even, so parity does not forbid it, yet from 000 you can only reach 110 and then return to 000, because switch 3 never changes. So 101 is impossible too: matching parity was not enough.
 
@@ -565,9 +565,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 29. Build the large case from smaller cases
 
-**Description:** Work out the smallest cases by hand, then build each bigger case from smaller ones you already have. Ask: how can the last move into this size be made? Every way leads back to a smaller case that is already solved, so the answers add up step by step. A rule that calculates each answer from earlier ones is called a recurrence. It gives values; proving a pattern for every size is a separate job, called induction.
+**Description:** Work out the smallest cases by hand, then build each bigger case from smaller ones you already have. Ask: how can the last move into this size be made? Every way leads back to a smaller case that is already solved, so the answers add up step by step. A rule that calculates each answer from earlier ones is called a recurrence. Proving that the pattern holds for every size is a different task (induction).
 
-**Example:** A robot climbs a staircase, and every jump goes up 1 or 2 steps. How many different routes lead to step 4? Count the small cases by hand: to step 1 there is 1 route (a jump of 1), to step 2 there are 2 (1 + 1, or 2). The last jump into step 3 starts from step 2 (a jump of 1) or from step 1 (a jump of 2), so the routes to step 3 are those to step 2 plus those to step 1: 2 + 1 = 3. Likewise for step 4: 3 + 2 = 5. Check by listing: 1+1+1+1, 1+1+2, 1+2+1, 2+1+1, 2+2 – five.
+**Example:** A robot climbs a staircase, and every jump goes up 1 or 2 steps. How many routes lead to step 4? Count small cases by hand: to step 1 there is 1 route (jump 1), to step 2 there are 2 (1 + 1, or 2). The last jump into step 3 starts from step 2 (jump 1) or step 1 (jump 2), so routes to step 3 equal those to step 2 plus those to step 1: 2 + 1 = 3. Likewise for step 4: 3 + 2 = 5. Listing: 1 + 1 + 1 + 1, 1 + 1 + 2, 1 + 2 + 1, 2 + 1 + 1, 2 + 2 – five.
 
 **Useful for:** Counting, sequences, recursive procedures, and proofs indexed by whole numbers.
 
@@ -603,7 +603,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 31. Count the same thing in two ways
 
-**Description:** Count the same thing twice, from two different viewpoints. Both counts describe the same objects, so the results must match. This can turn a hard count into an easy one, and a mismatch reveals a mistake. Before you start, decide what exactly counts as one object and whether order matters. Also ask how many times each object enters each count; if more than once, correct for it afterwards.
+**Description:** Count the same thing twice, from two different viewpoints. Both counts describe the same objects, so the results must match. This can turn a hard count into an easy one, and a mismatch reveals a mistake. Before you start, decide what exactly counts as one object and whether order matters. Also ask whether one object can be counted more than once; if so, correct for it afterwards.
 
 **Example:** Six students greet each other with a handshake, every pair exactly once. How many handshakes are there? First count, by student: each student shakes 5 hands, so together the students have 6 × 5 = 30 handshake ends (a handshake has two ends, one in each person's hand). Second count, by handshake: every handshake was counted twice, once for each of its two people, so there are 30 / 2 = 15 handshakes. Check from a third side: choose the first student in 6 ways and the second in 5, but the pair (A, B) equals (B, A), so again 6 × 5 / 2 = 15. Forgetting to divide by 2 would give 30.
 
@@ -679,7 +679,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 35. Use a greedy choice as a first pass
 
-**Description:** A greedy method builds an answer step by step, each time taking what looks best right now by a simple rule, such as the biggest token that still fits or the nearest stop. It quickly gives a first candidate when checking every possibility would take too long. Then look at the whole result and try to improve it. A good-looking move can leave an awkward remainder or a dead end, so a greedy answer is a candidate, not proof that nothing better exists.
+**Description:** A greedy method builds an answer step by step, each time taking what looks best right now by a simple rule, such as the biggest token that still fits or the closest stop on a route. It quickly gives a first candidate when checking every possibility would take too long. Then look at the whole result and try to improve it. A good-looking move can leave an awkward remainder or a dead end, so a greedy answer is a candidate, not proof that nothing better exists.
 
 **Example:** In a game you must collect exactly 6 points using as few tokens as possible. Tokens are worth 1, 3 and 4 points, and you may use each kind as often as you like. The greedy rule: always take the biggest token that still fits. Take 4 (2 points remain), then 3 does not fit, so 1 and 1: 3 tokens in all. But two 3-point tokens also make 6, so the greedy answer is valid but not the best: the big token left a remainder of 2 that only small tokens can fill. Two is the minimum, since no single token is worth 6.
 
@@ -719,7 +719,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 **Description:** Generalizing means replacing one fixed number with a letter, such as n for any whole number from 1 up, and studying the whole family of similar cases. A pattern seen in a few cases is only a guess. To be sure, show that it holds for the first case and that, whenever it holds for one case, it holds for the next one; then it holds for all, like a row of falling dominoes. Only then put the original number into the general result.
 
-**Example:** What is 1 + 3 + 5 + 7, the first four odd numbers? Small cases: 1 = 1 × 1, 1 + 3 = 2 × 2. Guess: the first n odd numbers add up to n × n, or n². Picture an n × n square of dots; add a row and a column, an L of 2n + 1 dots (7 when n = 3), for an (n + 1) × (n + 1) square. That L is the next odd number, so n² + 2n + 1 = (n + 1)². The formula holds for 1 and passes from each case to the next, so it always holds. For four numbers: 16.
+**Example:** What is 1 + 3 + 5 + 7, the first four odd numbers? Small cases: 1 = 1 × 1, 1 + 3 = 2 × 2, so guess: n odd numbers add up to n × n, or n². Picture an n × n square of dots. Such a square grows in L-shaped layers of 1, 3, 5… dots. The next L, with 2n + 1 dots (7 when n = 3), makes an (n + 1) × (n + 1) square and is the next odd number: n² + 2n + 1 = (n + 1)². The formula holds for 1 and passes from each case to the next, so it always holds. For four numbers: 16.
 
 **Useful for:** Unexplained numerical patterns, reusable formulas, and problems with arbitrary-looking constants.
 
