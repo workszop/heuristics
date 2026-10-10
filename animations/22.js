@@ -31,7 +31,7 @@ HeurAnim.register(22, {
       students.forEach(node => api.tone(node, null));
       api.tone(editor, step === 2 ? 'bad' : (step === 4 ? 'good' : null));
       api.tone(deadline, step === 2 ? 'bad' : (step === 4 ? 'good' : null));
-      flows.forEach(node => { api.visible(node, true); api.tone(node, step === 1 ? 'accent' : null); });
+      flows.forEach(node => { api.visible(node, true); api.tone(node, step === 1 ? 'info' : null); });
       api.tone(toDeadline, step === 2 ? 'bad' : (step === 4 ? 'good' : null));
       api.visible(incentive, api.between(step, 1, 2));
       api.tone(incentive, step === 1 ? 'accent' : null);
@@ -46,7 +46,7 @@ HeurAnim.register(22, {
       api.setText(verdict, dl || '');
       api.tone(verdict, step === 2 ? 'bad' : 'good');
       const foot = [null, null, { pl: 'wąskie gardło: jedna osoba i za dużo slajdów', en: 'bottleneck: one person and too many slides' }, null,
-        { pl: 'pilotaż, nie dowód', en: 'a pilot, not proof' }][step];
+        { pl: 'próba, nie dowód', en: 'a trial, not proof' }][step];
       api.visible(bottom, Boolean(foot));
       api.setText(bottom, foot || '');
     };

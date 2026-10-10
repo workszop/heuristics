@@ -32,7 +32,7 @@ HeurAnim.register(10, {
 
     const rows = HOURS.map((hours, i) => {
       const group = api.box(ROW_X, ROW_YS[i], hours * PX_PER_HOUR, ROW_H, null);
-      if (i === 1) api.el('rect', { x: ROW_X, y: ROW_YS[i], width: 2 * PX_PER_HOUR, height: ROW_H, rx: 10, class: 'ha-area is-accent' }, group);
+      if (i === 1) api.el('rect', { x: ROW_X, y: ROW_YS[i] + ROW_H + 2, width: 2 * PX_PER_HOUR, height: 5, rx: 2.5, class: 'ha-area is-accent' }, group);
       api.text(ROW_X + hours * PX_PER_HOUR / 2, ROW_YS[i] + ROW_H / 2,
         { pl: 'Stoisko ' + NAMES[i] + '\n' + hours + ' h · ' + POINTS[i] + ' pkt', en: 'Booth ' + NAMES[i] + '\n' + hours + ' h · ' + POINTS[i] + ' pts' }, 'ha-label--center', group);
       return group;

@@ -6,7 +6,7 @@ HeurAnim.register(13, {
     { pl: 'Kontrola: jeden uczeń chodzi na robotykę i na szachy, a oba koła są o tej samej godzinie. Plan nie działa.', en: 'Check: one student is in both robotics and chess, and both clubs are at the same time. The plan fails.' },
     { pl: 'Reguła 1: koła ze wspólnym uczniem nie spotykają się naraz. Odcina ten plan i podobne. Nowy plan: robotyka w sali bez gniazdek.', en: 'Rule 1: clubs sharing a student never meet together. It cuts off this plan and similar ones. New plan: robotics in a room with no sockets.' },
     { pl: 'Roboty nie mają prądu. Reguła 2: robotyka tylko w pracowni. Odcina kolejne plany.', en: 'The robots have no power. Rule 2: robotics only in the lab. It cuts off more plans.' },
-    { pl: 'Trzeci plan przechodzi: robotyka w pracowni, chór w auli o 15:00. Reguły wynikają z zadania, więc nic poprawnego nie znika.', en: 'The third plan passes: robotics in the lab, choir in the hall at 15:00. The rules follow from the task, so nothing valid is lost.' }
+    { pl: 'Trzeci plan przechodzi: robotyka w pracowni o 15:00, szachy o 16:00. Reguły wynikają z zadania, więc nic poprawnego nie znika.', en: 'The third plan passes: robotics in the lab at 15:00, chess at 16:00. The rules follow from the task, so nothing valid is lost.' }
   ],
   build(api) {
     // ─── Layout ───
@@ -19,7 +19,7 @@ HeurAnim.register(13, {
 
     // ─── Scene ───
     api.box(FRAME.x, FRAME.y, FRAME.w, FRAME.h, null, 'ha-box--ghost');
-    api.text(320, 30, { pl: 'Schemat: kropki to przykładowe plany kół', en: 'Sketch: dots stand for sample club timetables' }, 'ha-label--small ha-label--center');
+    api.text(320, 30, { pl: 'Kropki to przykładowe plany kół', en: 'Dots stand for sample club timetables' }, 'ha-label--small ha-label--center');
     const dots = [];
     ROWS.forEach((y, row) => COLS.forEach((x, col) => dots.push({ col, row, node: api.circle(x, y, DOT_R) })));
     const cuts1 = api.line(CUT1_X, FRAME.y, CUT1_X, FRAME.y + FRAME.h, 'ha-line--dashed is-bad');

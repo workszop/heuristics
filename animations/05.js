@@ -20,7 +20,7 @@ HeurAnim.register(5, {
     // ─── Scene ───
     const axis = api.line(40, 300, 610, 300, 'ha-line--thin');
     const yLabel = api.text(40, 24, { pl: 'wynik planu (0 do 3)', en: 'plan score (0 to 3)' }, 'ha-label--small');
-    const xLabel = api.text(325, 348, { pl: 'kolejne warianty planu', en: 'plan variants' }, 'ha-label--small ha-label--center');
+    const xLabel = api.text(610, 326, { pl: 'kolejne warianty planu', en: 'plan variants' }, 'ha-label--small ha-label--end');
     const leftHill = api.path('M 50 300 C 110 300 130 154 190 154 C 250 154 270 296 320 296', '');
     const rightHill = api.path('M 320 296 C 370 296 390 80 450 80 C 510 80 540 300 600 300', '');
     const saved = api.circle(PEAK_LEFT[0], PEAK_LEFT[1], 11, 'ha-dot--hollow is-info');

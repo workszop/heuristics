@@ -16,6 +16,7 @@ HeurAnim.register(9, {
     const DRAFT = [['A', 'B'], ['A', 'C'], ['D', 'E'], ['E', 'B'], ['C', 'D']];
     const FIXED = [['A', 'B'], ['E', 'C'], ['D', 'A'], ['E', 'B'], ['C', 'D']];
     const clashKey = (day, slot) => [[0, 0], [1, 0], [2, 1], [3, 0]].some(item => item[0] === day && item[1] === slot);
+    const SWAPPED = (day, slot) => (day === 1 || day === 2) && DRAFT[day][slot] !== FIXED[day][slot];
     const colX = day => COL_X + day * (COL_W + COL_GAP);
 
     // ─── Scene ───
@@ -38,7 +39,7 @@ HeurAnim.register(9, {
     // ─── Show (absolute state per step) ───
     return function show(step) {
       api.tone(ruleBox, step === 1 || step === 2 ? 'dim' : (step === 3 ? 'accent' : (step === 4 ? 'good' : null)));
-      ruleBox.classList.toggle('ha-box--ghost', step !== 4);
+      ruleBox.classList.toggle('ha-box--ghost', step === 0);
       cells.forEach((column, day) => column.forEach((cell, slot) => {
         const filled = step >= 2;
         const plan = step === 4 ? FIXED : DRAFT;
@@ -46,7 +47,7 @@ HeurAnim.register(9, {
         cell.classList.toggle('ha-box--ghost', !filled);
         let tone = null;
         if (step === 3 && clashKey(day, slot)) tone = 'bad';
-        else if (step === 4) tone = 'good';
+        else if (step === 4 && SWAPPED(day, slot)) tone = 'good';
         api.tone(cell, tone);
       }));
       const note = STATUS[step];

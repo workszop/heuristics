@@ -32,16 +32,16 @@ HeurAnim.register(28, {
       const pile = step <= 3;
       const left = REMAINING[Math.min(step, 3)];
       tokens.forEach((node, i) => {
-        api.visible(node, pile && i < left);
-        api.tone(node, step === 1 ? 'accent' : null);
+        api.visible(node, pile && (i < left || (step === 1 && i < TOKEN_COUNT)));
+        api.tone(node, step === 1 && i >= left ? 'accent' : null);
       });
       api.visible(counter, pile);
       api.setText(counter, { pl: 'żetonów: ' + left, en: 'tokens: ' + left });
       api.tone(counter, step === 3 ? 'good' : null);
-      api.visible(trail, step === 1 || step === 2);
-      api.setText(trail, step === 1 ? { pl: '12 → 9 → 7 → 6', en: '12 → 9 → 7 → 6' } : { pl: 'spadek co najmniej 1 w każdym ruchu', en: 'a drop of at least 1 in every move' });
-      api.visible(floor, step === 2);
-      api.tone(floor, step === 2 ? 'info' : null);
+      api.visible(trail, step >= 1 && step <= 3);
+      api.setText(trail, step === 1 ? { pl: 'zabrane: 3 + 2 + 1, zostaje 6', en: 'taken: 3 + 2 + 1, 6 left' } : (step === 2 ? { pl: 'spadek co najmniej 1 w każdym ruchu', en: 'a drop of at least 1 in every move' } : { pl: '0 żetonów: nie ma już ruchu', en: '0 tokens: no move is left' }));
+      api.visible(floor, step === 2 || step === 3);
+      api.tone(floor, step === 2 || step === 3 ? 'info' : null);
       bars.forEach(node => { api.visible(node, step === 4); api.tone(node, 'bad'); });
       barLabels.forEach(node => api.visible(node, step === 4));
       api.visible(zero, step === 4);

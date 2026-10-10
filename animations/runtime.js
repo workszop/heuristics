@@ -8,6 +8,7 @@
   const VIEW_W = 640;
   const VIEW_H = 360;
   const STEP_MS = 2800;
+  const MAX_STEP_MS = 8000;
   const MIN_STEPS = 3;
   const MAX_STEPS = 6;
   const MAX_CAPTION = 140;
@@ -217,7 +218,7 @@
 
     let step = Math.min(total - 1, Math.max(0, Number(opts.startStep) || 0));
     let state = 'idle';
-    if (opts.startState === 'paused') state = 'paused';
+    if (opts.startState === 'paused' || (opts.startState === 'playing' && prefersReducedMotion())) state = 'paused';
     else if (opts.startState === 'done') state = step === total - 1 ? 'done' : 'paused';
     let timer = null;
     let destroyed = false;
@@ -237,10 +238,10 @@
       toggleBtn.replaceChildren(icon(playing ? 'pause' : 'play'));
       toggleBtn.setAttribute('aria-label', playing ? labels.pause : labels.play);
       toggleBtn.title = playing ? labels.pause : labels.play;
-      toggleBtn.setAttribute('aria-pressed', String(playing));
       prevBtn.setAttribute('aria-disabled', String(step === 0));
       nextBtn.setAttribute('aria-disabled', String(step === total - 1));
     }
+    function stepDelay() { return Math.min(MAX_STEP_MS, Math.max(STEP_MS, 1800 + 45 * pick(def.steps[step], safeLang).length)); }
     function clearTimer() { if (timer) { window.clearTimeout(timer); timer = null; } }
     function tick() {
       timer = null;
@@ -248,7 +249,7 @@
       step = Math.min(total - 1, step + 1);
       if (step === total - 1) state = 'done';
       sync();
-      if (state === 'playing') timer = window.setTimeout(tick, STEP_MS);
+      if (state === 'playing') timer = window.setTimeout(tick, stepDelay());
     }
     function play() {
       if (destroyed) return;
@@ -257,7 +258,7 @@
       if (step === total - 1) step = 0;
       state = 'playing';
       sync();
-      timer = window.setTimeout(tick, STEP_MS);
+      timer = window.setTimeout(tick, stepDelay());
     }
     function pause() {
       if (destroyed) return;
@@ -344,6 +345,6 @@
     has: id => registry.has(id),
     ids: () => [...registry.keys()].sort((a, b) => a - b),
     definition: id => registry.get(id) || null,
-    STEP_MS, SCHEME_COUNT, VIEW_W, VIEW_H
+    STEP_MS, MAX_STEP_MS, SCHEME_COUNT, VIEW_W, VIEW_H
   };
 })();

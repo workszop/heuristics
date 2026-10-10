@@ -26,7 +26,7 @@ const PAGES = argValue('--page') ? [argValue('--page')] : ['index.html', 'index_
 const failures = [];
 let server = null;
 let browser = null;
-let stepMs = 2800;
+let maxStepMs = 8000;
 
 // ─── Helpers ───
 function check(name, pass, detail = '') {
@@ -58,7 +58,7 @@ async function newPage(contextOptions = {}) {
 async function openPage(page, pageName) {
   await page.goto(BASE + pageName, { waitUntil: 'load' });
   await page.waitForFunction(() => window.App && window.HeurAnim);
-  stepMs = await page.evaluate(() => window.HeurAnim.STEP_MS);
+  maxStepMs = await page.evaluate(() => window.HeurAnim.MAX_STEP_MS);
 }
 async function openScheme(page, id) {
   await page.evaluate(schemeId => window.App.navigate('scheme', schemeId), id);
@@ -192,7 +192,7 @@ async function regressions(page, errors) {
   const def1 = await page.evaluate(id => window.HeurAnim.definition(id).steps[1].en, id);
   check('language switch keeps step and paused state', paused.replaced && paused.after.lang === 'en' && paused.after.step === '1' && paused.after.state === 'paused' && paused.after.caption === def1, JSON.stringify(paused.after));
   if (id === 1) check('language switch relabels the svg', paused.before.text !== paused.after.text, paused.after.text);
-  await sleep(stepMs + 600);
+  await sleep(maxStepMs + 600);
   const stillPaused = await hostStatus(page);
   check('paused animation does not resume after language switch', stillPaused && stillPaused.step === '1' && stillPaused.state === 'paused', JSON.stringify(stillPaused));
   // Language switch at the last step: stays done on the last step.
@@ -200,11 +200,11 @@ async function regressions(page, errors) {
   await page.click(`[data-component="scheme-animation"] [data-anim-goto="${last}"]`);
   const atEnd = await switchLangSync(page, 'pl');
   check('language switch at last step stays done', atEnd.after.lang === 'pl' && atEnd.after.step === String(last) && atEnd.after.state === 'done', JSON.stringify(atEnd.after));
-  await sleep(stepMs + 600);
+  await sleep(maxStepMs + 600);
   const stillDone = await hostStatus(page);
   check('done animation stays done after language switch', stillDone && stillDone.step === String(last) && stillDone.state === 'done', JSON.stringify(stillDone));
   await page.evaluate(() => window.App.navigate('home'));
-  await sleep(stepMs + 600);
+  await sleep(maxStepMs + 600);
   check('navigate away is clean', await page.evaluate(() => !document.querySelector('[data-component="scheme-animation"]')) && errors.length === 0, errors.join(' | '));
   const fallback = await page.evaluate(() => {
     const host = document.createElement('section');
@@ -231,7 +231,7 @@ async function motionRegressions(page, errors, pageName) {
   check(`${pageName} language switch while playing: remounted in en`, sw.replaced && sw.after.lang === 'en' && sw.after.step === sw.before.step, JSON.stringify({ before: sw.before.step, after: sw.after }));
   if (id === 1) check(`${pageName} language switch while playing relabels the svg`, sw.before.text !== sw.after.text, sw.after.text);
   const frozenAt = await page.evaluate(() => window.__oldHost.dataset.animStep);
-  await sleep(stepMs + 600);
+  await sleep(maxStepMs + 600);
   const oldNow = await page.evaluate(() => window.__oldHost.dataset.animStep);
   check(`${pageName} old host frozen after language switch`, oldNow === frozenAt, `${frozenAt} -> ${oldNow}`);
   await setLang(page, 'pl');
@@ -247,7 +247,7 @@ async function motionRegressions(page, errors, pageName) {
     await page.evaluate(() => { window.__oldHost = document.querySelector('[data-component="scheme-animation"]'); });
     await act(page);
     const stepAfter = await page.evaluate(() => window.__oldHost.dataset.animStep);
-    await sleep(stepMs + 600);
+    await sleep(maxStepMs + 600);
     const result = await page.evaluate(() => {
       const host = document.querySelector('[data-component="scheme-animation"]');
       return {
@@ -292,12 +292,12 @@ async function run() {
     await openPage(motion.page, pageName);
     await openScheme(motion.page, IDS[0]);
     await motion.page.waitForFunction(() => document.querySelector('[data-component="scheme-animation"]').dataset.animState === 'playing', null, { timeout: 4000 }).catch(() => {});
-    await sleep(stepMs + 700);
+    await sleep(maxStepMs + 700);
     const advanced = await motion.page.evaluate(() => Number(document.querySelector('[data-component="scheme-animation"]').dataset.animStep));
     check(`${pageName} autoplay advances`, advanced >= 1, 'step ' + advanced);
     await motion.page.click('[data-component="scheme-animation"] [data-anim-action="toggle"]');
     const pausedAt = await motion.page.evaluate(() => document.querySelector('[data-component="scheme-animation"]').dataset.animStep);
-    await sleep(stepMs + 400);
+    await sleep(maxStepMs + 400);
     check(`${pageName} pause holds`, await motion.page.evaluate(step => document.querySelector('[data-component="scheme-animation"]').dataset.animStep === step, pausedAt));
     await motionRegressions(motion.page, motion.errors, pageName);
     check(`${pageName} console clean (motion)`, motion.errors.length === 0, motion.errors.join(' | '));

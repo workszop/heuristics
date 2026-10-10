@@ -6,7 +6,7 @@ HeurAnim.register(11, {
     { pl: 'Pomiń regułę o ulicach: w linii prostej jest 8 km. Każda trasa ulicami jest też dozwolona w tej wersji, więc żadna nie jest krótsza.', en: 'Drop the street rule: a straight line is 8 km. Every street route is allowed there too, so none is shorter.' },
     { pl: 'Znajdujesz trasę ulicami na 10 km. Najlepsza ma więc najwyżej 10 km: to granica górna.', en: 'You find a street route of 10 km. So the best one is at most 10 km: an upper bound.' },
     { pl: 'Najlepsza trasa ulicami leży między 8 a 10 km. Dalsze szukanie zaoszczędzi najwyżej 2 km.', en: 'The best street route lies between 8 and 10 km. More searching can save at most 2 km.' },
-    { pl: 'Trasa na 9 km zwęża przedział do 8–9 km. Dopiero trasa na 8 km dowiodłaby, że jest najlepsza.', en: 'A 9 km route narrows the range to 8–9 km. Only an 8 km street route would prove it best.' }
+    { pl: 'Trasa na 9 km: przedział 8–9 km. Trasa na dokładnie 8 km od razu dowiodłaby, że jest najlepsza; inaczej trzeba lepszej granicy dolnej.', en: 'A 9 km route: range 8–9 km. A street route of exactly 8 km would prove itself best at once; otherwise you need a better lower bound.' }
   ],
   build(api) {
     // ─── Layout ───

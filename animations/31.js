@@ -1,11 +1,12 @@
 /* Scheme 31 – Count the same thing in two ways.
-   Six students on a hexagon: count handshake ends per student (30), then per handshake (15). */
+   Six students on a hexagon: count one by one (5+4+3+2+1) and by ends (6 x 5 / 2), both give 15. */
 HeurAnim.register(31, {
   steps: [
-    { pl: 'Pierwszy rachunek, po uczniach: jedna osoba ściska 5 dłoni, więc ma 5 końców uścisków.', en: 'First count, by student: one person shakes 5 hands, so has 5 handshake ends.' },
-    { pl: 'Każdy z 6 uczniów ma 5 końców, razem 6 × 5 = 30. To nie jest jeszcze liczba uścisków.', en: 'Each of the 6 students has 5 ends: 6 × 5 = 30 in all. That is not yet the number of handshakes.' },
-    { pl: 'Drugi rachunek, po uściskach: uścisk ma dwa końce, po jednym u każdej osoby, więc 30 końców to 15 uścisków.', en: 'Second count, by handshake: a handshake has two ends, one per person, so 30 ends make 15 handshakes.' },
-    { pl: 'Trzeci rachunek: 6 wyborów pierwszej osoby razy 5 drugiej, podzielone przez 2: też 15. Oba wyniki się zgadzają.', en: 'Third count: 6 choices of the first person times 5 of the second, divided by 2: also 15. The results agree.' }
+    { pl: 'Pierwszy sposób, po kolei: pierwsza osoba ściska 5 nowych dłoni.', en: 'First way, one by one: the first student shakes 5 new hands.' },
+    { pl: 'Druga już tylko 4 nowe, potem 3, 2 i 1, razem 5 + 4 + 3 + 2 + 1 = 15 uścisków.', en: 'The second only 4 new ones, then 3, 2 and 1, so 5 + 4 + 3 + 2 + 1 = 15 handshakes.' },
+    { pl: 'Drugi sposób, po końcach: każdy z 6 uczniów ściska 5 dłoni, więc końców jest 6 × 5 = 30.', en: 'Second way, by ends: each of the 6 students shakes 5 hands, giving 6 × 5 = 30 ends.' },
+    { pl: 'Uścisk ma dwa końce, po jednym u każdej osoby, więc policzyliśmy go dwa razy: 30 / 2 = 15.', en: 'A handshake has two ends, one per person, so it was counted twice: 30 / 2 = 15.' },
+    { pl: 'Oba sposoby dają 15, więc wynik się potwierdza. Gdyby wyszło 15 i 30, to zdradziłoby błąd.', en: 'Both ways give 15, so the answer is confirmed. Getting 15 and 30 would reveal a mistake.' }
   ],
   build(api) {
     // ─── Layout ───
@@ -39,22 +40,23 @@ HeurAnim.register(31, {
         let name = null;
         if (step === 0 && item.a === 0) name = 'accent';
         if (step === 2) name = spoke ? 'accent' : 'dim';
-        if (step === 3) name = 'good';
+        if (step === 4) name = 'good';
         api.tone(item.node, name);
       });
       dots.forEach((node, i) => api.tone(node, step === 0 && i === 0 ? 'accent' : null));
-      endTags.forEach(node => api.visible(node, step === 2));
+      endTags.forEach(node => api.visible(node, step === 2 || step === 3));
       const main = [
-        { pl: '5 końców', en: '5 ends' },
+        { pl: 'pierwsza osoba:\n5 nowych', en: 'first student:\n5 new' },
+        { pl: '5 + 4 + 3 + 2 + 1\n= 15', en: '5 + 4 + 3 + 2 + 1\n= 15' },
         { pl: '6 × 5 = 30\nkońców', en: '6 × 5 = 30\nends' },
         { pl: '30 / 2 = 15\nuścisków', en: '30 / 2 = 15\nhandshakes' },
         { pl: '15 = 15', en: '15 = 15' }
       ][step];
       api.setText(side, main);
-      const note = [null, null, { pl: '2 końce = 1 uścisk', en: '2 ends = 1 handshake' }, { pl: '6 × 5 / 2 = 15', en: '6 × 5 / 2 = 15' }][step];
+      const note = [null, { pl: 'pierwszy sposób', en: 'first way' }, { pl: 'drugi sposób', en: 'second way' }, { pl: '2 końce = 1 uścisk', en: '2 ends = 1 handshake' }, { pl: '6 × 5 / 2 = 15', en: '6 × 5 / 2 = 15' }][step];
       api.visible(sub, Boolean(note));
       api.setText(sub, note || '');
-      api.tone(side, step === 3 ? 'good' : null);
+      api.tone(side, step === 4 ? 'good' : null);
     };
   }
 });

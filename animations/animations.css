@@ -98,8 +98,8 @@
 .ha-area.is-good { fill: var(--anim-good); }
 .ha-area.is-bad { fill: var(--anim-bad); }
 .ha-area.is-info { fill: var(--anim-info); }
-.is-dim { opacity: .3; }
-.is-hidden { opacity: 0; }
+.scheme-animation .is-dim { opacity: .3; }
+.scheme-animation .is-hidden { opacity: 0; }
 
 /* ─── Responsive ─── */
 @media (max-width: 768px) {
