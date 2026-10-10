@@ -660,9 +660,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 34. Ustal tylko tę wielkość, o którą pyta zadanie
 
-**Opis:** Sprawdź dokładnie, o co pyta zadanie. Może potrzebujesz tylko sumy, różnicy, ilorazu albo czyjejś pozycji, a nie wszystkich wartości z osobna. Spróbuj połączyć znane zależności tak, żeby zbędne niewiadome się zredukowały lub przestały mieć znaczenie. Unikniesz niepotrzebnych rachunków i wyznaczania danych, których nie da się ustalić. Na końcu sprawdź, czy odpowiedź jest jednoznaczna. Znajomość sumy nie określa jej składników, a jeśli dopuszczalne przypadki dają różne odpowiedzi na zadane pytanie, informacji rzeczywiście brakuje.
+**Opis:** Przeczytaj dokładnie, o co pyta zadanie. Często potrzebna jest tylko suma, różnica, iloraz albo czyjeś miejsce, a nie każda liczba z osobna. Zapisz, co wiesz, i połącz te informacje tak, żeby niepotrzebne niewiadome zniknęły. Oszczędzasz rachunki i nie zmyślasz danych, których zadanie nie podaje. Na końcu sprawdź, czy odpowiedź jest jednoznaczna: jeśli dwa przypadki zgodne z danymi dają różne odpowiedzi na pytanie, informacji brakuje.
 
-**Przykład:** Prostokąt ma obwód 28 cm. Jaka jest suma jego długości i szerokości? Oznacz je przez a i b. Z równania 2a + 2b = 28 od razu wynika a + b = 14 cm. Nie musisz znać a i b osobno: prostokąt o bokach 6 i 8 oraz prostokąt o bokach 5 i 9 mają ten sam obwód i tę samą sumę długości i szerokości, równą 14. Zadanie pozwala ustalić tę sumę, choć nie wyznacza osobno długości każdego boku.
+**Przykład:** Działka w kształcie prostokąta jest ogrodzona 28 m siatki. Ile metrów wynoszą razem długość i szerokość? Można by szukać obu boków, ale dane ich nie podają: działka 6 na 8 i działka 5 na 9 zużywają po 28 m (2 · 6 + 2 · 8 = 28 oraz 2 · 5 + 2 · 9 = 28). Siatka biegnie wzdłuż dwóch długości i dwóch szerokości, więc 2 długości + 2 szerokości = 28 m, a jedna długość i jedna szerokość to połowa: 14 m. Sprawdzenie: 6 + 8 = 14 i 5 + 9 = 14. Gdyby zadanie pytało o pole, obie działki dałyby różne wyniki (48 i 45 m²) i danych by brakowało.
 
 **Kiedy się przydaje:** Przy problemach pozornie niedookreślonych, długich obliczeniach i pytaniach o wielkości łączne.
 
@@ -679,9 +679,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 35. Zacznij od wyborów zachłannych
 
-**Opis:** W metodzie zachłannej na każdym kroku wybierasz to, co w danej chwili wygląda najlepiej według ustalonej reguły. Możesz tak szybko ułożyć pierwszą trasę, plan lub podział zasobów, zwłaszcza gdy sprawdzanie wszystkich możliwości trwałoby zbyt długo. Potem oceń cały wynik, porównaj go z innymi i spróbuj poprawić. Wybór korzystny teraz może bowiem utrudnić resztę zadania, zwiększyć późniejszy koszt albo uniemożliwić dokończenie. Metoda daje propozycję rozwiązania, ale bez osobnego dowodu nie wiesz, czy jest ono najlepsze.
+**Opis:** Metoda zachłanna buduje odpowiedź krok po kroku: za każdym razem bierzesz to, co w tej chwili wygląda najlepiej według prostej reguły, na przykład największy żeton, który jeszcze się mieści, albo najbliższy przystanek. Szybko dostajesz pierwszą propozycję, gdy sprawdzanie wszystkich możliwości trwałoby za długo. Potem obejrzyj cały wynik i spróbuj go poprawić. Ruch, który dziś wygląda dobrze, może zostawić kłopotliwą resztę albo ślepy zaułek, więc wynik zachłanny jest kandydatem, a nie dowodem, że nie ma nic lepszego.
 
-**Przykład:** W grze masz żetony warte 1, 3 i 4 punkty. Chcesz uzyskać dokładnie 6 punktów, używając jak najmniej żetonów. Wybierasz zachłannie największy pasujący żeton: najpierw 4, potem 1 i jeszcze 1. Potrzebujesz 3 żetonów. Można jednak wziąć dwa po 3 punkty i uzyskać 6 za pomocą 2 żetonów. Zachłanny wybór dał poprawną sumę, ale nie najlepszy wynik. Żeby uznać wynik tej metody za optymalny, trzeba osobno to udowodnić lub wykluczyć lepsze kombinacje.
+**Przykład:** W grze trzeba zebrać dokładnie 6 punktów, przy jak najmniejszej liczbie żetonów. Żetony są warte 1, 3 i 4 punkty, a każdego rodzaju możesz brać dowolnie dużo. Reguła zachłanna: zawsze bierz największy żeton, który jeszcze się mieści. Bierzesz 4 (zostają 2 punkty), żeton 3 już się nie mieści, więc 1 i 1: razem 3 żetony. Tymczasem dwa żetony po 3 punkty też dają 6. Wynik zachłanny jest więc poprawny, ale nie najlepszy: duży żeton zostawił resztę 2, którą da się wypełnić tylko drobnymi. Dwa żetony to minimum, bo nie ma żetonu wartego 6.
 
 **Kiedy się przydaje:** Gdy trzeba szybko przygotować pierwszą trasę, kolejność lub podział zasobów, a pełne przeszukiwanie jest zbyt kosztowne.
 
@@ -700,7 +700,7 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 **Opis:** Zatrzymaj się co pewien czas i sprawdź, czego dowiadujesz się z pracy. Co udało się ustalić? Czego nadal nie wiesz? Dlaczego następny krok miałby pomóc? Takie pytania pozwalają odróżnić brak potrzebnej wiedzy od źle dobranej metody lub błędnie odczytanego warunku. Kontynuuj, jeśli próby przynoszą informacje. Jeśli nie, ustal, co warto zmienić, zamiast zmieniać wszystko przypadkowo. Nie trzymaj się też planu tylko dlatego, że poświęcono mu dużo czasu. Na końcu sprawdź odpowiedź i zapisz, co przyda się następnym razem.
 
-**Przykład:** Chcesz lepiej napisać kartkówkę. Czytasz notatki przez 30 minut, a potem odpowiadasz na 10 pytań. Tylko 2 odpowiedzi są poprawne. Sprawdzasz błędy: rozumiesz przykłady, ale nie potrafisz przypomnieć sobie definicji. Zamiast tylko wydłużać czytanie, przechodzisz do fiszek i zadań. W podobnym teście uzyskujesz 7/10. To nie dowodzi, że materiał jest już w pełni opanowany, ale daje powód, by dalej pracować według poprawionego planu.
+**Przykład:** Za tydzień masz kartkówkę. Czytasz notatki przez 30 minut, a potem rozwiązujesz próbny test z 10 pytań i masz 2 dobre odpowiedzi. Zamiast czytać dalej, sprawdzasz 8 błędów: w 6 chodziło o definicje, których nie potrafisz sobie przypomnieć, a pytania o przykłady idą dobrze. Problemem jest więc przypominanie, nie czas czytania. Zmieniasz plan na fiszki z definicjami i zadania ćwiczeniowe, a w podobnym teście masz 7/10. To nie dowodzi, że materiał jest opanowany, ale pokazuje, że nowy plan działa lepiej niż pierwszy. Na koniec zapisujesz wniosek: po czytaniu sprawdzaj się pytaniami.
 
 **Kiedy się przydaje:** Przy długich analizach, powtarzających się niepowodzeniach, nauce i każdym problemie bez oczywistej metody.
 
@@ -717,9 +717,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 37. Uogólnij, aby ujawnić strukturę
 
-**Opis:** Wybierz jeden ustalony szczegół zadania i zastąp go parametrem, czyli symbolem oznaczającym różne dopuszczalne wartości. Możesz wtedy zbadać całą rodzinę podobnych zadań i zobaczyć zależność, którą trudno zauważyć w pojedynczym przykładzie. Ustal dokładnie, jakie wartości dopuszczasz. Sprawdzenie kilku z nich podpowiada wzór, ale go nie dowodzi. Potrzebujesz uzasadnienia obejmującego cały wskazany zakres, na przykład wszystkie dodatnie liczby całkowite. Wymień też wyjątki. Gdy już uzasadnisz ogólną zależność, podstaw wartość z pierwotnego zadania.
+**Opis:** Uogólnianie polega na zastąpieniu jednej konkretnej liczby literą, na przykład n oznaczającym dowolną liczbę całkowitą od 1 wzwyż, i zbadaniu całej rodziny podobnych przypadków. Wzór zauważony w kilku przypadkach to na razie tylko domysł. Żeby mieć pewność, pokaż, że działa dla pierwszego przypadku i że gdy działa dla jednego, działa też dla następnego. Wtedy działa dla wszystkich, jak rząd przewracających się kostek domina. Dopiero potem wstaw do ogólnego wyniku pierwotną liczbę.
 
-**Przykład:** Dodajesz kolejne dodatnie liczby nieparzyste: 1 = 1² oraz 1 + 3 = 2². Czy suma pierwszych n takich liczb zawsze wynosi n²? Przypadek początkowy już masz. Załóż teraz, że wzór działa dla n. Kolejna liczba nieparzysta to 2n + 1, więc po jej dodaniu otrzymujesz n² + 2n + 1 = (n + 1)². Przypadek początkowy i krok indukcyjny uzasadniają wzór dla każdego dodatniego całkowitego n. Możesz teraz podstawić 4: suma wynosi 4² = 16. Samo sprawdzenie kilku przykładów nie wystarczyłoby do dowodu.
+**Przykład:** Ile wynosi 1 + 3 + 5 + 7, czyli suma pierwszych czterech liczb nieparzystych? Małe przypadki: 1 = 1 · 1, 1 + 3 = 2 · 2. Domysł: suma pierwszych n takich liczb to n · n, czyli n². Wyobraź sobie n · n kropek w kwadracie. Dołóż jeden rząd i jedną kolumnę, czyli „L” z 2n + 1 kropek (dla n = 3 to 7), a dostaniesz kwadrat (n + 1) · (n + 1). Ten „L” to dokładnie następna liczba nieparzysta. Jeśli więc wzór działa dla n, to n² + 2n + 1 = (n + 1)². Działa dla 1, a każdy przypadek prowadzi do następnego, więc działa zawsze. Dla czterech liczb wychodzi 16.
 
 **Kiedy się przydaje:** Przy niewyjaśnionych wzorcach liczbowych, wzorach do wielokrotnego użycia i problemach ze stałymi, które wyglądają na przypadkowo dobrane.
 

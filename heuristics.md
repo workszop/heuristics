@@ -660,9 +660,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 34. Find only the quantity the question asks for
 
-**Description:** An aggregate is a total, difference, ratio, or position rather than every individual value. Start by underlining exactly what the question asks. Then combine the given relationships so extra unknowns cancel or become irrelevant. This saves work and avoids inventing information the data do not contain. Still check uniqueness: a fixed total does not determine its parts, and if two valid setups give different requested quantities, the problem is genuinely underdetermined.
+**Description:** Read exactly what the question asks for. Often it is only a total, a difference, a ratio or a position, not every number separately. Write down what you know and combine it so that the unknowns you do not need disappear. This saves work and stops you from inventing facts the data do not contain. At the end ask whether the answer is fixed: if two cases that both fit the data give different answers to the question, the data are not enough.
 
-**Example:** A rectangle has perimeter 28 cm, and the question asks for length plus width. If the sides are a and b, 2a + 2b = 28, so a + b = 14 cm. There is no need to find each side: 6 by 8 and 5 by 9 both fit the perimeter, yet each has sum 14. The requested aggregate is fixed while the individual sides are not.
+**Example:** A rectangular garden is fenced with 28 m of fence. How many metres are length and width together? You could hunt for each side, but the data do not give them: 6 by 8 and 5 by 9 both need 28 m (2 · 6 + 2 · 8 = 28 and 2 · 5 + 2 · 9 = 28). The fence runs along two lengths and two widths, so 2 lengths + 2 widths = 28 m, and one of each is half: 14 m. Check: 6 + 8 = 14 and 5 + 9 = 14. Asked for the area instead, the gardens disagree (48 and 45 m²), so that question would lack data.
 
 **Useful for:** Problems that appear underdetermined, long calculations, and questions about aggregate quantities.
 
@@ -679,9 +679,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 35. Use a greedy choice as a first pass
 
-**Description:** A greedy method builds a candidate by choosing what looks best now according to a simple local rule. It quickly produces a route, schedule, or allocation when checking every possibility is expensive. Then inspect the complete result and compare alternatives or improve it. Greedy is a way to find a candidate, not a proof that it is best. A locally attractive move can leave an awkward remainder, an expensive final step, or no legal continuation.
+**Description:** A greedy method builds an answer step by step, each time taking what looks best right now by a simple rule, such as the biggest token that still fits or the nearest stop. It quickly gives a first candidate when checking every possibility would take too long. Then look at the whole result and try to improve it. A good-looking move can leave an awkward remainder or a dead end, so a greedy answer is a candidate, not proof that nothing better exists.
 
-**Example:** A game must make exactly 6 points using tokens worth 1, 3, and 4, with as few tokens as possible. Greedy takes 4 first, then 1 and 1, for 3 tokens. Two 3-point tokens make 6 in 2. The greedy answer is valid but not optimal; proving a best answer needs a separate argument or comparison.
+**Example:** In a game you must collect exactly 6 points using as few tokens as possible. Tokens are worth 1, 3 and 4 points, and you may use each kind as often as you like. The greedy rule: always take the biggest token that still fits. Take 4 (2 points remain), then 3 does not fit, so 1 and 1: 3 tokens in all. But two 3-point tokens also make 6, so the greedy answer is valid but not the best: the big token left a remainder of 2 that only small tokens can fill. Two is the minimum, since no single token is worth 6.
 
 **Useful for:** Quickly producing a first route, ordering, or allocation when a full search is too expensive.
 
@@ -700,7 +700,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 **Description:** Monitoring means pausing during a solution to compare evidence with the plan. Ask what the attempt established, what remains unknown, and why the next step should help. This separates missing knowledge from a bad strategy or a misread condition. Continue when an attempt produces information; otherwise change a reasoned part of the plan, not randomly or just because time was spent. Finish by checking the answer and recording the reusable lesson.
 
-**Example:** You want to improve a quiz score. Your first plan is rereading notes for 30 minutes. A 10-question self-test gives 2 correct answers. Reviewing the misses shows definitions were not recalled, although examples made sense, so the issue is recalling definitions rather than reading time. You switch to flashcards and practice questions, then score 7/10 on a similar test. The numbers do not prove mastery, but they show why the revised plan is more promising.
+**Example:** You have a quiz next week. You read your notes for 30 minutes, then take a 10-question practice test and get 2 right. Instead of reading more, you check the 8 mistakes: 6 were definitions you could not recall, while the example questions went fine. So the problem is recalling, not reading time. You switch to flashcards of definitions plus practice questions, and a similar test gives 7/10. That does not prove mastery, but it shows the new plan works better than the first. You note the lesson: after reading, test yourself with questions.
 
 **Useful for:** Long investigations, repeated failed attempts, learning, and any problem without an obvious method.
 
@@ -717,9 +717,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 37. Generalize to reveal the structure
 
-**Description:** Generalization replaces one fixed detail with a variable and studies a family of related cases. A parameter is a symbol whose allowed values must be stated. This can reveal a formula or structure hidden by one example, but testing several values is not a proof. A valid general claim needs an argument covering its full scope, such as every positive integer in a stated range, plus any exceptions. Only then substitute the original value.
+**Description:** Generalizing means replacing one fixed number with a letter, such as n for any whole number from 1 up, and studying the whole family of similar cases. A pattern seen in a few cases is only a guess. To be sure, show that it holds for the first case and that, whenever it holds for one case, it holds for the next one; then it holds for all, like a row of falling dominoes. Only then put the original number into the general result.
 
-**Example:** For the first n odd numbers, test 1 = 1² and 1 + 3 = 2². To prove the pattern for every positive integer n, assume the first n sum to n². The next odd number, 2n + 1, gives n² + 2n + 1 = (n + 1)². The base and this step cover every positive n. Therefore the first 4 sum to 4² = 16; a few examples alone would not prove the formula.
+**Example:** What is 1 + 3 + 5 + 7, the first four odd numbers? Small cases: 1 = 1 × 1, 1 + 3 = 2 × 2. Guess: the first n odd numbers add up to n × n, or n². Picture an n × n square of dots; add a row and a column, an L of 2n + 1 dots (7 when n = 3), for an (n + 1) × (n + 1) square. That L is the next odd number, so n² + 2n + 1 = (n + 1)². The formula holds for 1 and passes from each case to the next, so it always holds. For four numbers: 16.
 
 **Useful for:** Unexplained numerical patterns, reusable formulas, and problems with arbitrary-looking constants.
 
