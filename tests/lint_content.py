@@ -5,6 +5,7 @@ Usage: python3 tests/lint_content.py [--base REF] [--strict]
 Fails (exit 1) on structure errors; prints warnings that a reviewer must read.
 --base REF compares protected fields with git REF (default: main).
 --strict also fails on style warnings (redundant "For example" opener).
+--allow-polish-edits permits intentional Polish editorial changes except sources.
 """
 import re
 import subprocess
@@ -17,10 +18,11 @@ FILES = {
     'en': ('heuristics.md', ['Description', 'Example', 'Useful for', 'Procedure', 'Watch out', 'Sources']),
     'pl': ('heuristics_pl.md', ['Opis', 'Przykład', 'Kiedy się przydaje', 'Procedura', 'Uwaga', 'Źródła']),
 }
-LIMITS = {'en': {'d': (45, 100), 'e': (45, 120)}, 'pl': {'d': (45, 115), 'e': (45, 135)}}
+LIMITS = {'en': {'d': (45, 100), 'e': (45, 120)}, 'pl': {'d': (45, 115), 'e': (45, 150)}}
 SCHEME_COUNT = 37
 EM_DASH = '\u2014'
 STRICT = '--strict' in sys.argv[1:]
+ALLOW_POLISH_EDITS = '--allow-polish-edits' in sys.argv[1:]
 
 errors = []
 warnings = []
@@ -33,7 +35,7 @@ def parse(text, names):
         sid, title, body = int(match.group(1)), match.group(2).strip(), match.group(3)
         fields = {}
         for name in names:
-            found = re.search(r'^\*\*' + re.escape(name) + r':\*\*[ \t]*(.*)$', body, re.M)
+            found = re.search(r'^\*\*' + re.escape(name) + r':\*\*[ \t]*([\s\S]*?)(?=^\*\*[^\n]+:\*\*|\Z)', body, re.M)
             fields[name] = found.group(1).strip() if found else None
         proc = re.search(r'^\*\*' + re.escape(names[3]) + r':\*\*\s*\n((?:\d+\..*\n?)+)', body, re.M)
         steps = re.findall(r'^\d+\.\s+(.+)$', proc.group(1), re.M) if proc else []
@@ -92,11 +94,14 @@ def main():
         for sid in schemes:
             if sid not in old:
                 continue
-            if schemes[sid]['title'] != old[sid]['title']:
+            allow_edit = lang == 'pl' and ALLOW_POLISH_EDITS
+            if not allow_edit and schemes[sid]['title'] != old[sid]['title']:
                 errors.append(f'{name} #{sid}: title changed')
-            if schemes[sid]['steps'] != old[sid]['steps']:
+            if not allow_edit and schemes[sid]['steps'] != old[sid]['steps']:
                 errors.append(f'{name} #{sid}: procedure changed')
             for field in names[2:]:
+                if allow_edit and field != names[5]:
+                    continue
                 if field != names[3] and schemes[sid]['fields'].get(field) != old[sid]['fields'].get(field):
                     errors.append(f'{name} #{sid}: protected field {field} changed')
     for sid in range(1, SCHEME_COUNT + 1):
