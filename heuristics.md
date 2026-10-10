@@ -432,9 +432,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 22. Map interactions and incentives
 
-**Description:** Map a problem as a system, not isolated parts. Draw participants as nodes, then connect dependencies and influences with arrows. Look for a bottleneck, the point limiting the process, feedback loops, and incentives. An incentive is a reason making someone more likely to choose an action. This helps predict side effects. The map is a model, not proof of causation, so test a limited change and check the whole result.
+**Description:** Draw the problem as a map: people or parts as dots, and arrows for who passes work or influence to whom. On the map look for the bottleneck, the spot that limits the speed of the whole process, and for incentives, the rewards that make people choose a certain action. Such a map helps predict side effects of a change. It shows connections, not causes, so try a small change first and check the result as a whole.
 
-**Example:** For example, four students send slides to one editor. The teacher awards one point per slide, so students add more; the editor becomes a bottleneck and gets 18 repeated slides late. They map students, slides, editing, and deadline, then ask the teacher to approve a pilot: grade one coherent deck and cap students at three slides. The teacher agrees. They finish 12 non-repeated slides on time. This pilot suggests the rule helped, but cannot prove it caused all improvements.
+**Example:** Four students each send slides to one classmate, the editor, who assembles the presentation before the deadline. The teacher gives one point per slide, so everyone sends more and more. The editor gets 18 slides late, many repeating the same content, and cannot finish. The map shows why: the point per slide is the incentive that floods the editor, the bottleneck. The students ask the teacher for a trial: grade the whole presentation and allow at most 3 slides per student. Now 4 × 3 = 12 slides arrive without repeats and the editor finishes on time. One trial suggests the rule helped, but does not prove it caused every improvement.
 
 **Useful for:** Organizational problems, process bottlenecks, coordination, and changes with side effects.
 
@@ -451,9 +451,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 23. Experiment, find a pattern, then explain it
 
-**Description:** Use several small experiments to discover a possible pattern, then find why it should hold. A pattern is a repeated relationship; a proof explains why it must continue under the stated rules. Record examples consistently, test an awkward case, and state the suspected range. Different rules can match the first few results, so examples support a conjecture but do not establish a universal claim. If a test fails, refine the rule.
+**Description:** Run a few small experiments to discover a possible pattern, then find the reason it should hold. A pattern is a repeated relationship; a proof explains why it must hold under the given rules. Record examples in a consistent way and test one awkward case. The first few results fit many different rules, so examples suggest a rule but do not prove it always works. If a test fails, fix the rule instead of hiding the exception.
 
-**Example:** For example, a row of connected square tiles uses 4 sticks for one square, 7 for two, and 10 for three. The differences suggest adding 3, so eight squares should use 4 + 7 × 3 = 25 sticks. Structurally, each new square shares one side and adds three sticks. That explains any straight row. The numbers alone could fit another rule, so the pattern was not proof.
+**Example:** Squares are made from matchsticks and placed in a row so that neighbors share a side. One square needs 4 matchsticks, two need 7, three need 10. Each time 3 more are added, so eight squares should need 4 + 7 × 3 = 25 matchsticks. Why? A new square already shares one side with the previous one, so only three matchsticks are added. That explains any straight row. The numbers 4, 7 and 10 alone would not be proof, because other rules fit them too.
 
 **Useful for:** Sequences, repeated processes, counting, and exploring unfamiliar systems.
 
@@ -470,9 +470,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 24. Test the opposite and search for a counterexample
 
-**Description:** Separate assumptions from the exact conclusion, then test its opposite. A contradiction occurs when the assumptions plus the negated conclusion force something impossible. A counterexample is one valid case satisfying the assumptions but breaking the conclusion. Use contradiction to support a universal claim and a counterexample to reject or narrow one. Not finding a counterexample proves nothing; in empirical work, conflict may reveal a bad model.
+**Description:** To check a claim, try to break it. If you suspect it is false, look for a counterexample: one case that meets the starting conditions but not the conclusion. One is enough to reject the claim. If you suspect it is true, assume the opposite and follow the consequences. If they lead to something impossible, the opposite is out and the claim stays (this is a proof by contradiction). Not finding a counterexample after a few tries proves nothing.
 
-**Example:** For example, claim: ‘Every multiple of 4 is even.’ If a number were both a multiple of 4 and odd, it would be divisible by 2 and leave remainder 1, impossible; the claim survives for whole numbers. Claim: ‘Every number ending in 5 is prime.’ Counterexample 15 ends in 5 but is divisible by 3 and 5. This valid case does not create a contradiction; it breaks the conclusion.
+**Example:** Claim 1: ‘Every number ending in 5 is prime.’ The example 5 fits, but one example proves nothing, so look for a case that breaks it. The number 15 ends in 5 and 15 = 3 × 5, so it is not prime. One counterexample is enough to reject the claim. Claim 2: ‘Every multiple of 4 is even.’ Assume the opposite: some multiple of 4 is odd. But every multiple of 4 is 4 times a whole number k, and 4 × k = 2 × (2 × k), so it divides by 2 and is even. Odd and even at once is impossible, so the opposite fails and the claim stays.
 
 **Useful for:** Proofs, reviewing universal claims, and exposing faulty rules.
 
@@ -489,9 +489,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 25. Focus on an extreme element
 
-**Description:** Choose an actual smallest, largest, first, last, or most constrained object. Its extreme position rules out possibilities that an arbitrary object would allow. In a finite set, check that the extreme exists, then ask whether a proposed arrangement forces something even smaller or larger. This can turn a complicated existence argument into a short contradiction. It is not substituting a huge value or approaching a limit; use an object really present.
+**Description:** Pick an extreme member of the group: the tallest person, the smallest number, the first or last step. A member at the end of the scale cannot have things that an ordinary member could have, so one look at it can replace checking everyone. First make sure it exists (a finite group always has a tallest). Then ask what the claim would demand of it. If it demands something even bigger or smaller, you have a contradiction. Choose a member really in the group, not a huge number invented as a test.
 
-**Example:** For example, five players have scores 12, 8, 15, 10, and 9. Pick the largest, 15. The claim that every player can be followed by someone with a higher score cannot work, because no listed score exceeds 15. The extreme player gives the stopping point. In a longer finite ranking, this avoids checking everyone. An infinite collection with no largest element would need another argument.
+**Example:** Five friends stand in a circle. Each says: ‘The person on my right is taller than me.’ Can all five be telling the truth? You do not need to know anyone's height or try every arrangement. Take the tallest person. If she is telling the truth, her right neighbor is taller than the tallest person in the circle, which is impossible. So at least one friend is wrong. The same argument works for a circle of any size.
 
 **Useful for:** Existence proofs, arrangements, ordered data, and reducing complicated cases.
 
@@ -546,9 +546,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 28. Track a quantity that moves only one way
 
-**Description:** A monovariant is a number attached to the current state that never increases or never decreases during legal steps. It can show direction of progress, rule out a target, or support a termination proof. Finite stopping needs more than monotonicity: a discrete bound, such as a nonnegative integer dropping by at least 1 whenever the process continues. A bounded real number may move strictly one way forever; unchanged-score moves may also create a cycle.
+**Description:** Find a number that describes the current situation and changes in only one direction under every allowed move: it only goes down, or it only goes up. Such a number shows progress, can rule out a goal, or prove that a process ends. Falling alone does not guarantee an end, because a number can fall ever more slowly and never reach zero. So check two things: whether it drops by at least 1 in every move, and whether it cannot go below 0, like the number of tokens in a pile.
 
-**Example:** Start with a positive real x = 1 and replace it by x/2 each round, stopping only at x = 0. It strictly decreases but stays above 0. After n rounds x = 1/2^n, still positive for every finite n, so this never stops. In a different process, a pile of 12 marbles loses at least one marble each active move; its integer monovariant reaches 0 within 12 moves.
+**Example:** Two players share a pile of 12 tokens. In each move a player takes 1, 2 or 3 tokens, and the game ends when the pile is empty. Will it end, and how many moves can it last? Watch the number of tokens: every move lowers it by at least 1, and it cannot fall below 0. So after at most 12 moves (if everyone takes just one) the pile is empty. A number halved each round (1, 1/2, 1/4...) also keeps falling, but it never reaches 0, because the steps get smaller. That is why ‘at least 1 per move’ matters.
 
 **Useful for:** Repeated procedures, games, iterative improvement, and termination arguments.
 

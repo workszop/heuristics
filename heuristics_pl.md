@@ -432,9 +432,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 22. Rozrysuj zależności i motywacje uczestników
 
-**Opis:** Zamiast rozpatrywać każdą osobę lub część osobno, narysuj, jak na siebie wpływają. Połącz je strzałkami pokazującymi zależności i przepływ pracy. Poszukaj miejsca, które spowalnia całość, czyli wąskiego gardła. Sprawdź też, czy skutki działań wracają do uczestników i wpływają na ich następne decyzje oraz co zachęca ich do określonego zachowania. Taki rysunek pomaga przewidzieć skutki uboczne zmiany. Nie dowodzi jednak, co jest przyczyną czego. Wypróbuj małą zmianę i oceń jej wpływ na całość.
+**Opis:** Narysuj problem jako mapę: osoby lub części jako punkty, a strzałki pokazują, kto komu przekazuje pracę lub na kogo wpływa. Na mapie szukaj wąskiego gardła, czyli miejsca, które ogranicza tempo całości, oraz zachęt, czyli nagród sprawiających, że ludzie wybierają dane zachowanie. Taka mapa pomaga przewidzieć skutki uboczne zmiany. Pokazuje powiązania, a nie przyczyny, więc najpierw wypróbuj małą zmianę i oceń cały wynik.
 
-**Przykład:** Czworo uczniów wysyła slajdy do jednej osoby, która składa prezentację. Nauczyciel przyznaje punkt za każdy slajd, więc uczniom opłaca się dodawać ich więcej. Osoba składająca dostaje późno 18 slajdów z powtarzającymi się treściami i nie nadąża z pracą. Grupa rozrysowuje tę zależność i prosi nauczyciela o próbę innych zasad: ocenę spójności całej prezentacji oraz limit trzech slajdów na osobę. Po jego zgodzie przygotowuje na czas 12 slajdów bez powtórzeń. Wynik sugeruje, że zmiana pomogła, ale nie dowodzi, że odpowiada za każdą poprawę.
+**Przykład:** Czworo uczniów wysyła slajdy do jednej koleżanki, redaktorki, która składa prezentację na termin. Nauczyciel daje punkt za każdy slajd, więc każdy wysyła ich coraz więcej. Redaktorka dostaje późno 18 slajdów, w dużej części powtarzających te same treści, i nie zdąży. Mapa pokazuje dlaczego: punkt za slajd to zachęta, która zalewa redaktorkę, czyli wąskie gardło. Uczniowie proszą nauczyciela o próbę: ocena całej prezentacji i najwyżej 3 slajdy na osobę. Teraz przychodzi 4 × 3 = 12 slajdów bez powtórzeń, a redaktorka kończy na czas. Jedna próba sugeruje, że zasada pomogła, ale nie dowodzi, że spowodowała każdą poprawę.
 
 **Kiedy się przydaje:** W problemach organizacyjnych, przy wąskich gardłach procesów, koordynacji i zmianach wywołujących skutki uboczne.
 
@@ -451,9 +451,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 23. Eksperymentuj, znajdź wzorzec i go wyjaśnij
 
-**Opis:** Wykonaj kilka małych eksperymentów, aby odkryć możliwy wzorzec, a potem znajdź powód, dla którego powinien się utrzymać. Wzorzec to powtarzająca się zależność, natomiast dowód wyjaśnia, dlaczego musi ona zachodzić przy podanych regułach. Zapisuj przykłady w stały sposób, sprawdź niewygodny przypadek i określ przewidywany zakres. Wiele reguł może pasować do kilku pierwszych wyników, więc przykłady wspierają przypuszczenie, ale nie dowodzą twierdzenia ogólnego. Gdy test zawiedzie, popraw regułę zamiast ukrywać wyjątek.
+**Opis:** Wykonaj kilka małych eksperymentów, aby odkryć możliwy wzorzec, a potem znajdź powód, dla którego powinien się utrzymać. Wzorzec to powtarzająca się zależność, a dowód wyjaśnia, dlaczego musi ona zachodzić przy podanych regułach. Zapisuj przykłady w stały sposób i sprawdź jeden niewygodny przypadek. Kilka pierwszych wyników pasuje do wielu reguł, więc przykłady podpowiadają regułę, ale nie dowodzą, że działa zawsze. Gdy test zawiedzie, popraw regułę zamiast ukrywać wyjątek.
 
-**Przykład:** Układasz z patyczków kwadraty w rzędzie tak, żeby sąsiednie miały wspólny bok. Na jeden kwadrat potrzeba 4 patyczków, na dwa 7, a na trzy 10. Za każdym razem przybywa 3, więc na osiem kwadratów powinno wystarczyć 4 + 7 × 3 = 25 patyczków. Dlaczego? Nowy kwadrat ma już jeden bok wspólny z poprzednim, więc dokładasz tylko trzy patyczki. To wyjaśnienie działa dla całego prostego rzędu. Same liczby 4, 7 i 10 nie byłyby dowodem, bo można do nich dopasować również inne reguły.
+**Przykład:** Z zapałek układasz kwadraty w rzędzie tak, że sąsiednie mają wspólny bok. Na jeden kwadrat potrzeba 4 zapałek, na dwa 7, a na trzy 10. Za każdym razem przybywają 3, więc na osiem kwadratów powinno wystarczyć 4 + 7 × 3 = 25 zapałek. Dlaczego? Nowy kwadrat ma już jeden bok wspólny z poprzednim, więc dokładasz tylko trzy zapałki. To wyjaśnia każdy prosty rząd. Same liczby 4, 7 i 10 nie byłyby dowodem, bo pasują do nich także inne reguły.
 
 **Kiedy się przydaje:** Przy ciągach, powtarzających się procesach, zliczaniu i badaniu nieznanych systemów.
 
@@ -470,9 +470,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 24. Sprawdź zaprzeczenie i poszukaj kontrprzykładu
 
-**Opis:** Zapisz osobno założenia i wniosek, który chcesz sprawdzić. Następnie rozważ, co by było, gdyby wniosek był fałszywy. Jeśli razem z założeniami prowadzi to do niemożliwości, otrzymujesz dowód przez sprzeczność. Możesz też szukać kontrprzykładu: przypadku, który spełnia założenia, ale nie pasuje do wniosku. Taki przypadek obala twierdzenie lub pokazuje, że trzeba je zawęzić. Nieznalezienie kontrprzykładu jeszcze niczego nie dowodzi. Przy badaniu rzeczywistego zjawiska sprzeczne wyniki mogą natomiast oznaczać błąd modelu lub założeń.
+**Opis:** Sprawdzając twierdzenie, spróbuj je podważyć. Jeśli podejrzewasz, że jest fałszywe, szukaj kontrprzykładu: jednego przypadku, który spełnia założenia, ale nie pasuje do wniosku. Wystarczy jeden, żeby twierdzenie odrzucić. Jeśli podejrzewasz, że jest prawdziwe, załóż coś przeciwnego i wyciągaj konsekwencje. Gdy prowadzą do czegoś niemożliwego, przeciwieństwo odpada, a twierdzenie zostaje (to dowód przez sprzeczność). Brak kontrprzykładu po kilku próbach jeszcze niczego nie dowodzi.
 
-**Przykład:** Rozważ twierdzenie „Każda wielokrotność 4 jest parzysta”. Gdyby liczba była podzielna przez 4 i jednocześnie nieparzysta, musiałaby być podzielna przez 2, a zarazem dawać przy dzieleniu przez 2 resztę 1. To niemożliwe. Inaczej sprawdzisz twierdzenie „Każda liczba kończąca się na 5 jest pierwsza”: wystarczy wskazać 15. Kończy się na 5, ale dzieli się przez 3 i 5. Ten kontrprzykład obala twierdzenie, bo spełnia jego założenie, a przeczy wnioskowi.
+**Przykład:** Twierdzenie 1: „Każda liczba kończąca się na 5 jest pierwsza”. Przykład 5 pasuje, ale jeden przykład niczego nie dowodzi, więc szukasz przypadku, który je łamie. Liczba 15 kończy się na 5, a 15 = 3 × 5, więc nie jest pierwsza. Jeden kontrprzykład wystarcza, żeby odrzucić twierdzenie. Twierdzenie 2: „Każda wielokrotność 4 jest parzysta”. Załóż przeciwnie: pewna wielokrotność 4 jest nieparzysta. Ale każda wielokrotność 4 to 4 razy liczba całkowita k, a 4 × k = 2 × (2 × k), więc dzieli się przez 2 i jest parzysta. Nieparzysta i parzysta naraz to niemożliwe, więc przeciwieństwo odpada, a twierdzenie zostaje.
 
 **Kiedy się przydaje:** Przy dowodzeniu, sprawdzaniu twierdzeń ogólnych i ujawnianiu błędnych reguł.
 
@@ -489,9 +489,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 25. Skup się na elemencie skrajnym
 
-**Opis:** Wybierz z rozpatrywanego zbioru element najmniejszy, największy, pierwszy, ostatni albo taki, którego dotyczą najsilniejsze ograniczenia. Jego pozycja może uprościć rozumowanie, bo wyklucza część możliwości. Najpierw upewnij się, że taki element istnieje. Potem zapytaj, czy badana sytuacja wymagałaby czegoś jeszcze mniejszego lub większego. Jeśli tak, otrzymasz sprzeczność z wyborem elementu skrajnego. Nie chodzi tu o wpisanie bardzo dużej liczby do wzoru ani o zbliżanie się do granicy. Wybierasz konkretny element należący do zbioru.
+**Opis:** Wybierz z grupy element skrajny: najwyższą osobę, najmniejszą liczbę, pierwszy lub ostatni krok. Element na końcu skali nie może mieć tego, co mógłby mieć zwykły element, więc jedno spojrzenie na niego może zastąpić sprawdzanie wszystkich. Najpierw upewnij się, że taki element istnieje (w skończonej grupie zawsze jest najwyższy). Potem zapytaj, czego od niego wymagałoby badane twierdzenie. Jeśli czegoś jeszcze większego lub mniejszego, masz sprzeczność. Wybieraj element naprawdę należący do grupy, a nie bardzo dużą liczbę wymyśloną na próbę.
 
-**Przykład:** Pięciu graczy zdobyło 12, 8, 15, 10 i 9 punktów. Czy dla każdego można wskazać gracza z wyższym wynikiem? Wystarczy wybrać największy wynik: 15. Nikt na liście go nie przewyższa, więc odpowiedź brzmi „nie”. Nie trzeba sprawdzać po kolei wszystkich osób. Tak samo możesz postąpić z dłuższym, skończonym rankingiem. Dla zbioru nieskończonego trzeba jednak uważać: jeśli nie ma w nim największego elementu, ten argument nie zadziała.
+**Przykład:** Pięcioro przyjaciół stoi w kółku. Każde mówi: „Osoba po mojej prawej jest wyższa ode mnie”. Czy wszyscy mogą mówić prawdę? Nie musisz znać niczyjego wzrostu ani sprawdzać wszystkich ustawień. Weź najwyższą osobę. Jeśli mówi prawdę, to jej sąsiad z prawej jest wyższy od najwyższej osoby w kółku, a to niemożliwe. Zatem przynajmniej jedna osoba się myli. Ten sam argument działa przy kółku z dowolną liczbą osób.
 
 **Kiedy się przydaje:** Przy dowodach istnienia, układaniu obiektów, uporządkowanych danych i upraszczaniu złożonych przypadków.
 
@@ -546,9 +546,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 28. Śledź wielkość, która zmienia się tylko w jednym kierunku
 
-**Opis:** Przypisz bieżącej sytuacji liczbę i sprawdź, jak zmienia ją każdy dozwolony krok. Jeśli nigdy nie rośnie albo nigdy nie maleje, nazywamy ją monowariantem. Może pomóc śledzić postęp, wykluczyć cel lub dowieść, że proces się skończy. Do tego ostatniego potrzeba jednak dodatkowego uzasadnienia. Na przykład nieujemna liczba całkowita nie może bez końca maleć o co najmniej 1. Liczba rzeczywista może natomiast maleć coraz wolniej, nigdy nie osiągając granicy. Kroki, które nie zmieniają liczby, mogą też prowadzić do powtarzania tych samych stanów.
+**Opis:** Znajdź liczbę opisującą bieżącą sytuację, która przy każdym dozwolonym ruchu zmienia się tylko w jedną stronę: albo tylko maleje, albo tylko rośnie. Taka liczba pokazuje postęp, może wykluczyć cel albo dowieść, że proces się skończy. Samo malenie nie gwarantuje jednak końca, bo liczba może maleć coraz wolniej i nigdy nie dojść do zera. Sprawdź więc dwie rzeczy: czy w każdym ruchu spada o co najmniej 1 i czy nie może zejść poniżej 0, jak liczba żetonów w stosie.
 
-**Przykład:** Zacznij od x = 1 i w każdej rundzie dziel x przez 2. Masz skończyć dopiero wtedy, gdy x = 0. Liczba za każdym razem maleje, ale nadal jest dodatnia: po n rundach x = 1/2^n. Żadna skończona liczba rund nie pozwoli więc zakończyć procedury. Porównaj to ze stosem 12 kulek, z którego w każdym kroku zabierasz co najmniej jedną. Liczba kulek jest całkowita i nieujemna, więc stos opróżnisz w najwyżej 12 krokach.
+**Przykład:** Dwoje graczy ma stos 12 żetonów. W każdym ruchu gracz zabiera 1, 2 albo 3 żetony, a gra kończy się, gdy stos jest pusty. Czy gra się skończy i ile ruchów może trwać? Patrz na liczbę żetonów: każdy ruch zmniejsza ją o co najmniej 1, a poniżej 0 nie zejdzie. Po co najwyżej 12 ruchach (gdy każdy zabiera po jednym) stos jest więc pusty. Liczba połowiona w każdej rundzie (1, 1/2, 1/4…) też stale maleje, ale nigdy nie dojdzie do 0, bo kroki są coraz mniejsze. Dlatego liczy się „co najmniej 1 w ruchu”.
 
 **Kiedy się przydaje:** Przy powtarzanych procedurach, grach, stopniowym ulepszaniu i dowodzeniu zakończenia procesu.
 
