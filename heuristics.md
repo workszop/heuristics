@@ -242,9 +242,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 12. Put an explicit cost on a trade-off
 
-**Description:** A trade-off appears when improving one preference worsens another. Separate hard constraints, which may not be broken, from soft targets that can be exchanged. Give each soft violation a measurable penalty and weight, combine those costs with the normal score, and see how changing weights changes the choice. The numbers organize a decision; arbitrary penalties do not prove that the result is mathematically best.
+**Description:** Sometimes you cannot satisfy every wish at once: improving one result makes another worse. First split the requirements into hard rules that may never be broken and soft wishes that you may trade. Then give each soft wish a price: some penalty points for each unit of failure. Penalty points put different losses on one scale, so you can add them up and compare plans. Try other prices to see whether the choice changes. The numbers only organize the decision; they do not prove the winner is mathematically best.
 
-**Example:** Your team chooses a rehearsal time. Room and Friday upload are hard constraints. Attendance is soft: charge 5 points per absent member and 1 point per 15 minutes late. Plan A includes everyone but ends 45 minutes late, costing 3. Plan B ends on time but misses one member, costing 5. A wins under these weights. If attendance matters more, raise its penalty; it never excuses missing the room or deadline.
+**Example:** A school band must pick a rehearsal plan. Two rules are hard: the room is booked and the recording is uploaded on Friday. Two wishes are soft and get prices: 5 penalty points for each absent member and 1 point for each 15 minutes the rehearsal runs past its planned 18:00 end. Plan A waits until everyone arrives and ends at 18:45: 3 × 1 = 3 points. Plan B starts on time without one member and ends at 18:00: 1 × 5 = 5 points. A wins, 3 to 5. If an absence cost only 2 points, B would win with 2, so state the prices openly. No price lets you skip the room or the Friday upload.
 
 **Useful for:** Balancing preferences in schedules, resource use, and designs.
 
@@ -261,9 +261,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 13. Add missing restrictions as failures reveal them
 
-**Description:** Add restrictions gradually when a candidate fails. A new restriction, sometimes called a cut, should describe the failure generally and exclude that invalid pattern while preserving every valid answer. Re-solve and repeat. This keeps a large model manageable, but a rule based only on taste can remove a legitimate solution. The process may end with a valid candidate or show that no candidate survives.
+**Description:** Start with a simplified version of the problem that has only the basic rules, and find any answer to it. Test that answer against the real situation. When it fails, work out why and add one general rule that rules out this kind of mistake, not just this one answer. Such a rule is called a cut, because it cuts off bad candidates. Then look for a new answer and repeat. Each rule must follow from the task and keep every valid answer; a rule based on taste can throw away a good solution.
 
-**Example:** A simplified timetable lets one student attend two meetings at once. Add a rule: no student occupies overlapping sessions. A later candidate puts a recorder in a room without an outlet, though the assignment requires wall-powered equipment; require an outlet for every recording. Check each rule comes from the assignment, not personal taste. The cut removes invalid schedules while preserving valid ones; another solve gives a workable timetable.
+**Example:** A school has three clubs (robotics, chess, choir) and two rooms, the lab and the hall, each free at 15:00 and 16:00. Basic rule: every club gets a room and a time, and no room is booked twice at once. The first draft puts robotics and chess at 15:00, but one student attends both. New general rule: clubs sharing a member never meet together. The next draft puts robotics in the hall, which has no sockets for the robots. New rule: robotics only in the lab. Both rules come from the facts, so no valid timetable is lost. The third draft passes: robotics in the lab and choir in the hall at 15:00, chess in the hall at 16:00.
 
 **Useful for:** Complex planning models, configuration, and searches with many constraints.
 
@@ -280,9 +280,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 14. Commit in stages while keeping later choices flexible
 
-**Description:** This method means deciding a long plan one block at a time instead of fixing every detail immediately. Settle the first stage, sketch what comes later, and check that enough time, space, or materials remain. A block is a group of related decisions, while feasibility means the remaining work still fits the rules. If a later stage becomes impossible, change an earlier choice. Early choices can trap you, and the method does not guarantee the best plan.
+**Description:** Decide a long plan one block at a time instead of fixing every detail at once. A block is a group of related decisions, such as decorations, games or cleanup. Settle the first block in detail, sketch the later ones roughly, and check that enough time, space and materials remain for them. If a later block no longer fits, go back and change an earlier choice. Early choices can trap you, and the method does not guarantee the best plan.
 
-**Example:** For example, Maja has four hours for a school fair: setup, games, and cleanup. Decorations take 2.5 hours; later blocks need 1.25 hours and 1 hour, so 4.75 hours cannot fit. She backtracks, chooses decorations taking 1.5 hours, and leaves 1.5 hours for games plus 1 hour for cleanup. The revised schedule uses all four hours and remains feasible.
+**Example:** Maja has the school hall for 4 hours to decorate it for the fair, run the games and clean up. She decides one stage (block) at a time. First she picks the decorations: the rich set takes 2.5 hours. For the later stages she only sketches rough times: games 1.5 hours, cleanup 1 hour. She checks: 2.5 + 1.5 + 1 = 5 hours, one more than she has. So she goes back to the first choice: simple decorations take 1.5 hours, and 1.5 + 1.5 + 1 = 4 hours fits exactly. Without that check she would have found the problem only during the fair.
 
 **Useful for:** Multi-stage schedules and plans too large to settle in full at once.
 
@@ -299,9 +299,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 15. Alternate the big plan with detailed feasibility checks
 
-**Description:** A high-level plan chooses the direction, while a detailed check tests whether actual tasks, time, people, and cost fit. Alternate between them: propose a strategy, work out a concrete version, turn failures into specific feedback, and revise. Feedback means information from the details that changes the bigger plan, not a vague feeling. This helps when a clever idea fails during execution. Matching the two levels still does not prove success.
+**Description:** A big plan sets the direction, but it can look fine until you work out the details. So go back and forth: propose a plan, then check the real tasks, time, people and cost it needs. If something does not fit, name the exact part that causes it and use that fact to change the plan. Such feedback is a specific fact from the details, not a vague feeling that it will not work. Repeat until both levels agree. Agreement still does not guarantee success, so check the whole at the end.
 
-**Example:** For example, four students plan a science video no longer than six minutes: a 1-minute introduction, 3-minute live experiment, and 2-minute conclusion. The lab is available for 20 minutes, but setup takes 12 and filming 15, so the experiment needs 27. They revise the big plan to a prepared 30-second demonstration, already assembled before booking, filmed in 5 minutes. Recording the other sections takes 14 minutes, so filming uses 19 minutes.
+**Example:** Four students plan a science video. The big plan: film the whole experiment live in the school lab, which they have for only 20 minutes. Detail check: setting up the experiment takes 12 minutes and filming it 10, so 12 + 10 = 22 minutes, 2 more than they have. The feedback is specific: the setup does not fit in the lab. They revise the big plan: assemble the experiment at home and only plug it in at school, which takes 4 minutes. New check: 4 + 10 = 14 minutes, so 6 minutes remain for a retake. Plan and details now agree.
 
 **Useful for:** Location choices, staffing plans, system design, and other decisions with a strategic layer and an operational layer.
 
@@ -320,7 +320,7 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 **Description:** A small instance is a reduced version of the same problem: fewer objects, smaller numbers, or simpler rules, while keeping the relationship you want to understand. Solve it, compare it with a slightly larger case, and look for steps that stay the same. This gives a foothold when the original feels tangled. It suggests a reusable method, not proof for every size; restore the original size and check the actual rules.
 
-**Example:** For example, in a tournament where every player meets every other once, start small. Two players create 1 game, three create 3, and four create 6. Each new player adds one game against every earlier player, so 20 players create 1 + 2 + ... + 19 = 190 games. The small cases revealed the repeated step, but would not prove a different tournament rule.
+**Example:** A tournament has 20 players, and every player meets every other player exactly once. How many games is that? Start small: two players play 1 game, three play 3, four play 6. What repeats: each new player plays one game against every player already there, so going from 3 players to 4 adds 3 games. With 20 players the last newcomer adds 19, so the total is 1 + 2 + … + 19, all whole numbers from 1 to 19 added up: 190 games. The small cases found the pattern and the newcomer idea explains it. It holds only while every pair plays once; with other tournament rules, check again.
 
 **Useful for:** Unfamiliar rules, counting, learning, prototypes, and finding a first foothold.
 
