@@ -337,9 +337,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 17. Clarify the problem and challenge hidden assumptions
 
-**Description:** Turn a vague difficulty into a question with a clear goal, known facts, and real constraints. Separate facts from assumptions: a fact is given or checked; an assumption is treated as true without checking. This prevents solving a precise version of the wrong question. Ask what counts as success, what information is missing, and whether a rule is real or merely customary. Review the framing after solving.
+**Description:** Before solving, make the question exact. Write down the goal, meaning what you will accept as success, the facts you are given, and the limits that really apply. List your assumptions separately: things you treat as true without checking. Ask whether a rule is real or only a habit. This matters because a perfect solution to a slightly different question helps nobody. After solving, return to the question and check that your answer is about the one that was asked.
 
-**Example:** For example, a class asks, ‘Can everyone reach the museum by 9:00?’ Clarify ‘everyone’ as 28 students plus 2 teachers. A bus leaves at 8:10, takes 35 minutes, and has 30 seats. The school requires a seat for each person, so the group fits exactly and arrives at 8:45. If only 28 seats can be used, two people lack seats and another route is needed. Naming the seat rule prevents an answer to the wrong question.
+**Example:** A class asks: ‘Can everyone get to the museum by 9:00?’ First decide who ‘everyone’ is: 28 students and 2 teachers, 30 people. The bus leaves at 8:10 and drives for 35 minutes, so it arrives at 8:45, in time. The school rule is one seat for every person, and this bus has only 28 seats. It is easy to assume silently that two people can stand and answer ‘yes’. Check that assumption against the rule: it fails, so 2 people have no seat and the answer is ‘no’, even though the time is fine. The class needs a bigger bus or a second one. Naming the assumption showed which question you were really answering.
 
 **Useful for:** Almost any problem, especially disagreements about what needs solving.
 
@@ -356,9 +356,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 18. Change the representation
 
-**Description:** Change the representation by describing the same problem as a picture, table, equation, physical model, or new variables. A good representation makes a hidden relationship easier to see. Label quantities and carry every condition across, or you may change the problem silently. This helps with dense word problems and tangled dependencies. An exact transformation preserves the question, but an approximation needs a separate check. A sketch suggests an answer, not proof.
+**Description:** Describe the same problem in another form: a picture, a table, an equation, or a model made of objects. The new form should make a hidden relationship easier to see, for example when letters stand for unknown numbers. Label every quantity and carry over every condition from the text, which means each fact in the words must appear in the new form, otherwise you end up solving a different problem. A sketch suggests an answer but does not prove it.
 
-**Example:** For example, the words say that a rectangle has perimeter 26 cm and length 3 cm more than its width. Let the width be w and the length w + 3. The equation 2w + 2(w + 3) = 26 becomes 4w + 6 = 26, so w = 5 and the length is 8. Checking gives 2 × 5 + 2 × 8 = 26. Replacing words with variables exposed the relationship without changing the conditions.
+**Example:** A rectangle has a perimeter of 26 cm, and its length is 3 cm more than its width. In words this is hard to hold in your head, so draw the rectangle and label the width w and the length w + 3. The perimeter is two widths and two lengths: 2w + 2(w + 3) = 26, which simplifies to 4w + 6 = 26. Then 4w = 20, so w = 5 and the length is 8. Check: 2 × 5 + 2 × 8 = 26, and 8 is 3 more than 5. The picture and the letters turned the words into an equation without dropping either condition.
 
 **Useful for:** Dense verbal problems, awkward algebra, spatial relationships, and tangled dependencies.
 
@@ -375,9 +375,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 19. Check units and extreme cases
 
-**Description:** Attach units to measured quantities and test simple boundary cases before trusting a formula. Units identify the kind of result: distance divided by time gives speed, not time per distance. Boundary cases include zero, one, equal values, and allowed minimum or maximum values. They can reveal a reversed operation or a model’s limits, although passing them does not prove correctness. Never divide by a forbidden input, such as zero time.
+**Description:** Write the unit next to every measured quantity and try simple extreme cases before you trust a formula. Units tell you what kind of result you get: distance divided by time gives speed, while time divided by distance gives hours per kilometre. Simple cases are zero, one, equal values, and the smallest or largest allowed input. They can expose a reversed operation or a limit of the model, but passing them does not prove the formula right. Never feed in forbidden input, such as dividing by zero hours.
 
-**Example:** For example, a cyclist travels 18 km in 1.5 hours, so speed is 18 ÷ 1.5 = 12 km/h. Reversing the division gives 0.083 hours per kilometre, exposing the mistake. Testing 0 km gives 0 km/h; testing 36 km in 1.5 hours gives 24 km/h. Zero hours is forbidden because division by zero is undefined.
+**Example:** A cyclist rides 18 km in 1.5 hours, and you want the speed. It is easy to divide the wrong way and compute 1.5 ÷ 18, which is about 0.083. Write the units: hours divided by kilometres is hours per kilometre, not speed, so the division is reversed. The right calculation is 18 ÷ 1.5 = 12 km/h. Now try extremes: 0 km in 1.5 hours gives 0 km/h, as it should: no distance, no speed. And 36 km, twice as far, in the same time gives 24 km/h, twice as fast, as it should. Zero hours is not tested, because division by zero is not defined.
 
 **Useful for:** Formulas, estimates, models, and catching errors before detailed calculation.
 
@@ -394,9 +394,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 20. Use symmetry to avoid repeated work
 
-**Description:** Use symmetry when swapping, rotating, reflecting, or relabeling parts leaves every rule and the goal unchanged. Group genuinely equivalent cases, solve one representative, and transfer the result. This avoids repeated work in geometry, counting, arrangements, and games with interchangeable pieces. Check the rules first: a labelled seat, different colour, or special player can destroy apparent symmetry. A symmetric picture does not guarantee a symmetric solution.
+**Description:** Look for symmetry: a change that breaks no rule and does not change the goal, such as moving everyone along by one seat, swapping two identical pieces, or renaming things. If different cases become the same after such a change, count or solve only one of them and copy the result to the rest. First check the rules: a marked seat, a different colour or a special player can destroy the symmetry.
 
-**Example:** For example, four named players sit around an unlabelled circular table, and the clockwise order matters, so a reflection is different. Rotating everyone gives the same arrangement; fix Ania and arrange the other three clockwise: 3 × 2 × 1 = 6. If one chair is labelled ‘near the door’, rotations differ too. Any player can occupy it, with 3! arrangements left, giving 4 × 6 = 24. The rules, not the circle’s appearance, decide the real symmetry.
+**Example:** Four friends, Ania, Bartek, Celina and Darek, sit at a round table with no marked seats. An arrangement is the clockwise order of people around the table, so when everybody moves one seat clockwise, nothing has changed. There are 4 such moves, so counting all 4 × 3 × 2 × 1 = 24 seatings counts every arrangement 4 times. Instead, put Ania in any seat, which removes the moving, and place the other three in 3 × 2 × 1 = 6 ways. Check: 24 ÷ 4 = 6. If one chair were marked ‘by the door’, moving everyone would change who sits there, so all 24 seatings would be different.
 
 **Useful for:** Geometry, counting, arrangements, and optimization with interchangeable elements.
 
@@ -413,9 +413,9 @@ Use the schemes as a menu, not a checklist to complete in order. You may need to
 
 ### 21. Compare choices through outcomes and trade-offs
 
-**Description:** List each feasible choice, its outcomes, costs, and opportunities you give up. An outcome is a possible result, a trade-off is a gain paired with giving up something else, and probability is a justified estimate of how often a result may occur. Use probability-weighted averages only with evidence; an unknown chance is not automatically 50 percent. Compare downside outcomes too, and keep value judgments visible instead of hiding them in one score.
+**Description:** For each choice, write down what you may gain, what you may lose, and what you give up. If the result is uncertain, list the possible outcomes. Give an outcome a probability, a justified estimate of how often it happens, only when you have evidence: not knowing is not the same as 50 percent. With probabilities you can compute an expected score, the average result if the choice were repeated many times. Also check the worst outcome, because a single average hides it.
 
-**Example:** For example, Rita compares study plans. Plan A takes two hours; from four similar quizzes she estimates 75% for 80 points and 25% for 60. Its rough expected score is 0.75 × 80 + 0.25 × 60 = 75. Plan B takes one hour, but its chance is unknown, not 50%. She may test it, but cannot calculate an average from a made-up probability. If 60 is unacceptable, the average alone is not enough.
+**Example:** Rita must choose between two ways of studying for a test. Plan A takes two hours. In four similar quizzes after studying this way she scored 80 points three times and 60 once, so she estimates 75% for 80 points and 25% for 60. Her expected score, the average over many repeats, is 0.75 × 80 + 0.25 × 60 = 75 points. Plan B takes one hour, but she has no quizzes to judge it, so its chance is unknown, not 50%. She could try it, but she cannot compute an average from an invented probability. And if 60 points is too low for her because it would not pass, the average of 75 does not settle the choice.
 
 **Useful for:** Decisions with uncertainty, competing objectives, or several plausible options.
 

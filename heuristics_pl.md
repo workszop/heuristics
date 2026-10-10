@@ -337,9 +337,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 17. Doprecyzuj problem i zakwestionuj ukryte założenia
 
-**Opis:** Zanim zaczniesz rozwiązywać problem, upewnij się, że wiesz, o co chodzi. Zapisz cel, podane lub sprawdzone fakty i obowiązujące ograniczenia. Osobno wypisz założenia, czyli rzeczy przyjęte za prawdę bez sprawdzenia. Ustal, jakich danych brakuje i czy każda reguła rzeczywiście obowiązuje, czy tylko tak się przyjęło. Dopiero wtedy wybierz sposób działania. Podczas pracy wracaj też do samego pytania: nawet poprawne rozwiązanie niewiele pomoże, jeśli dotyczy innego problemu niż ten, który chcesz rozwiązać.
+**Opis:** Zanim zaczniesz rozwiązywać, doprecyzuj pytanie. Zapisz cel, czyli co uznasz za sukces, fakty, które są podane lub sprawdzone, oraz ograniczenia, które naprawdę obowiązują. Osobno wypisz założenia: rzeczy przyjęte za prawdę bez sprawdzenia. Zapytaj, czy dana reguła jest prawdziwa, czy tylko tak się przyjęło. To ważne, bo doskonałe rozwiązanie trochę innego pytania nikomu nie pomoże. Po rozwiązaniu wróć do pytania i sprawdź, czy odpowiedź dotyczy tego, o które pytano.
 
-**Przykład:** Klasa pyta: „Czy wszyscy dotrą do muzeum przed dziewiątą?”. Najpierw ustalacie, kogo obejmuje „wszyscy”: 28 uczniów i 2 nauczycieli. Autobus odjeżdża o 8:10, jedzie 35 minut i ma 30 miejsc. Szkoła wymaga miejsca siedzącego dla każdej osoby. Grupa mieści się dokładnie i przyjeżdża o 8:45. Gdyby dostępnych było tylko 28 miejsc, dwie osoby nie miałyby gdzie usiąść. Sam czas przejazdu nadal by pasował, ale trzeba byłoby znaleźć inną trasę.
+**Przykład:** Klasa pyta: „Czy wszyscy dotrą do muzeum przed 9:00?”. Najpierw ustalacie, kogo obejmuje „wszyscy”: 28 uczniów i 2 nauczycieli, razem 30 osób. Autobus odjeżdża o 8:10 i jedzie 35 minut, więc będzie na miejscu o 8:45, na czas. Szkoła wymaga miejsca siedzącego dla każdego, a ten autobus ma tylko 28 miejsc. Łatwo po cichu założyć, że dwie osoby postoją, i odpowiedzieć „tak”. Sprawdźcie to założenie z regułą: nie wytrzymuje, więc 2 osoby nie mają miejsca i odpowiedź brzmi „nie”, chociaż czas pasuje. Klasa potrzebuje większego autobusu albo drugiego. Nazwanie założenia pokazało, na jakie pytanie naprawdę odpowiadacie.
 
 **Kiedy się przydaje:** Przy niemal każdym problemie, szczególnie gdy nie ma zgody co do tego, co właściwie trzeba rozwiązać.
 
@@ -356,9 +356,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 18. Zmień sposób przedstawienia problemu
 
-**Opis:** Gdy opis słowny jest trudny do zrozumienia, narysuj problem, ułóż tabelę, zapisz równanie albo zbuduj model z przedmiotów. Możesz też inaczej oznaczyć zmienne. Chodzi o to, by łatwiej dostrzec zależności, a nie zmienić zadanie. Dlatego przenieś wszystkie ważne wielkości i warunki. To pomaga zwłaszcza przy długich zadaniach tekstowych i relacjach przestrzennych. Uważaj na przybliżenia: w odróżnieniu od dokładnego przekształcenia zmieniają problem i wymagają dodatkowej kontroli. Sam wygląd szkicu nie dowodzi dokładnej zależności.
+**Opis:** Opisz ten sam problem inaczej: narysuj go, ułóż tabelę, zapisz równanie albo zbuduj model z przedmiotów. Nowa forma ma ułatwić zobaczenie ukrytej zależności, na przykład gdy nieznane liczby oznaczysz literami. Oznacz każdą wielkość i przenieś wszystkie warunki z treści, czyli każdy fakt z opisu musi znaleźć się w nowej postaci, bo inaczej rozwiążesz inne zadanie. Szkic podpowiada odpowiedź, ale jej nie dowodzi.
 
-**Przykład:** Prostokąt ma obwód 26 cm, a jego długość jest o 3 cm większa od szerokości. Oznacz szerokość przez w. Długość to wtedy w + 3. Zapisujesz obwód jako 2w + 2(w + 3) = 26 i upraszczasz do 4w + 6 = 26. Otrzymujesz w = 5, więc długość wynosi 8. Sprawdzenie daje 2 × 5 + 2 × 8 = 26. Równanie pozwoliło zobaczyć zależność między bokami bez pomijania warunków z treści.
+**Przykład:** Obwód prostokąta wynosi 26 cm, a jego długość jest o 3 cm większa od szerokości. W słowach trudno to ogarnąć, więc rysujesz prostokąt i oznaczasz szerokość literą w, a długość jako w + 3. Obwód to dwie szerokości i dwie długości: 2w + 2(w + 3) = 26, czyli 4w + 6 = 26. Stąd 4w = 20, więc w = 5, a długość to 8. Sprawdzenie: 2 × 5 + 2 × 8 = 26, a 8 to o 3 więcej niż 5. Rysunek i litery zamieniły opis słowny w równanie, nie gubiąc żadnego z dwóch warunków.
 
 **Kiedy się przydaje:** Przy zawiłych zadaniach tekstowych, niewygodnych wyrażeniach algebraicznych, relacjach przestrzennych i splątanych zależnościach.
 
@@ -375,9 +375,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 19. Sprawdź jednostki i przypadki graniczne
 
-**Opis:** Zanim zaufasz wzorowi, dopisz jednostki do mierzonych wielkości. Pomagają sprawdzić, co właściwie obliczasz: odległość podzielona przez czas daje prędkość, a odwrotne dzielenie daje czas potrzebny na jednostkę odległości. Wypróbuj też proste wartości, takie jak zero, jeden, równe wielkości lub dozwolone minimum i maksimum. Możesz wtedy zauważyć odwrócone działanie albo granicę, przy której model przestaje działać. Poprawne wyniki tych testów nie zastępują dowodu. Sprawdzaj tylko dopuszczalne dane: przy obliczaniu prędkości nie wolno dzielić przez zero godzin.
+**Opis:** Dopisz jednostki do każdej mierzonej wielkości i wypróbuj proste przypadki skrajne, zanim zaufasz wzorowi. Jednostki mówią, co dokładnie obliczasz: odległość podzielona przez czas daje prędkość, a czas podzielony przez odległość daje godziny na kilometr. Proste przypadki to zero, jeden, równe wartości oraz najmniejsza i największa dozwolona wartość. Mogą ujawnić odwrócone działanie albo granicę modelu, ale ich przejście nie dowodzi, że wzór jest dobry. Nie wstawiaj niedozwolonych danych, na przykład zera godzin do dzielenia.
 
-**Przykład:** Rowerzysta przejeżdża 18 km w 1,5 godziny. Jego prędkość to 18 ÷ 1,5 = 12 km/h. Leo omyłkowo dzieli odwrotnie i otrzymuje około 0,083 godziny na kilometr. Po jednostkach widzi, że obliczył coś innego. Sprawdza jeszcze 0 km: prawidłowy wzór daje 0 km/h. Dla 36 km w 1,5 godziny otrzymuje 24 km/h, czyli dwukrotnie większą prędkość przy dwukrotnie większej odległości. Odrzuca natomiast 0 godzin, bo przez zero nie można dzielić.
+**Przykład:** Rowerzysta przejeżdża 18 km w 1,5 godziny, a ty szukasz jego prędkości. Łatwo podzielić w złą stronę i obliczyć 1,5 ÷ 18, czyli około 0,083. Dopisz jednostki: godziny podzielone przez kilometry to godziny na kilometr, a nie prędkość, więc dzielenie jest odwrócone. Poprawnie: 18 ÷ 1,5 = 12 km/h. Teraz przypadki skrajne: 0 km w 1,5 godziny daje 0 km/h, tak jak powinno być: brak drogi to brak prędkości. A 36 km, czyli dwa razy dalej, w tym samym czasie daje 24 km/h, dwa razy szybciej, tak jak powinno być. Zera godzin nie sprawdzasz, bo przez zero nie można dzielić.
 
 **Kiedy się przydaje:** Przy wzorach, oszacowaniach, modelach i wykrywaniu błędów przed szczegółowymi obliczeniami.
 
@@ -394,9 +394,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 20. Wykorzystaj symetrię, aby nie powtarzać pracy
 
-**Opis:** Wykorzystaj symetrię, gdy zamiana, obrót, odbicie lub zmiana oznaczeń nie zmienia żadnej reguły ani celu. Pogrupuj przypadki rzeczywiście równoważne, rozpatrz jeden reprezentatywny przypadek i przenieś wynik na pozostałe. Dzięki temu nie powtarzasz pracy w geometrii, zliczaniu, układaniu i grach z wymiennymi elementami. Najpierw sprawdź reguły: oznaczone krzesło, inny kolor albo wyróżniony gracz może zniszczyć pozorną symetrię. Symetryczny rysunek nie wymaga symetrycznego rozwiązania, a przy zliczaniu trzeba uważać na liczebność każdej grupy.
+**Opis:** Szukaj symetrii, czyli zmiany, która nie łamie żadnej reguły i nie zmienia celu: na przykład przesunięcia wszystkich o jedno miejsce, zamiany dwóch jednakowych części albo zmiany oznaczeń. Jeśli różne przypadki po takiej zmianie stają się takie same, policz albo rozwiąż tylko jeden z nich i przenieś wynik na resztę. Najpierw sprawdź reguły: oznaczone miejsce, inny kolor albo wyróżniony gracz psuje symetrię.
 
-**Przykład:** Czworo graczy siedzi przy okrągłym stole bez oznaczonych miejsc. W grze liczy się kolejność osób zgodna z ruchem wskazówek zegara, więc odbicie daje inny układ, ale obrót wszystkich osób nie. Ustal miejsce Ani i ustaw pozostałych: 3 × 2 × 1 = 6 możliwości. Jeśli nauczyciel wyróżni jedno krzesło jako miejsce „przy drzwiach”, obrót też zmieni układ. Na tym krześle może siedzieć każdy gracz, a pozostałych można usadzić na 3! sposobów. Otrzymujesz 4 × 6 = 24 możliwości.
+**Przykład:** Czworo przyjaciół – Ania, Bartek, Celina i Darek – siada przy okrągłym stole bez oznaczonych miejsc. Układem jest kolejność osób dookoła stołu zgodnie z ruchem wskazówek zegara, więc gdy wszyscy przesiądą się o jedno miejsce, nic się nie zmienia. Takich przesunięć jest 4, więc policzenie wszystkich 4 × 3 × 2 × 1 = 24 sposobów posadzenia zlicza każdy układ 4 razy. Lepiej posadzić Anię na dowolnym miejscu, co usuwa przesuwanie, a pozostałą trójkę ustawić na 3 × 2 × 1 = 6 sposobów. Sprawdzenie: 24 ÷ 4 = 6. Gdyby jedno krzesło było oznaczone „przy drzwiach”, przesunięcie zmieniałoby, kto na nim siedzi, więc każde z 24 posadzeń byłoby inne.
 
 **Kiedy się przydaje:** W geometrii, zliczaniu, układaniu obiektów i optymalizacji z wymiennymi elementami.
 
@@ -413,9 +413,9 @@ Nie musisz przechodzić przez wszystkie schematy po kolei. Wybieraj te, których
 
 ### 21. Porównuj wybory przez ich skutki i kompromisy
 
-**Opis:** Przy każdej dostępnej opcji zapisz, co możesz zyskać, co stracić i z czego musisz zrezygnować. Jeśli wynik jest niepewny, określ możliwe skutki. Prawdopodobieństwa przypisuj im tylko wtedy, gdy masz ku temu podstawy w danych. Możesz wtedy obliczyć średni spodziewany wynik, uwzględniając szanse poszczególnych skutków. Brak wiedzy nie oznacza szansy 50 procent. Oprócz średniej sprawdź też niekorzystne scenariusze. Jedna liczba nie pokaże wszystkiego, zwłaszcza gdy dla różnych osób inne korzyści i straty są ważne.
+**Opis:** Przy każdym wyborze zapisz, co możesz zyskać, co stracić i z czego rezygnujesz. Gdy wynik jest niepewny, wypisz możliwe skutki. Prawdopodobieństwo, czyli uzasadnione oszacowanie, jak często coś się zdarza, przypisuj skutkowi tylko wtedy, gdy masz do tego dane: brak wiedzy to nie 50 procent. Z prawdopodobieństwami możesz obliczyć wynik oczekiwany, czyli średni wynik, gdyby wybór powtarzać wiele razy. Sprawdź też najgorszy skutek, bo jedna średnia go ukrywa.
 
-**Przykład:** Rita porównuje dwa sposoby nauki. Plan A zajmuje dwie godziny. Na podstawie czterech podobnych kartkówek szacuje 75 procent szans na 80 punktów i 25 procent na 60. Przy tych założeniach wynik oczekiwany to 0,75 × 80 + 0,25 × 60 = 75 punktów. Plan B zajmuje godzinę, ale Rita nie ma danych o jego skuteczności. Może go wypróbować, lecz nie powinna wpisywać 50 procent tylko dlatego, że nie zna szans. Musi też rozważyć gorszy wynik planu A: jeśli 60 punktów to za mało, korzystna średnia nie rozstrzyga wyboru.
+**Przykład:** Rita wybiera jeden z dwóch sposobów nauki do sprawdzianu. Plan A zajmuje dwie godziny. W czterech podobnych kartkówkach po takiej nauce trzy razy dostała 80 punktów, a raz 60, więc szacuje 75 procent szans na 80 punktów i 25 procent na 60. Wynik oczekiwany, czyli średnia z wielu powtórzeń, to 0,75 × 80 + 0,25 × 60 = 75 punktów. Plan B zajmuje godzinę, ale Rita nie ma kartkówek, które by go oceniły, więc jego szansa jest nieznana, a nie równa 50 procent. Może go wypróbować, ale nie obliczy średniej z wymyślonej liczby. A jeśli 60 punktów to dla niej za mało, bo nie zalicza, średnia 75 nie rozstrzyga wyboru.
 
 **Kiedy się przydaje:** Przy decyzjach obarczonych niepewnością, konkurujących celach lub kilku rozsądnych możliwościach.
 
